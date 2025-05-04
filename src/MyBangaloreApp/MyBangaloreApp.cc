@@ -34,7 +34,7 @@ void MyBangaloreApp::initialize(int stage) {
 
     // Move your custom initialization logic to a later stage
     // Stage 2 might be needed if mobility details are set later
-    if (stage == 1) {
+    if (stage == 2) {
         // Your initialization logic (broadcastInterval, timer, logFile) goes here
         broadcastInterval = par("broadcastInterval").doubleValueInUnit("s");
         broadcastTimer = new cMessage("v2v_broadcast_timer");
@@ -55,38 +55,6 @@ void MyBangaloreApp::initialize(int stage) {
 }
 
 void MyBangaloreApp::handleSelfMsg(cMessage* msg) {
-    if (msg->getArrivalGate() == lowerGate) { // Check if message is from the network
-           // This is an incoming V2V message
-           // You might need to cast it to your specific V2V message type
-           // Example assuming a V2VMessage type with methods like getPosition() and getSpeed()
-           // If you haven't defined a custom message type yet, you might just log cMessage info.
-
-           // Assuming message type is V2VMessage (replace with your actual message type if different)
-           // V2VMessage* v2vMsg = dynamic_cast<V2VMessage*>(msg);
-
-           // Check if the log file is open before writing
-           if (logFile.is_open()) {
-               // Write to the log file in the desired format
-               // Example format: [time] Sender -> Receiver : "Content"
-               logFile << "[" << simTime() << "s] "
-                       << msg->getSenderModule()->getName() << " -> " // Sender module name (e.g., node[x].appl)
-                       << getParentModule()->getName()      // Receiver module name (e.g., node[y].appl)
-                       << " : \"" << msg->getName() << "\""; // Message name or content
-
-               // If you have a custom message type, you can access its fields:
-               // if (v2vMsg) {
-               //     logFile << " Position: (" << v2vMsg->getPosition().x << "," << v2vMsg->getPosition().y << ")"
-               //             << ", Speed: " << v2vMsg->getSpeed() << " m/s";
-               // }
-
-               logFile << "\n"; // Add a newline after each log entry
-               logFile.flush(); // Ensure data is written to file immediately (optional but good for debugging)
-           }
-
-           // Delete the message after processing
-           delete msg;
-
-       }
     if (msg == broadcastTimer) {
         sendBroadcast();
         scheduleAt(simTime() + broadcastInterval, broadcastTimer);
@@ -94,7 +62,6 @@ void MyBangaloreApp::handleSelfMsg(cMessage* msg) {
         DemoBaseApplLayer::handleSelfMsg(msg);
     }
 }
-
 
 void MyBangaloreApp::sendBroadcast() {
     // Correct member name: curPosition
