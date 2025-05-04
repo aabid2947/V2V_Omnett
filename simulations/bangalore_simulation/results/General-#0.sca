@@ -1,0 +1,1956 @@
+version 3
+run General-0-20250504-17:08:59-12832
+attr configname General
+attr datetime 20250504-17:08:59
+attr datetimef 20250504-170859
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network BangaloreScenario
+attr processid 12832
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../../../OneDrive/Desktop/veins/images
+config network BangaloreScenario
+config sim-time-limit 3600s
+config *.manager.updateInterval 0.1s
+config *.manager.host "\"localhost\""
+config *.manager.port 9999
+config *.manager.moduleType "\"org.car2x.veins.nodes.Car\""
+config *.manager.moduleName "\"node\""
+config *.manager.autoShutdown true
+config *.manager.launchConfig "xmldoc(\"bangalore.launchd.xml\")"
+config *.**.BangaloreScenario.worldUtility.playgroundSizeX 3000m
+config *.**.BangaloreScenario.worldUtility.playgroundSizeY 3000m
+config *.**.BangaloreScenario.worldUtility.playgroundSizeZ 50m
+config *.**.BangaloreScenario.playgroundSizeX 3000m
+config *.**.BangaloreScenario.playgroundSizeY 3000m
+config *.**.BangaloreScenario.playgroundSizeZ 50m
+config *.node[*].veinsmobility.setHostState false
+config *.node[*].veinsmobility.setHostSpeed false
+config *.node[*].mobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+config *.node[*].mobility.updateInterval 0.1s
+config *.node[*].mobility.setHostState false
+config *.node[*].applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+config *.node[*].nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+config *.node[*].nic.phy80211p.usePropagationDelay true
+config *.node[*].nic.phy80211p.thermalNoise -110dBm
+config *.node[*].nic.phy80211p.sensitivity -95dBm
+config *.node[*].nic.phy80211p.maxTXPower 20mW
+config *.node[*].veinsmobility.x 0
+config *.node[*].veinsmobility.y 0
+config *.node[*].veinsmobility.z 0
+config *.node[*].appl.broadcastInterval 1s
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config BangaloreScenario.numCars 0
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.connectionManager.sendDirect false
+config *.connectionManager.maxInterfDist 10000m
+
+par BangaloreScenario.node[0].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[0].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[0].appl sendBeacons true
+par BangaloreScenario.node[0].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[0].appl beaconUserPriority 7
+par BangaloreScenario.node[0].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[0].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[0].appl dataOnSch false
+par BangaloreScenario.node[0].appl dataUserPriority 7
+par BangaloreScenario.node[0].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[0].appl sendWSA false
+par BangaloreScenario.node[0].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[0].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[0].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[0].appl logVehicleData true
+par BangaloreScenario.node[0].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[0].appl generatedWSMs 31
+scalar BangaloreScenario.node[0].appl receivedWSMs 81
+scalar BangaloreScenario.node[0].appl generatedBSMs 31
+scalar BangaloreScenario.node[0].appl receivedBSMs 82
+scalar BangaloreScenario.node[0].appl generatedWSAs 0
+scalar BangaloreScenario.node[0].appl receivedWSAs 0
+par BangaloreScenario.node[0].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[0].nic.phy80211p recordStats false
+par BangaloreScenario.node[0].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[0].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[0].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[0].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[0].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[0].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[0].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[0].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[0].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[0].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[0].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[0].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[0].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[0].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[0].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[0].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[0].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[0].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[0].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[0].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[0].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[0].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[0].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[0].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[0].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[0].nic.phy80211p busyTime 0.00052398713826367
+par BangaloreScenario.node[0].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[0].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[0].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[0].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[0].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[0].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[0].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[0].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[0].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[0].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[0].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[0].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[0].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[0].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[0].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[0].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[0].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 ReceivedBroadcasts 163
+scalar BangaloreScenario.node[0].nic.mac1609_4 SentPackets 62
+scalar BangaloreScenario.node[0].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 TimesIntoBackoff 62
+scalar BangaloreScenario.node[0].nic.mac1609_4 SlotsBackoff 95
+scalar BangaloreScenario.node[0].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[0].nic.mac1609_4 totalBusyTime 0.022518
+scalar BangaloreScenario.node[0].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[0].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[0].nic.mac1609_4 sentPackets:count 62
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[0].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[0].nic.mac1609_4 channelBusy:timeavg 0.00072405144694534
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[0].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[0].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[0].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[0].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[0].veinsmobility x 0
+par BangaloreScenario.node[0].veinsmobility y 0
+par BangaloreScenario.node[0].veinsmobility z 0
+par BangaloreScenario.node[0].veinsmobility xOrientation 1
+par BangaloreScenario.node[0].veinsmobility yOrientation 0
+par BangaloreScenario.node[0].veinsmobility zOrientation 0
+par BangaloreScenario.node[0].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[0].veinsmobility setHostSpeed false
+par BangaloreScenario.node[0].veinsmobility accidentCount 0
+par BangaloreScenario.node[0].veinsmobility accidentStart 46.4644s
+attr unit s
+par BangaloreScenario.node[0].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[0].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[0].veinsmobility startTime 0.1
+scalar BangaloreScenario.node[0].veinsmobility totalTime 31
+scalar BangaloreScenario.node[0].veinsmobility stopTime 31.2
+scalar BangaloreScenario.node[0].veinsmobility minSpeed 0.24714285032102
+scalar BangaloreScenario.node[0].veinsmobility maxSpeed 24.794549958147
+scalar BangaloreScenario.node[0].veinsmobility totalDistance 399.84170671348
+scalar BangaloreScenario.node[0].veinsmobility totalCO2Emission 164.20292960879
+par BangaloreScenario.node[0] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[0] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[0] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[0] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[1].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[1].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[1].appl sendBeacons true
+par BangaloreScenario.node[1].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[1].appl beaconUserPriority 7
+par BangaloreScenario.node[1].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[1].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[1].appl dataOnSch false
+par BangaloreScenario.node[1].appl dataUserPriority 7
+par BangaloreScenario.node[1].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[1].appl sendWSA false
+par BangaloreScenario.node[1].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[1].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[1].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[1].appl logVehicleData true
+par BangaloreScenario.node[1].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[1].appl generatedWSMs 26
+scalar BangaloreScenario.node[1].appl receivedWSMs 82
+scalar BangaloreScenario.node[1].appl generatedBSMs 26
+scalar BangaloreScenario.node[1].appl receivedBSMs 82
+scalar BangaloreScenario.node[1].appl generatedWSAs 0
+scalar BangaloreScenario.node[1].appl receivedWSAs 0
+par BangaloreScenario.node[1].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[1].nic.phy80211p recordStats false
+par BangaloreScenario.node[1].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[1].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[1].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[1].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[1].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[1].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[1].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[1].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[1].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[1].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[1].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[1].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[1].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[1].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[1].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[1].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[1].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[1].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[1].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[1].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[1].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[1].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[1].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[1].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[1].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[1].nic.phy80211p busyTime 0.00062473282442748
+par BangaloreScenario.node[1].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[1].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[1].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[1].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[1].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[1].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[1].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[1].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[1].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[1].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[1].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[1].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[1].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[1].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[1].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[1].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[1].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 ReceivedBroadcasts 164
+scalar BangaloreScenario.node[1].nic.mac1609_4 SentPackets 52
+scalar BangaloreScenario.node[1].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 TimesIntoBackoff 52
+scalar BangaloreScenario.node[1].nic.mac1609_4 SlotsBackoff 79
+scalar BangaloreScenario.node[1].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[1].nic.mac1609_4 totalBusyTime 0.02162
+scalar BangaloreScenario.node[1].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[1].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[1].nic.mac1609_4 sentPackets:count 52
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[1].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[1].nic.mac1609_4 channelBusy:timeavg 0.00082519083969466
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[1].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[1].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[1].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[1].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[1].veinsmobility x 0
+par BangaloreScenario.node[1].veinsmobility y 0
+par BangaloreScenario.node[1].veinsmobility z 0
+par BangaloreScenario.node[1].veinsmobility xOrientation 1
+par BangaloreScenario.node[1].veinsmobility yOrientation 0
+par BangaloreScenario.node[1].veinsmobility zOrientation 0
+par BangaloreScenario.node[1].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[1].veinsmobility setHostSpeed false
+par BangaloreScenario.node[1].veinsmobility accidentCount 0
+par BangaloreScenario.node[1].veinsmobility accidentStart 58.9099s
+attr unit s
+par BangaloreScenario.node[1].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[1].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[1].veinsmobility startTime 5.1
+scalar BangaloreScenario.node[1].veinsmobility totalTime 26.1
+scalar BangaloreScenario.node[1].veinsmobility stopTime 31.3
+scalar BangaloreScenario.node[1].veinsmobility minSpeed 0.25599684562138
+scalar BangaloreScenario.node[1].veinsmobility maxSpeed 14.5622414484
+scalar BangaloreScenario.node[1].veinsmobility totalDistance 296.33328486214
+scalar BangaloreScenario.node[1].veinsmobility totalCO2Emission 100.27303667468
+par BangaloreScenario.node[1] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[1] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[1] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[1] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[2].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[2].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[2].appl sendBeacons true
+par BangaloreScenario.node[2].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[2].appl beaconUserPriority 7
+par BangaloreScenario.node[2].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[2].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[2].appl dataOnSch false
+par BangaloreScenario.node[2].appl dataUserPriority 7
+par BangaloreScenario.node[2].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[2].appl sendWSA false
+par BangaloreScenario.node[2].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[2].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[2].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[2].appl logVehicleData true
+par BangaloreScenario.node[2].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[2].appl generatedWSMs 32
+scalar BangaloreScenario.node[2].appl receivedWSMs 128
+scalar BangaloreScenario.node[2].appl generatedBSMs 32
+scalar BangaloreScenario.node[2].appl receivedBSMs 129
+scalar BangaloreScenario.node[2].appl generatedWSAs 0
+scalar BangaloreScenario.node[2].appl receivedWSAs 0
+par BangaloreScenario.node[2].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[2].nic.phy80211p recordStats false
+par BangaloreScenario.node[2].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[2].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[2].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[2].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[2].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[2].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[2].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[2].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[2].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[2].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[2].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[2].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[2].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[2].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[2].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[2].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[2].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[2].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[2].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[2].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[2].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[2].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[2].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[2].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[2].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[2].nic.phy80211p busyTime 0.00080275
+par BangaloreScenario.node[2].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[2].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[2].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[2].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[2].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[2].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[2].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[2].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[2].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[2].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[2].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[2].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[2].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[2].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[2].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[2].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[2].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 ReceivedBroadcasts 257
+scalar BangaloreScenario.node[2].nic.mac1609_4 SentPackets 64
+scalar BangaloreScenario.node[2].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 TimesIntoBackoff 64
+scalar BangaloreScenario.node[2].nic.mac1609_4 SlotsBackoff 95
+scalar BangaloreScenario.node[2].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[2].nic.mac1609_4 totalBusyTime 0.032144
+scalar BangaloreScenario.node[2].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[2].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[2].nic.mac1609_4 sentPackets:count 64
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[2].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[2].nic.mac1609_4 channelBusy:timeavg 0.0010045
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[2].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[2].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[2].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[2].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[2].veinsmobility x 0
+par BangaloreScenario.node[2].veinsmobility y 0
+par BangaloreScenario.node[2].veinsmobility z 0
+par BangaloreScenario.node[2].veinsmobility xOrientation 1
+par BangaloreScenario.node[2].veinsmobility yOrientation 0
+par BangaloreScenario.node[2].veinsmobility zOrientation 0
+par BangaloreScenario.node[2].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[2].veinsmobility setHostSpeed false
+par BangaloreScenario.node[2].veinsmobility accidentCount 0
+par BangaloreScenario.node[2].veinsmobility accidentStart 43.158s
+attr unit s
+par BangaloreScenario.node[2].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[2].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[2].veinsmobility startTime 10.1
+scalar BangaloreScenario.node[2].veinsmobility totalTime 31.9
+scalar BangaloreScenario.node[2].veinsmobility stopTime 42.1
+scalar BangaloreScenario.node[2].veinsmobility minSpeed 0.25121549153933
+scalar BangaloreScenario.node[2].veinsmobility maxSpeed 14.305810632597
+scalar BangaloreScenario.node[2].veinsmobility totalDistance 339.75367054588
+scalar BangaloreScenario.node[2].veinsmobility totalCO2Emission 110.99847538717
+par BangaloreScenario.node[2] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[2] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[2] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[2] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[4].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[4].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[4].appl sendBeacons true
+par BangaloreScenario.node[4].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[4].appl beaconUserPriority 7
+par BangaloreScenario.node[4].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[4].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[4].appl dataOnSch false
+par BangaloreScenario.node[4].appl dataUserPriority 7
+par BangaloreScenario.node[4].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[4].appl sendWSA false
+par BangaloreScenario.node[4].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[4].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[4].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[4].appl logVehicleData true
+par BangaloreScenario.node[4].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[4].appl generatedWSMs 33
+scalar BangaloreScenario.node[4].appl receivedWSMs 162
+scalar BangaloreScenario.node[4].appl generatedBSMs 33
+scalar BangaloreScenario.node[4].appl receivedBSMs 162
+scalar BangaloreScenario.node[4].appl generatedWSAs 0
+scalar BangaloreScenario.node[4].appl receivedWSAs 0
+par BangaloreScenario.node[4].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[4].nic.phy80211p recordStats false
+par BangaloreScenario.node[4].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[4].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[4].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[4].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[4].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[4].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[4].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[4].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[4].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[4].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[4].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[4].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[4].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[4].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[4].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[4].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[4].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[4].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[4].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[4].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[4].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[4].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[4].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[4].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[4].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[4].nic.phy80211p busyTime 0.00099925925925926
+par BangaloreScenario.node[4].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[4].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[4].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[4].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[4].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[4].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[4].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[4].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[4].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[4].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[4].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[4].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[4].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[4].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[4].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[4].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[4].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 ReceivedBroadcasts 324
+scalar BangaloreScenario.node[4].nic.mac1609_4 SentPackets 66
+scalar BangaloreScenario.node[4].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 TimesIntoBackoff 66
+scalar BangaloreScenario.node[4].nic.mac1609_4 SlotsBackoff 113
+scalar BangaloreScenario.node[4].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[4].nic.mac1609_4 totalBusyTime 0.039034
+scalar BangaloreScenario.node[4].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[4].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[4].nic.mac1609_4 sentPackets:count 66
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[4].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[4].nic.mac1609_4 channelBusy:timeavg 0.0012047530864198
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[4].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[4].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[4].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[4].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[4].veinsmobility x 0
+par BangaloreScenario.node[4].veinsmobility y 0
+par BangaloreScenario.node[4].veinsmobility z 0
+par BangaloreScenario.node[4].veinsmobility xOrientation 1
+par BangaloreScenario.node[4].veinsmobility yOrientation 0
+par BangaloreScenario.node[4].veinsmobility zOrientation 0
+par BangaloreScenario.node[4].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[4].veinsmobility setHostSpeed false
+par BangaloreScenario.node[4].veinsmobility accidentCount 0
+par BangaloreScenario.node[4].veinsmobility accidentStart 46.3142s
+attr unit s
+par BangaloreScenario.node[4].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[4].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[4].veinsmobility startTime 20.1
+scalar BangaloreScenario.node[4].veinsmobility totalTime 32.3
+scalar BangaloreScenario.node[4].veinsmobility stopTime 52.5
+scalar BangaloreScenario.node[4].veinsmobility minSpeed 0.24937594743702
+scalar BangaloreScenario.node[4].veinsmobility maxSpeed 12.265934383503
+scalar BangaloreScenario.node[4].veinsmobility totalDistance 279.47178926704
+scalar BangaloreScenario.node[4].veinsmobility totalCO2Emission 103.44657099795
+par BangaloreScenario.node[4] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[4] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[4] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[4] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[6].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[6].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[6].appl sendBeacons true
+par BangaloreScenario.node[6].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[6].appl beaconUserPriority 7
+par BangaloreScenario.node[6].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[6].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[6].appl dataOnSch false
+par BangaloreScenario.node[6].appl dataUserPriority 7
+par BangaloreScenario.node[6].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[6].appl sendWSA false
+par BangaloreScenario.node[6].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[6].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[6].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[6].appl logVehicleData true
+par BangaloreScenario.node[6].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[6].appl generatedWSMs 25
+scalar BangaloreScenario.node[6].appl receivedWSMs 135
+scalar BangaloreScenario.node[6].appl generatedBSMs 25
+scalar BangaloreScenario.node[6].appl receivedBSMs 138
+scalar BangaloreScenario.node[6].appl generatedWSAs 0
+scalar BangaloreScenario.node[6].appl receivedWSAs 0
+par BangaloreScenario.node[6].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[6].nic.phy80211p recordStats false
+par BangaloreScenario.node[6].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[6].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[6].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[6].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[6].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[6].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[6].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[6].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[6].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[6].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[6].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[6].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[6].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[6].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[6].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[6].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[6].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[6].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[6].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[6].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[6].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[6].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[6].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[6].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[6].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[6].nic.phy80211p busyTime 0.0010828571428571
+par BangaloreScenario.node[6].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[6].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[6].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[6].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[6].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[6].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[6].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[6].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[6].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[6].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[6].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[6].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[6].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[6].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[6].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[6].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[6].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 ReceivedBroadcasts 273
+scalar BangaloreScenario.node[6].nic.mac1609_4 SentPackets 50
+scalar BangaloreScenario.node[6].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 TimesIntoBackoff 50
+scalar BangaloreScenario.node[6].nic.mac1609_4 SlotsBackoff 60
+scalar BangaloreScenario.node[6].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[6].nic.mac1609_4 totalBusyTime 0.032338
+scalar BangaloreScenario.node[6].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[6].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[6].nic.mac1609_4 sentPackets:count 50
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[6].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[6].nic.mac1609_4 channelBusy:timeavg 0.001283253968254
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[6].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[6].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[6].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[6].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[6].veinsmobility x 0
+par BangaloreScenario.node[6].veinsmobility y 0
+par BangaloreScenario.node[6].veinsmobility z 0
+par BangaloreScenario.node[6].veinsmobility xOrientation 1
+par BangaloreScenario.node[6].veinsmobility yOrientation 0
+par BangaloreScenario.node[6].veinsmobility zOrientation 0
+par BangaloreScenario.node[6].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[6].veinsmobility setHostSpeed false
+par BangaloreScenario.node[6].veinsmobility accidentCount 0
+par BangaloreScenario.node[6].veinsmobility accidentStart 38.6015s
+attr unit s
+par BangaloreScenario.node[6].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[6].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[6].veinsmobility startTime 30.5
+scalar BangaloreScenario.node[6].veinsmobility totalTime 25.1
+scalar BangaloreScenario.node[6].veinsmobility stopTime 55.7
+scalar BangaloreScenario.node[6].veinsmobility minSpeed 0.24775651352853
+scalar BangaloreScenario.node[6].veinsmobility maxSpeed 13.129700970156
+scalar BangaloreScenario.node[6].veinsmobility totalDistance 200.86423026359
+scalar BangaloreScenario.node[6].veinsmobility totalCO2Emission 81.574681910551
+par BangaloreScenario.node[6] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[6] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[6] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[6] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[5].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[5].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[5].appl sendBeacons true
+par BangaloreScenario.node[5].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[5].appl beaconUserPriority 7
+par BangaloreScenario.node[5].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[5].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[5].appl dataOnSch false
+par BangaloreScenario.node[5].appl dataUserPriority 7
+par BangaloreScenario.node[5].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[5].appl sendWSA false
+par BangaloreScenario.node[5].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[5].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[5].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[5].appl logVehicleData true
+par BangaloreScenario.node[5].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[5].appl generatedWSMs 31
+scalar BangaloreScenario.node[5].appl receivedWSMs 166
+scalar BangaloreScenario.node[5].appl generatedBSMs 31
+scalar BangaloreScenario.node[5].appl receivedBSMs 166
+scalar BangaloreScenario.node[5].appl generatedWSAs 0
+scalar BangaloreScenario.node[5].appl receivedWSAs 0
+par BangaloreScenario.node[5].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[5].nic.phy80211p recordStats false
+par BangaloreScenario.node[5].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[5].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[5].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[5].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[5].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[5].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[5].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[5].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[5].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[5].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[5].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[5].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[5].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[5].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[5].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[5].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[5].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[5].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[5].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[5].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[5].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[5].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[5].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[5].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[5].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[5].nic.phy80211p busyTime 0.0010701935483871
+par BangaloreScenario.node[5].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[5].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[5].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[5].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[5].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[5].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[5].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[5].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[5].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[5].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[5].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[5].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[5].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[5].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[5].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[5].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[5].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 ReceivedBroadcasts 332
+scalar BangaloreScenario.node[5].nic.mac1609_4 SentPackets 62
+scalar BangaloreScenario.node[5].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 TimesIntoBackoff 62
+scalar BangaloreScenario.node[5].nic.mac1609_4 SlotsBackoff 98
+scalar BangaloreScenario.node[5].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[5].nic.mac1609_4 totalBusyTime 0.03943
+scalar BangaloreScenario.node[5].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[5].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[5].nic.mac1609_4 sentPackets:count 62
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[5].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[5].nic.mac1609_4 channelBusy:timeavg 0.001271935483871
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[5].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[5].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[5].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[5].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[5].veinsmobility x 0
+par BangaloreScenario.node[5].veinsmobility y 0
+par BangaloreScenario.node[5].veinsmobility z 0
+par BangaloreScenario.node[5].veinsmobility xOrientation 1
+par BangaloreScenario.node[5].veinsmobility yOrientation 0
+par BangaloreScenario.node[5].veinsmobility zOrientation 0
+par BangaloreScenario.node[5].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[5].veinsmobility setHostSpeed false
+par BangaloreScenario.node[5].veinsmobility accidentCount 0
+par BangaloreScenario.node[5].veinsmobility accidentStart 56.015s
+attr unit s
+par BangaloreScenario.node[5].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[5].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[5].veinsmobility startTime 25.1
+scalar BangaloreScenario.node[5].veinsmobility totalTime 30.9
+scalar BangaloreScenario.node[5].veinsmobility stopTime 56.1
+scalar BangaloreScenario.node[5].veinsmobility minSpeed 0.25936657659966
+scalar BangaloreScenario.node[5].veinsmobility maxSpeed 25.628219418374
+scalar BangaloreScenario.node[5].veinsmobility totalDistance 396.57466691468
+scalar BangaloreScenario.node[5].veinsmobility totalCO2Emission 175.23239176729
+par BangaloreScenario.node[5] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[5] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[5] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[5] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.manager typename "\"org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd\""
+par BangaloreScenario.manager connectAt 0s
+attr unit s
+par BangaloreScenario.manager firstStepAt -1s
+attr unit s
+par BangaloreScenario.manager updateInterval 0.1s
+attr unit s
+par BangaloreScenario.manager moduleType "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.manager moduleName "\"node\""
+par BangaloreScenario.manager moduleDisplayString "\"*='i=veins/node/car;is=vs'\""
+par BangaloreScenario.manager trafficLightModuleType "\"\""
+par BangaloreScenario.manager trafficLightModuleName "\"tls\""
+par BangaloreScenario.manager trafficLightFilter "\"\""
+par BangaloreScenario.manager trafficLightModuleDisplayString "\"i=veins/node/trafficlight;is=vs\""
+par BangaloreScenario.manager host "\"localhost\""
+par BangaloreScenario.manager port 9999
+par BangaloreScenario.manager seed -1
+par BangaloreScenario.manager autoShutdown true
+par BangaloreScenario.manager margin 25
+par BangaloreScenario.manager roiRoads "\"\""
+par BangaloreScenario.manager roiRects "\"\""
+par BangaloreScenario.manager penetrationRate 1
+par BangaloreScenario.manager ignoreGuiCommands false
+par BangaloreScenario.manager order -1
+par BangaloreScenario.manager ignoreUnknownSubscriptionResults false
+par BangaloreScenario.manager launchConfig "<launch>...</launch> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\bangalore.launchd.xml:4"
+scalar BangaloreScenario.manager roiArea 0
+par BangaloreScenario.world typename "\"org.car2x.veins.base.modules.BaseWorldUtility\""
+par BangaloreScenario.world playgroundSizeX 1000m
+attr unit m
+par BangaloreScenario.world playgroundSizeY 1000m
+attr unit m
+par BangaloreScenario.world playgroundSizeZ 1000m
+attr unit m
+par BangaloreScenario.world useTorus false
+par BangaloreScenario.world use2D false
+par BangaloreScenario.annotations typename "\"org.car2x.veins.modules.world.annotations.AnnotationManager\""
+par BangaloreScenario.annotations draw false
+par BangaloreScenario.annotations annotations "<annotations/> at content:1"
+par BangaloreScenario.roadsCanvasVisualizer typename "\"org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer\""
+par BangaloreScenario.roadsCanvasVisualizer enabled true
+par BangaloreScenario.roadsCanvasVisualizer lineZIndex -1
+par BangaloreScenario.roadsCanvasVisualizer lineColor "\"firebrick4\""
+par BangaloreScenario.roadsCanvasVisualizer lineWidth 1
+par BangaloreScenario.roadsCanvasVisualizer lineWidthZoom false
+par BangaloreScenario.connectionManager typename "\"org.car2x.veins.base.connectionManager.ConnectionManager\""
+par BangaloreScenario.connectionManager sendDirect false
+par BangaloreScenario.connectionManager maxInterfDist 10000m
+attr unit m
+par BangaloreScenario.connectionManager drawMaxIntfDist false
+par BangaloreScenario.node[3].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[3].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[3].appl sendBeacons true
+par BangaloreScenario.node[3].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[3].appl beaconUserPriority 7
+par BangaloreScenario.node[3].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[3].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[3].appl dataOnSch false
+par BangaloreScenario.node[3].appl dataUserPriority 7
+par BangaloreScenario.node[3].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[3].appl sendWSA false
+par BangaloreScenario.node[3].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[3].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[3].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[3].appl logVehicleData true
+par BangaloreScenario.node[3].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[3].appl generatedWSMs 41
+scalar BangaloreScenario.node[3].appl receivedWSMs 202
+scalar BangaloreScenario.node[3].appl generatedBSMs 41
+scalar BangaloreScenario.node[3].appl receivedBSMs 201
+scalar BangaloreScenario.node[3].appl generatedWSAs 0
+scalar BangaloreScenario.node[3].appl receivedWSAs 0
+par BangaloreScenario.node[3].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[3].nic.phy80211p recordStats false
+par BangaloreScenario.node[3].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[3].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[3].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[3].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[3].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[3].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[3].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[3].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[3].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[3].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[3].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[3].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[3].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[3].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[3].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[3].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[3].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[3].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[3].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[3].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[3].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[3].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[3].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[3].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[3].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[3].nic.phy80211p busyTime 0.00097403762815562
+par BangaloreScenario.node[3].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[3].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[3].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[3].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[3].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[3].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[3].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[3].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[3].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[3].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[3].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[3].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[3].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[3].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[3].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[3].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[3].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 ReceivedBroadcasts 403
+scalar BangaloreScenario.node[3].nic.mac1609_4 SentPackets 82
+scalar BangaloreScenario.node[3].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 TimesIntoBackoff 82
+scalar BangaloreScenario.node[3].nic.mac1609_4 SlotsBackoff 118
+scalar BangaloreScenario.node[3].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[3].nic.mac1609_4 totalBusyTime 0.048538
+scalar BangaloreScenario.node[3].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[3].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[3].nic.mac1609_4 sentPackets:count 82
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[3].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[3].nic.mac1609_4 channelBusy:timeavg 0.001174429610379
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[3].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[3].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[3].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[3].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[3].veinsmobility x 0
+par BangaloreScenario.node[3].veinsmobility y 0
+par BangaloreScenario.node[3].veinsmobility z 0
+par BangaloreScenario.node[3].veinsmobility xOrientation 1
+par BangaloreScenario.node[3].veinsmobility yOrientation 0
+par BangaloreScenario.node[3].veinsmobility zOrientation 0
+par BangaloreScenario.node[3].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[3].veinsmobility setHostSpeed false
+par BangaloreScenario.node[3].veinsmobility accidentCount 0
+par BangaloreScenario.node[3].veinsmobility accidentStart 32.075s
+attr unit s
+par BangaloreScenario.node[3].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[3].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[3].veinsmobility startTime 15.1
+scalar BangaloreScenario.node[3].veinsmobility totalTime 41.3
+scalar BangaloreScenario.node[3].veinsmobility stopTime 56.428998835729
+scalar BangaloreScenario.node[3].veinsmobility minSpeed 0.25608864674508
+scalar BangaloreScenario.node[3].veinsmobility maxSpeed 14.102085262505
+scalar BangaloreScenario.node[3].veinsmobility totalDistance 463.11263442423
+scalar BangaloreScenario.node[3].veinsmobility totalCO2Emission 143.79628634213
+par BangaloreScenario.node[3] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[3] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[3] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[3] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[7].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[7].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[7].appl sendBeacons true
+par BangaloreScenario.node[7].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[7].appl beaconUserPriority 7
+par BangaloreScenario.node[7].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[7].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[7].appl dataOnSch false
+par BangaloreScenario.node[7].appl dataUserPriority 7
+par BangaloreScenario.node[7].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[7].appl sendWSA false
+par BangaloreScenario.node[7].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[7].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[7].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[7].appl logVehicleData true
+par BangaloreScenario.node[7].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[7].appl generatedWSMs 21
+scalar BangaloreScenario.node[7].appl receivedWSMs 121
+scalar BangaloreScenario.node[7].appl generatedBSMs 21
+scalar BangaloreScenario.node[7].appl receivedBSMs 119
+scalar BangaloreScenario.node[7].appl generatedWSAs 0
+scalar BangaloreScenario.node[7].appl receivedWSAs 0
+par BangaloreScenario.node[7].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[7].nic.phy80211p recordStats false
+par BangaloreScenario.node[7].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[7].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[7].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[7].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[7].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[7].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[7].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[7].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[7].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[7].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[7].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[7].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[7].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[7].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[7].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[7].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[7].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[7].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[7].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[7].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[7].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[7].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[7].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[7].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[7].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[7].nic.phy80211p busyTime 0.0011241033948502
+par BangaloreScenario.node[7].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[7].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[7].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[7].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[7].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[7].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[7].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[7].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[7].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[7].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[7].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[7].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[7].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[7].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[7].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[7].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[7].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 ReceivedBroadcasts 240
+scalar BangaloreScenario.node[7].nic.mac1609_4 SentPackets 42
+scalar BangaloreScenario.node[7].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 TimesIntoBackoff 42
+scalar BangaloreScenario.node[7].nic.mac1609_4 SlotsBackoff 65
+scalar BangaloreScenario.node[7].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[7].nic.mac1609_4 totalBusyTime 0.028218
+scalar BangaloreScenario.node[7].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[7].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[7].nic.mac1609_4 sentPackets:count 42
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[7].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[7].nic.mac1609_4 channelBusy:timeavg 0.0013229875540492
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[7].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[7].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[7].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[7].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[7].veinsmobility x 0
+par BangaloreScenario.node[7].veinsmobility y 0
+par BangaloreScenario.node[7].veinsmobility z 0
+par BangaloreScenario.node[7].veinsmobility xOrientation 1
+par BangaloreScenario.node[7].veinsmobility yOrientation 0
+par BangaloreScenario.node[7].veinsmobility zOrientation 0
+par BangaloreScenario.node[7].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[7].veinsmobility setHostSpeed false
+par BangaloreScenario.node[7].veinsmobility accidentCount 0
+par BangaloreScenario.node[7].veinsmobility accidentStart 30.6042s
+attr unit s
+par BangaloreScenario.node[7].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[7].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[7].veinsmobility startTime 35.1
+scalar BangaloreScenario.node[7].veinsmobility totalTime 21.3
+scalar BangaloreScenario.node[7].veinsmobility stopTime 56.428998835729
+scalar BangaloreScenario.node[7].veinsmobility minSpeed 0
+scalar BangaloreScenario.node[7].veinsmobility maxSpeed 10.613993383971
+scalar BangaloreScenario.node[7].veinsmobility totalDistance 130.89142285889
+scalar BangaloreScenario.node[7].veinsmobility totalCO2Emission 54.594805329533
+par BangaloreScenario.node[7] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[7] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[7] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[7] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[8].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[8].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[8].appl sendBeacons true
+par BangaloreScenario.node[8].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[8].appl beaconUserPriority 7
+par BangaloreScenario.node[8].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[8].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[8].appl dataOnSch false
+par BangaloreScenario.node[8].appl dataUserPriority 7
+par BangaloreScenario.node[8].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[8].appl sendWSA false
+par BangaloreScenario.node[8].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[8].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[8].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[8].appl logVehicleData true
+par BangaloreScenario.node[8].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[8].appl generatedWSMs 16
+scalar BangaloreScenario.node[8].appl receivedWSMs 95
+scalar BangaloreScenario.node[8].appl generatedBSMs 16
+scalar BangaloreScenario.node[8].appl receivedBSMs 94
+scalar BangaloreScenario.node[8].appl generatedWSAs 0
+scalar BangaloreScenario.node[8].appl receivedWSAs 0
+par BangaloreScenario.node[8].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[8].nic.phy80211p recordStats false
+par BangaloreScenario.node[8].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[8].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[8].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[8].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[8].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[8].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[8].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[8].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[8].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[8].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[8].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[8].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[8].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[8].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[8].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[8].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[8].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[8].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[8].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[8].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[8].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[8].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[8].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[8].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[8].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[8].nic.phy80211p busyTime 0.0011621043145939
+par BangaloreScenario.node[8].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[8].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[8].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[8].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[8].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[8].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[8].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[8].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[8].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[8].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[8].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[8].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[8].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[8].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[8].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[8].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[8].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 ReceivedBroadcasts 189
+scalar BangaloreScenario.node[8].nic.mac1609_4 SentPackets 32
+scalar BangaloreScenario.node[8].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 TimesIntoBackoff 32
+scalar BangaloreScenario.node[8].nic.mac1609_4 SlotsBackoff 52
+scalar BangaloreScenario.node[8].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[8].nic.mac1609_4 totalBusyTime 0.022112
+scalar BangaloreScenario.node[8].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[8].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[8].nic.mac1609_4 sentPackets:count 32
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[8].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[8].nic.mac1609_4 channelBusy:timeavg 0.001360024241254
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[8].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[8].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[8].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[8].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[8].veinsmobility x 0
+par BangaloreScenario.node[8].veinsmobility y 0
+par BangaloreScenario.node[8].veinsmobility z 0
+par BangaloreScenario.node[8].veinsmobility xOrientation 1
+par BangaloreScenario.node[8].veinsmobility yOrientation 0
+par BangaloreScenario.node[8].veinsmobility zOrientation 0
+par BangaloreScenario.node[8].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[8].veinsmobility setHostSpeed false
+par BangaloreScenario.node[8].veinsmobility accidentCount 0
+par BangaloreScenario.node[8].veinsmobility accidentStart 48.8735s
+attr unit s
+par BangaloreScenario.node[8].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[8].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[8].veinsmobility startTime 40.1
+scalar BangaloreScenario.node[8].veinsmobility totalTime 16.3
+scalar BangaloreScenario.node[8].veinsmobility stopTime 56.428998835729
+scalar BangaloreScenario.node[8].veinsmobility minSpeed 0.25782265218766
+scalar BangaloreScenario.node[8].veinsmobility maxSpeed 14.640485847395
+scalar BangaloreScenario.node[8].veinsmobility totalDistance 185.93110397755
+scalar BangaloreScenario.node[8].veinsmobility totalCO2Emission 58.707360280738
+par BangaloreScenario.node[8] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[8] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[8] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[8] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[9].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[9].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[9].appl sendBeacons true
+par BangaloreScenario.node[9].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[9].appl beaconUserPriority 7
+par BangaloreScenario.node[9].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[9].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[9].appl dataOnSch false
+par BangaloreScenario.node[9].appl dataUserPriority 7
+par BangaloreScenario.node[9].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[9].appl sendWSA false
+par BangaloreScenario.node[9].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[9].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[9].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[9].appl logVehicleData true
+par BangaloreScenario.node[9].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[9].appl generatedWSMs 11
+scalar BangaloreScenario.node[9].appl receivedWSMs 69
+scalar BangaloreScenario.node[9].appl generatedBSMs 11
+scalar BangaloreScenario.node[9].appl receivedBSMs 67
+scalar BangaloreScenario.node[9].appl generatedWSAs 0
+scalar BangaloreScenario.node[9].appl receivedWSAs 0
+par BangaloreScenario.node[9].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[9].nic.phy80211p recordStats false
+par BangaloreScenario.node[9].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[9].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[9].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[9].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[9].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[9].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[9].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[9].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[9].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[9].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[9].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[9].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[9].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[9].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[9].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[9].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[9].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[9].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[9].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[9].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[9].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[9].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[9].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[9].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[9].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[9].nic.phy80211p busyTime 0.0011990468175492
+par BangaloreScenario.node[9].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[9].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[9].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[9].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[9].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[9].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[9].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[9].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[9].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[9].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[9].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[9].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[9].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[9].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[9].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[9].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[9].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 ReceivedBroadcasts 136
+scalar BangaloreScenario.node[9].nic.mac1609_4 SentPackets 22
+scalar BangaloreScenario.node[9].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 TimesIntoBackoff 22
+scalar BangaloreScenario.node[9].nic.mac1609_4 SlotsBackoff 33
+scalar BangaloreScenario.node[9].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[9].nic.mac1609_4 totalBusyTime 0.015798
+scalar BangaloreScenario.node[9].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[9].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[9].nic.mac1609_4 sentPackets:count 22
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[9].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[9].nic.mac1609_4 channelBusy:timeavg 0.0013944745011516
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[9].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[9].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[9].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[9].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[9].veinsmobility x 0
+par BangaloreScenario.node[9].veinsmobility y 0
+par BangaloreScenario.node[9].veinsmobility z 0
+par BangaloreScenario.node[9].veinsmobility xOrientation 1
+par BangaloreScenario.node[9].veinsmobility yOrientation 0
+par BangaloreScenario.node[9].veinsmobility zOrientation 0
+par BangaloreScenario.node[9].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[9].veinsmobility setHostSpeed false
+par BangaloreScenario.node[9].veinsmobility accidentCount 0
+par BangaloreScenario.node[9].veinsmobility accidentStart 56.2126s
+attr unit s
+par BangaloreScenario.node[9].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[9].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[9].veinsmobility startTime 45.1
+scalar BangaloreScenario.node[9].veinsmobility totalTime 11.3
+scalar BangaloreScenario.node[9].veinsmobility stopTime 56.428998835729
+scalar BangaloreScenario.node[9].veinsmobility minSpeed 0.24720550588868
+scalar BangaloreScenario.node[9].veinsmobility maxSpeed 16.12292070582
+scalar BangaloreScenario.node[9].veinsmobility totalDistance 94.871850933993
+scalar BangaloreScenario.node[9].veinsmobility totalCO2Emission 58.292563042049
+par BangaloreScenario.node[9] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[9] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[9] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[9] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[10].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[10].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[10].appl sendBeacons true
+par BangaloreScenario.node[10].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[10].appl beaconUserPriority 7
+par BangaloreScenario.node[10].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[10].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[10].appl dataOnSch false
+par BangaloreScenario.node[10].appl dataUserPriority 7
+par BangaloreScenario.node[10].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[10].appl sendWSA false
+par BangaloreScenario.node[10].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[10].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[10].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[10].appl logVehicleData true
+par BangaloreScenario.node[10].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[10].appl generatedWSMs 5
+scalar BangaloreScenario.node[10].appl receivedWSMs 27
+scalar BangaloreScenario.node[10].appl generatedBSMs 4
+scalar BangaloreScenario.node[10].appl receivedBSMs 26
+scalar BangaloreScenario.node[10].appl generatedWSAs 0
+scalar BangaloreScenario.node[10].appl receivedWSAs 0
+par BangaloreScenario.node[10].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[10].nic.phy80211p recordStats false
+par BangaloreScenario.node[10].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[10].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[10].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[10].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[10].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[10].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[10].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[10].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[10].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[10].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[10].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[10].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[10].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[10].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[10].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[10].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[10].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[10].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[10].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[10].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[10].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[10].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[10].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[10].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[10].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[10].nic.phy80211p busyTime 0.0011939492865388
+par BangaloreScenario.node[10].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[10].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[10].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[10].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[10].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[10].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[10].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[10].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[10].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[10].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[10].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[10].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[10].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[10].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[10].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[10].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[10].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 ReceivedBroadcasts 53
+scalar BangaloreScenario.node[10].nic.mac1609_4 SentPackets 9
+scalar BangaloreScenario.node[10].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 TimesIntoBackoff 9
+scalar BangaloreScenario.node[10].nic.mac1609_4 SlotsBackoff 11
+scalar BangaloreScenario.node[10].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[10].nic.mac1609_4 totalBusyTime 0.006193
+scalar BangaloreScenario.node[10].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[10].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[10].nic.mac1609_4 sentPackets:count 9
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[10].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[10].nic.mac1609_4 channelBusy:timeavg 0.0013982844046019
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[10].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[10].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[10].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[10].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[10].veinsmobility x 0
+par BangaloreScenario.node[10].veinsmobility y 0
+par BangaloreScenario.node[10].veinsmobility z 0
+par BangaloreScenario.node[10].veinsmobility xOrientation 1
+par BangaloreScenario.node[10].veinsmobility yOrientation 0
+par BangaloreScenario.node[10].veinsmobility zOrientation 0
+par BangaloreScenario.node[10].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[10].veinsmobility setHostSpeed false
+par BangaloreScenario.node[10].veinsmobility accidentCount 0
+par BangaloreScenario.node[10].veinsmobility accidentStart 35.9177s
+attr unit s
+par BangaloreScenario.node[10].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[10].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[10].veinsmobility startTime 52
+scalar BangaloreScenario.node[10].veinsmobility totalTime 4.4
+scalar BangaloreScenario.node[10].veinsmobility stopTime 56.428998835729
+scalar BangaloreScenario.node[10].veinsmobility minSpeed 0.25875277706515
+scalar BangaloreScenario.node[10].veinsmobility maxSpeed 8.6473930480221
+scalar BangaloreScenario.node[10].veinsmobility totalDistance 19.788933933713
+scalar BangaloreScenario.node[10].veinsmobility totalCO2Emission 15.001971866848
+par BangaloreScenario.node[10] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[10] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[10] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[10] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[11].appl typename "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[11].appl headerLength 88bit
+attr unit bit
+par BangaloreScenario.node[11].appl sendBeacons true
+par BangaloreScenario.node[11].appl beaconLengthBits 256bit
+attr unit bit
+par BangaloreScenario.node[11].appl beaconUserPriority 7
+par BangaloreScenario.node[11].appl beaconInterval 1s
+attr unit s
+par BangaloreScenario.node[11].appl dataLengthBits 1024bit
+attr unit bit
+par BangaloreScenario.node[11].appl dataOnSch false
+par BangaloreScenario.node[11].appl dataUserPriority 7
+par BangaloreScenario.node[11].appl avoidBeaconSynchronization true
+par BangaloreScenario.node[11].appl sendWSA false
+par BangaloreScenario.node[11].appl wsaLengthBits 250bit
+attr unit bit
+par BangaloreScenario.node[11].appl wsaInterval 1s
+attr unit s
+par BangaloreScenario.node[11].appl broadcastInterval 1s
+attr unit s
+par BangaloreScenario.node[11].appl logVehicleData true
+par BangaloreScenario.node[11].appl logFileName "\"v2v_log.txt\""
+scalar BangaloreScenario.node[11].appl generatedWSMs 1
+scalar BangaloreScenario.node[11].appl receivedWSMs 7
+scalar BangaloreScenario.node[11].appl generatedBSMs 1
+scalar BangaloreScenario.node[11].appl receivedBSMs 6
+scalar BangaloreScenario.node[11].appl generatedWSAs 0
+scalar BangaloreScenario.node[11].appl receivedWSAs 0
+par BangaloreScenario.node[11].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par BangaloreScenario.node[11].nic.phy80211p recordStats false
+par BangaloreScenario.node[11].nic.phy80211p usePropagationDelay true
+par BangaloreScenario.node[11].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par BangaloreScenario.node[11].nic.phy80211p useNoiseFloor true
+par BangaloreScenario.node[11].nic.phy80211p antenna "<root>...</root> at content:1"
+par BangaloreScenario.node[11].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par BangaloreScenario.node[11].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par BangaloreScenario.node[11].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par BangaloreScenario.node[11].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par BangaloreScenario.node[11].nic.phy80211p analogueModels "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[11].nic.phy80211p decider "<root>...</root> at C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/\\config.xml:34"
+par BangaloreScenario.node[11].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par BangaloreScenario.node[11].nic.phy80211p timeRXToTX 0s
+attr unit s
+par BangaloreScenario.node[11].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par BangaloreScenario.node[11].nic.phy80211p timeTXToRX 0s
+attr unit s
+par BangaloreScenario.node[11].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par BangaloreScenario.node[11].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par BangaloreScenario.node[11].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par BangaloreScenario.node[11].nic.phy80211p initialRadioState 0
+par BangaloreScenario.node[11].nic.phy80211p radioMinAtt 1
+par BangaloreScenario.node[11].nic.phy80211p radioMaxAtt 0
+par BangaloreScenario.node[11].nic.phy80211p nbRadioChannels 1
+par BangaloreScenario.node[11].nic.phy80211p initialRadioChannel 0
+par BangaloreScenario.node[11].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par BangaloreScenario.node[11].nic.phy80211p collectCollisionStatistics false
+par BangaloreScenario.node[11].nic.phy80211p allowTxDuringRx false
+scalar BangaloreScenario.node[11].nic.phy80211p busyTime 0.001047404980785
+par BangaloreScenario.node[11].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par BangaloreScenario.node[11].nic.mac1609_4 notAffectedByHostState false
+par BangaloreScenario.node[11].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par BangaloreScenario.node[11].nic.mac1609_4 address "\"auto\""
+par BangaloreScenario.node[11].nic.mac1609_4 useServiceChannel false
+par BangaloreScenario.node[11].nic.mac1609_4 serviceChannel 1
+par BangaloreScenario.node[11].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par BangaloreScenario.node[11].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par BangaloreScenario.node[11].nic.mac1609_4 txPower 20mW
+attr unit mW
+par BangaloreScenario.node[11].nic.mac1609_4 queueSize 0
+par BangaloreScenario.node[11].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par BangaloreScenario.node[11].nic.mac1609_4 dot11ShortRetryLimit 7
+par BangaloreScenario.node[11].nic.mac1609_4 dot11LongRetryLimit 4
+par BangaloreScenario.node[11].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par BangaloreScenario.node[11].nic.mac1609_4 useAcks false
+par BangaloreScenario.node[11].nic.mac1609_4 frameErrorRate 0
+par BangaloreScenario.node[11].nic.mac1609_4 ackErrorRate 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 ReceivedBroadcasts 14
+scalar BangaloreScenario.node[11].nic.mac1609_4 SentPackets 2
+scalar BangaloreScenario.node[11].nic.mac1609_4 SentAcknowledgements 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 RetriesExceeded 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 SNIRLostPackets 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 RXTXLostPackets 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 TotalLostPackets 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 DroppedPacketsInMac 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 TooLittleTime 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 TimesIntoBackoff 2
+scalar BangaloreScenario.node[11].nic.mac1609_4 SlotsBackoff 6
+scalar BangaloreScenario.node[11].nic.mac1609_4 NumInternalContention 0
+scalar BangaloreScenario.node[11].nic.mac1609_4 totalBusyTime 0.001594
+scalar BangaloreScenario.node[11].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar BangaloreScenario.node[11].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar BangaloreScenario.node[11].nic.mac1609_4 sentPackets:count 2
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar BangaloreScenario.node[11].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar BangaloreScenario.node[11].nic.mac1609_4 channelBusy:timeavg 0.0011993990943759
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par BangaloreScenario.node[11].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[11].nic connectionManagerName "\"connectionManager\""
+par BangaloreScenario.node[11].veinsmobility typename "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario.node[11].veinsmobility notAffectedByHostState true
+par BangaloreScenario.node[11].veinsmobility x 0
+par BangaloreScenario.node[11].veinsmobility y 0
+par BangaloreScenario.node[11].veinsmobility z 0
+par BangaloreScenario.node[11].veinsmobility xOrientation 1
+par BangaloreScenario.node[11].veinsmobility yOrientation 0
+par BangaloreScenario.node[11].veinsmobility zOrientation 0
+par BangaloreScenario.node[11].veinsmobility hostPositionOffset 0m
+attr unit m
+par BangaloreScenario.node[11].veinsmobility setHostSpeed false
+par BangaloreScenario.node[11].veinsmobility accidentCount 0
+par BangaloreScenario.node[11].veinsmobility accidentStart 31.1163s
+attr unit s
+par BangaloreScenario.node[11].veinsmobility accidentDuration "uniform(30s, 60s)"
+attr unit s
+par BangaloreScenario.node[11].veinsmobility accidentInterval "uniform(30s, 60s)"
+attr unit s
+scalar BangaloreScenario.node[11].veinsmobility startTime 55.1
+scalar BangaloreScenario.node[11].veinsmobility totalTime 1.3
+scalar BangaloreScenario.node[11].veinsmobility stopTime 56.428998835729
+scalar BangaloreScenario.node[11].veinsmobility minSpeed 0.24754462761804
+scalar BangaloreScenario.node[11].veinsmobility maxSpeed 2.9705555393989
+scalar BangaloreScenario.node[11].veinsmobility totalDistance 2.1412830670727
+scalar BangaloreScenario.node[11].veinsmobility totalCO2Emission 2.566832555713
+par BangaloreScenario.node[11] typename "\"org.car2x.veins.nodes.Car\""
+par BangaloreScenario.node[11] applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+par BangaloreScenario.node[11] nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+par BangaloreScenario.node[11] veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+par BangaloreScenario typename "\"bangalore_v2v.simulations.bangalore_simulation.BangaloreScenario\""
+par BangaloreScenario playgroundSizeX 1000m
+attr unit m
+par BangaloreScenario playgroundSizeY 1000m
+attr unit m
+par BangaloreScenario playgroundSizeZ 1000m
+attr unit m
+par BangaloreScenario numCars 0
+

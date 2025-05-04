@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="OMNeT++ NED doc generator"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="material-icons.css">
+<link rel="stylesheet" href="material.blue-light_blue.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<title>MyBangaloreApp</title>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div id="top" class="mdl-layout__header-row">
+      <span class="mdl-layout-title">MyBangaloreApp</span>
+      <div class="mdl-layout-spacer"></div>
+<!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search" />
+          <label class="mdl-textfield__label" for="search">Enter your query...</label>
+        </div>
+      </div>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons">code</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+        <li class="mdl-menu__item">OMNeT++ Website</li>
+      </ul>
+-->
+    </div>
+  </header>
+
+  <div class="drawer mdl-layout__drawer">
+    <nav id="side-nav" class="mdl-navigation">
+      <div id="nav-tree">
+        <div id="nav-tree-contents">
+          <div id="nav-sync" class="sync"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){initNavTree(location.pathname.split("/").slice(-1).toString(),'');});
+  </script>
+
+  <main class="mdl-layout__content">
+    <div id="doc-content">
+
+    <p>Package: <a class="reference-ned" href="packages.html#bangalore_v2v_MyBangaloreApp">bangalore_v2v.MyBangaloreApp</a></p>
+<h2 class="comptitle" style="float: left;">MyBangaloreApp</h2>
+<span class="mdl-chip" style="float: right; margin-top: 6pt; background-color: #ff000040;">
+    <span class="mdl-chip__text">simple module</span>
+</span><div style="clear: both;"/>
+<p><a class="reference-cpp" href="../doxy/classbangalore__v2v_1_1_my_bangalore_app.html">C++ definition</a></p>
+<p>(no description)</p>
+<img src="bangalore_v2v.MyBangaloreApp.MyBangaloreApp-type.svg" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="bangalore_v2v.MyBangaloreApp.MyBangaloreApp.html" title="" alt="" coords="0,30,138,70">
+</map>
+<h3 class="subtitle">Inheritance diagram</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.</p>
+<object type="image/svg+xml" data="bangalore_v2v.MyBangaloreApp.MyBangaloreApp-inheritance.svg"></object>
+<h3 class="subtitle">Extends</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.application.ieee80211p.DemoBaseApplLayer" href="../../../veins/doc/neddoc/org.car2x.veins.modules.application.ieee80211p.DemoBaseApplLayer.html">DemoBaseApplLayer</a></td>
+      <td><i>simple&nbsp;module</i></td>
+      <td>
+<p>Demo application layer base class.</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Parameters</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr class="inherited">
+      <td>headerLength</td>
+      <td>int</td>
+      <td>88bit</td>
+      <td>
+<p>header length of the application</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>sendBeacons</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>tell the applayer to periodically send beacons</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>beaconLengthBits</td>
+      <td>int</td>
+      <td>256bit</td>
+      <td>
+<p>the length of a beacon packet</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>beaconUserPriority</td>
+      <td>int</td>
+      <td>7</td>
+      <td>
+<p>the user priority (UP) of the beacon messages</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>beaconInterval</td>
+      <td>double</td>
+      <td>1s</td>
+      <td>
+<p>the intervall between 2 beacon messages</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>dataLengthBits</td>
+      <td>int</td>
+      <td>1024bit</td>
+      <td>
+<p>the length of a data packet</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>dataOnSch</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>tells the applayer whether to use a service channel for datapackets or the control channel</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>dataUserPriority</td>
+      <td>int</td>
+      <td>7</td>
+      <td>
+<p>the default user priority (UP) for data packets</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>avoidBeaconSynchronization</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>don't start beaconing directly after node was created but delay to avoid artifical synchronization</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>sendWSA</td>
+      <td>bool</td>
+      <td>false</td>
+      <td></td>
+   </tr>
+   <tr class="inherited">
+      <td>wsaLengthBits</td>
+      <td>int</td>
+      <td>250bit</td>
+      <td></td>
+   </tr>
+   <tr class="inherited">
+      <td>wsaInterval</td>
+      <td>double</td>
+      <td>1s</td>
+      <td>
+</td>
+   </tr>
+   <tr class="local">
+      <td>broadcastInterval</td>
+      <td>double</td>
+      <td>1s</td>
+      <td>
+<p>headerLength is REMOVED - inherited from DemoBaseApplLayer
+int headerLength @unit(bit) = default(88bit);</p>
+</td>
+   </tr>
+   <tr class="local">
+      <td>logVehicleData</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr class="local">
+      <td>logFileName</td>
+      <td>string</td>
+      <td>"v2v_log.txt"</td>
+      <td>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Properties</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td>class</td>
+      <td>bangalore_v2v::MyBangaloreApp</td>
+      <td>
+<p>&lt;-- Fixed namespace to match C++ file</p>
+</td>
+   </tr>
+   <tr>
+      <td>display</td>
+      <td>i=block/app2</td>
+      <td>
+<p>*** REMOVE THIS ENTIRE GATES SECTION: Gates are inherited from DemoBaseApplLayer ***
+gates:
+   input lowerLayerIn;
+   output lowerLayerOut;</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Gates</h3>
+<table class="gatestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Direction</th>
+      <th class="gatesize">Size</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr class="inherited">
+      <td>lowerLayerIn</td>
+      <td>input</td>
+      <td></td>
+      <td>
+<p>from mac layer</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>lowerLayerOut</td>
+      <td>output</td>
+      <td></td>
+      <td>
+<p>to mac layer</p>
+</td>
+   </tr>
+   <tr class="inherited">
+      <td>lowerControlIn</td>
+      <td>input</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr class="inherited">
+      <td>lowerControlOut</td>
+      <td>output</td>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
+<h3 class="subtitle">Source code</h3>
+<pre class="src dark-bg">
+<span style="color: #8b814c; font-weight: bold; ">simple</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">MyBangaloreApp</span><span style="color: #cccccc; "> </span><span style="color: #8b814c; font-weight: bold; ">extends</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">DemoBaseApplLayer</span><span style="color: #cccccc; ">
+{
+    </span><span style="color: #8b814c; font-weight: bold; ">parameters</span><span style="color: #cccccc; ">:
+        </span><span style="color: #cdc673; font-weight: bold; ">@class</span><span style="color: #cccccc; ">(</span><span style="color: #cccccc; ">bangalore_v2v</span><span style="color: #cccccc; ">::</span><span style="color: #cccccc; ">MyBangaloreApp</span><span style="color: #cccccc; ">); </span><span style="color: #808080; font-style: italic; ">// &lt;-- Fixed namespace to match C++ file
+</span><span style="color: #cccccc; ">
+        </span><span style="color: #008080; font-weight: bold; ">double</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">broadcastInterval</span><span style="color: #cccccc; "> </span><span style="color: #cdc673; font-weight: bold; ">@unit</span><span style="color: #cccccc; ">(</span><span style="color: #cccccc; ">s</span><span style="color: #cccccc; ">) = </span><span style="color: #8b814c; font-weight: bold; ">default</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">1</span><span style="color: #cccccc; ">s</span><span style="color: #cccccc; ">);
+
+        </span><span style="color: #808080; font-style: italic; ">// headerLength is REMOVED - inherited from DemoBaseApplLayer
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// int headerLength @unit(bit) = default(88bit);
+</span><span style="color: #cccccc; ">
+        </span><span style="color: #008080; font-weight: bold; ">bool</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">logVehicleData</span><span style="color: #cccccc; "> = </span><span style="color: #8b814c; font-weight: bold; ">default</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">true</span><span style="color: #cccccc; ">);
+        </span><span style="color: #008080; font-weight: bold; ">string</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">logFileName</span><span style="color: #cccccc; "> = </span><span style="color: #8b814c; font-weight: bold; ">default</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">&quot;v2v_log.txt&quot;</span><span style="color: #cccccc; ">);
+
+        </span><span style="color: #cdc673; font-weight: bold; ">@display</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">&quot;i=block/app2&quot;</span><span style="color: #cccccc; ">);
+
+
+    </span><span style="color: #808080; font-style: italic; ">// *** REMOVE THIS ENTIRE GATES SECTION: Gates are inherited from DemoBaseApplLayer ***
+</span><span style="color: #cccccc; ">    </span><span style="color: #808080; font-style: italic; ">// gates:
+</span><span style="color: #cccccc; ">    </span><span style="color: #808080; font-style: italic; ">//    input lowerLayerIn;
+</span><span style="color: #cccccc; ">    </span><span style="color: #808080; font-style: italic; ">//    output lowerLayerOut;
+</span><span style="color: #cccccc; ">}
+</span></pre>
+File: <a href="src-MyBangaloreApp-MyBangaloreApp.ned.html">src/MyBangaloreApp/MyBangaloreApp.ned</a>
+<hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.svg"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+
+
+    </div><!-- doc-content -->
+  </main>
+</div>
+
+<script type="text/javascript" src="material.min.js"></script>
+</body>
+</html>

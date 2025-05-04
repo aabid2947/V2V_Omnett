@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.9.4" doxygen_gitid="62655e983acec90d4946fa60ab28211277867fb0*">
+  <compound kind="file">
+    <name>MyBangaloreApp.cc</name>
+    <path>C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/src/MyBangaloreApp/</path>
+    <filename>_my_bangalore_app_8cc.html</filename>
+    <includes id="_my_bangalore_app_8h" name="MyBangaloreApp.h" local="yes" imported="no">MyBangaloreApp.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>_my_bangalore_app_8cc.html</anchorfile>
+      <anchor>abdc5fba403fedb52b53edb335db3b574</anchor>
+      <arglist>(bangalore_v2v::MyBangaloreApp)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>MyBangaloreApp.h</name>
+    <path>C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/src/MyBangaloreApp/</path>
+    <filename>_my_bangalore_app_8h.html</filename>
+    <class kind="class">bangalore_v2v::MyBangaloreApp</class>
+    <namespace>bangalore_v2v</namespace>
+  </compound>
+  <compound kind="class">
+    <name>bangalore_v2v::MyBangaloreApp</name>
+    <filename>classbangalore__v2v_1_1_my_bangalore_app.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>a7541abf661ac9417a59739bd5fef0ef8</anchor>
+      <arglist>(int stage) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finish</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>a14d1d92cececf94265fceb17d7ef0229</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onBSM</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>a484ea7e98cd65f11880f547c1b19b8d0</anchor>
+      <arglist>(veins::DemoSafetyMessage *bsm) override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onWSM</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>add89075df94ae97c3babc9ddfc25223a</anchor>
+      <arglist>(veins::BaseFrame1609_4 *wsm) override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onWSA</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>aeef4f74ee9e46a24e5b69c1c58ab0915</anchor>
+      <arglist>(veins::DemoServiceAdvertisment *wsa) override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleSelfMsg</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>a76ce093cb416c45e4e8ca03ffb870d56</anchor>
+      <arglist>(cMessage *msg) override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handlePositionUpdate</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>a365e7b924504acbf9361fa2daefa7ed8</anchor>
+      <arglist>(cObject *obj) override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>sendBroadcast</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>aa86b34cadfc182da9b16991b14454c3e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>broadcastInterval</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>ae03f7bcc6179c16556775af38bfc644c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>broadcastTimer</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>adec99e9fbca374cadfe6c9b43388ff2b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::ofstream</type>
+      <name>logFile</name>
+      <anchorfile>classbangalore__v2v_1_1_my_bangalore_app.html</anchorfile>
+      <anchor>a4248d2e13fadb360a937d3f09bac7988</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>bangalore_v2v</name>
+    <filename>namespacebangalore__v2v.html</filename>
+    <class kind="class">bangalore_v2v::MyBangaloreApp</class>
+  </compound>
+</tagfile>

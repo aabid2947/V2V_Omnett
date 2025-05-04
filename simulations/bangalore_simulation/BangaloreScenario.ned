@@ -7,6 +7,7 @@ import org.car2x.veins.modules.obstacle.ObstacleControl; // For obstacles (if us
 import org.car2x.veins.modules.world.annotations.AnnotationManager; // For annotations (if used)
 import org.car2x.veins.base.connectionManager.ConnectionManager;
 // Import your custom application
+import org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer;
 import bangalore_v2v.MyBangaloreApp.MyBangaloreApp; // <-- Added this import
 import org.car2x.veins.base.modules.BaseWorldUtility; // <-- ADD THIS LINE
 network BangaloreScenario
@@ -26,7 +27,8 @@ network BangaloreScenario
         // Comment out or remove the original line:
         // @display("bgb=$playgroundSizeX,$playgroundSizeY");
         // Add this line as a workaround:
-        @display("bgb=3000,3000"); // <-- Use dimensionless numbers for background size
+         @display("bgb=dropUnit($playgroundSizeX),dropUnit($playgroundSizeY)");
+        // <-- Use dimensionless numbers for background size
 
         // This parameter will be set by the TraCIScenarioManagerLaunchd
         // to the number of vehicles in the SUMO route file.
@@ -37,11 +39,14 @@ network BangaloreScenario
 
         manager: TraCIScenarioManagerLaunchd {
             parameters:
-                @display("p=2169,1424");
+                @display("p=697,451");
         }
-        worldUtility: BaseWorldUtility { // <-- Keep this one
+        world: BaseWorldUtility {
             parameters:
-                @display("p=625,469"); // Adjust display position as needed
+                playgroundSizeX = veins_eval_by_version(veins_omnetpp_buildnum(), "playgroundSizeX", 1525, "parent.playgroundSizeX");
+                playgroundSizeY = veins_eval_by_version(veins_omnetpp_buildnum(), "playgroundSizeY", 1525, "parent.playgroundSizeY");
+                playgroundSizeZ = veins_eval_by_version(veins_omnetpp_buildnum(), "playgroundSizeZ", 1525, "parent.playgroundSizeZ");
+                @display("p=30,0;i=misc/globe");
         }
         // Obstacle module (include only if you are using obstacles)
         //        obstacles: ObstacleControl {
@@ -51,15 +56,17 @@ network BangaloreScenario
         // Annotation manager (include only if you are using annotations)
         annotations: AnnotationManager {
             parameters:
-                @display("p=300,1364");
+                @display("p=66,679");
         }
 
 
-
+roadsCanvasVisualizer: RoadsCanvasVisualizer {
+            @display("p=300,0");
+        }
 
         connectionManager: ConnectionManager {
             parameters:
-                @display("p=1730,613");
+                @display("p=631,138");
                 // You might need to set 'maxInterfDist' here if not set in omnetpp.ini
                 // maxInterfDist = default(2500m); // Example default value
         }
@@ -72,7 +79,7 @@ network BangaloreScenario
                 // Pass the broadcastInterval parameter to your application module
                 appl.broadcastInterval = default(1s); // Example default value, can be overridden in omnetpp.ini
 
-                @display("i=vehicle/passenger");
+                @display("i=vehicle/passenger;p=463,841");
         }
 
     connections allowunconnected:

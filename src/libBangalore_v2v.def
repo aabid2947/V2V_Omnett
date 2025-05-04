@@ -101,22 +101,27 @@ EXPORTS
     _ZTSN5veins10BaseModuleE @100 DATA
     _ZTSN5veins13BaseApplLayerE @101 DATA
     _ZTSN5veins13BatteryAccessE @102 DATA
-    _ZTSN5veins17DemoBaseApplLayerE @103 DATA
-    _ZTSN5veins9BaseLayerE @104 DATA
-    _ZTSN7omnetpp10cComponentE @105 DATA
-    _ZTSN7omnetpp10cExceptionE @106 DATA
-    _ZTSN7omnetpp10cIListenerE @107 DATA
-    _ZTSN7omnetpp10cSoftOwnerE @108 DATA
-    _ZTSN7omnetpp11noncopyableE @109 DATA
-    _ZTSN7omnetpp12cNamedObjectE @110 DATA
-    _ZTSN7omnetpp12cOwnedObjectE @111 DATA
-    _ZTSN7omnetpp13cRuntimeErrorE @112 DATA
-    _ZTSN7omnetpp13cSimpleModuleE @113 DATA
-    _ZTSN7omnetpp23cNoncopyableOwnedObjectE @114 DATA
-    _ZTSN7omnetpp7cModuleE @115 DATA
-    _ZTSN7omnetpp7cObjectE @116 DATA
-    _ZTSN7omnetpp9cListenerE @117 DATA
-    _ZTVN13bangalore_v2v14MyBangaloreAppE @118 DATA
-    _ZThn216_N13bangalore_v2v14MyBangaloreAppD0Ev @119
-    _ZThn216_N13bangalore_v2v14MyBangaloreAppD1Ev @120
-    __clang_call_terminate @121
+    _ZTSN5veins15BaseFrame1609_4E @103 DATA
+    _ZTSN5veins17DemoBaseApplLayerE @104 DATA
+    _ZTSN5veins23DemoServiceAdvertismentE @105 DATA
+    _ZTSN5veins9BaseLayerE @106 DATA
+    _ZTSN7omnetpp10cComponentE @107 DATA
+    _ZTSN7omnetpp10cExceptionE @108 DATA
+    _ZTSN7omnetpp10cIListenerE @109 DATA
+    _ZTSN7omnetpp10cSoftOwnerE @110 DATA
+    _ZTSN7omnetpp11noncopyableE @111 DATA
+    _ZTSN7omnetpp12cNamedObjectE @112 DATA
+    _ZTSN7omnetpp12cOwnedObjectE @113 DATA
+    _ZTSN7omnetpp13cRuntimeErrorE @114 DATA
+    _ZTSN7omnetpp13cSimpleModuleE @115 DATA
+    _ZTSN7omnetpp23cNoncopyableOwnedObjectE @116 DATA
+    _ZTSN7omnetpp6cEventE @117 DATA
+    _ZTSN7omnetpp7cModuleE @118 DATA
+    _ZTSN7omnetpp7cObjectE @119 DATA
+    _ZTSN7omnetpp7cPacketE @120 DATA
+    _ZTSN7omnetpp8cMessageE @121 DATA
+    _ZTSN7omnetpp9cListenerE @122 DATA
+    _ZTVN13bangalore_v2v14MyBangaloreAppE @123 DATA
+    _ZThn216_N13bangalore_v2v14MyBangaloreAppD0Ev @124
+    _ZThn216_N13bangalore_v2v14MyBangaloreAppD1Ev @125
+    __clang_call_terminate @126

@@ -1,9 +1,12 @@
+<?xml version="1.0"?>
+
+
 <launch>
-    <copy file="bangalore.sumocfg" type="config"/>
+    <copy file="bangalore.sumo.cfg" type="config"/>
     <copy file="bangalore.net.xml"/>
     <copy file="bangalore.rou.xml"/>
-    <copy file="bangalore.poly.xml"/> <basedir path="C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/"/>
+    <copy file="bangalore.poly.xml"/> 
+    <basedir path="C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/Bangalore_v2v/simulations/bangalore_simulation/"/>
 
     <seed value="0"/>
-    
 </launch>

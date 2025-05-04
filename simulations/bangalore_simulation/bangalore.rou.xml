@@ -1,14 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-04 13:16:34.678308 by randomTrips.py v1_22_0+0002-63e50f52594
+<configuration>
+    <net-file value="bangalore.net.xml"/>
+    <output-trip-file value="bangalore.rou.xml"/>
+    <validate value="True"/>
+    <end value="300.0"/>
+    <period value="5.0"/>
+</configuration>
+-->
+
+<!-- generated on 2025-05-04 13:16:34 by Eclipse SUMO duarouter Version 1.22.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="bangalore.net.xml"/>
+        <route-files value="bangalore.rou.xml"/>
+    </input>
+
+    <output>
+        <output-file value="bangalore.rou.xml.tmp"/>
+        <alternatives-output value="NUL"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+        <end value="300.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <!-- Define a vehicle type for our simulation -->
-    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="30" color="1,0,0"/>
-    
-    <!-- Define a simple route -->
-    <route id="route0" edges="e1 e2"/>
-    
-    <!-- Add some vehicles -->
-    <vehicle id="veh0" type="car" route="route0" depart="0" />
-    <vehicle id="veh1" type="car" route="route0" depart="5" />
-    <vehicle id="veh2" type="car" route="route0" depart="10" />
-    <vehicle id="veh3" type="car" route="route0" depart="15" />
+    <trip id="0" depart="0.00" from="100402308#1" to="-100402305#1"/>
+    <trip id="1" depart="5.00" from="-1155810076#1" to="-100402309"/>
+    <trip id="2" depart="10.00" from="100402309" to="100402308#4"/>
+    <trip id="3" depart="15.00" from="551796312" to="-100402307#2"/>
+    <trip id="4" depart="20.00" from="-551912151" to="-100402305#1"/>
+    <trip id="5" depart="25.00" from="-100402308#6" to="100402305#0"/>
+    <trip id="6" depart="30.00" from="-100402305#1" to="-100402308#4"/>
+    <trip id="7" depart="35.00" from="100402308#2" to="100402307#0"/>
+    <trip id="8" depart="40.00" from="-100402309" to="100402307#2"/>
+    <trip id="9" depart="45.00" from="1185273022#0" to="-100402305#0"/>
+    <trip id="10" depart="50.00" from="1185273022#0" to="100402308#5"/>
+    <trip id="11" depart="55.00" from="-551796312" to="-100402308#2"/>
+    <trip id="12" depart="60.00" from="551912151" to="-1185273022#1"/>
+    <trip id="13" depart="65.00" from="-100402307#2" to="-100402307#2"/>
+    <trip id="14" depart="70.00" from="1185273022#2" to="100402308#1"/>
+    <trip id="15" depart="75.00" from="1185273022#0" to="100402309"/>
+    <trip id="16" depart="80.00" from="100402305#1" to="551912152#1"/>
+    <trip id="17" depart="85.00" from="-551796315#0" to="100402307#0"/>
+    <trip id="18" depart="90.00" from="1185273022#1" to="100402308#1"/>
+    <trip id="19" depart="95.00" from="1185273023" to="100402307#1"/>
+    <trip id="20" depart="100.00" from="100402308#5" to="-100402307#0"/>
+    <trip id="21" depart="105.00" from="-100402309" to="-1155810076#0"/>
+    <trip id="22" depart="110.00" from="-100402307#1" to="-100402309"/>
+    <trip id="23" depart="115.00" from="-100402308#1" to="-1102803979"/>
+    <trip id="24" depart="120.00" from="100402308#1" to="-1185273023"/>
+    <trip id="25" depart="125.00" from="-551796315#0" to="-100402308#5"/>
+    <trip id="26" depart="130.00" from="-1155810076#1" to="551912151"/>
+    <trip id="27" depart="135.00" from="100402308#2" to="100402308#1"/>
+    <trip id="28" depart="140.00" from="-100402308#4" to="100402309"/>
+    <trip id="29" depart="145.00" from="-100402308#4" to="-1185273023"/>
+    <trip id="30" depart="150.00" from="551912152#1" to="100402308#2"/>
+    <trip id="31" depart="155.00" from="100402307#0" to="100402308#5"/>
+    <trip id="32" depart="160.00" from="1185273022#2" to="1155810076#1"/>
+    <trip id="33" depart="165.00" from="-100402309" to="-100402305#1"/>
+    <trip id="34" depart="170.00" from="-1185273022#1" to="-1102803979"/>
+    <trip id="35" depart="175.00" from="-100402308#6" to="551912152#0"/>
+    <trip id="36" depart="180.00" from="1185273023" to="-1185273022#0"/>
+    <trip id="37" depart="185.00" from="100402308#2" to="-551796312"/>
+    <trip id="38" depart="190.00" from="551796315#0" to="-551912151"/>
+    <trip id="39" depart="195.00" from="-1155810076#1" to="-1102803977"/>
+    <trip id="40" depart="200.00" from="100402307#1" to="-1102803979"/>
+    <trip id="41" depart="205.00" from="100402307#2" to="551796315#1"/>
+    <trip id="42" depart="210.00" from="-551796315#1" to="-100402308#5"/>
+    <trip id="43" depart="215.00" from="551912152#1" to="100402305#0"/>
+    <trip id="44" depart="220.00" from="-100402307#2" to="-100402307#0"/>
+    <trip id="45" depart="225.00" from="-100402308#1" to="100402308#2"/>
+    <trip id="46" depart="230.00" from="1155810076#0" to="-551796315#1"/>
+    <trip id="47" depart="235.00" from="-100402307#1" to="-551796312"/>
+    <trip id="48" depart="240.00" from="551912152#1" to="100402305#1"/>
+    <trip id="49" depart="245.00" from="551912152#0" to="551796315#0"/>
+    <trip id="50" depart="250.00" from="-100402305#0" to="100402309"/>
+    <trip id="51" depart="255.00" from="100402308#4" to="100402305#1"/>
+    <trip id="52" depart="260.00" from="-1155810076#1" to="100402308#3"/>
+    <trip id="53" depart="265.00" from="-100402308#1" to="-551796315#1"/>
+    <trip id="54" depart="270.00" from="-551912152#0" to="551912152#0"/>
+    <trip id="55" depart="275.00" from="1185273023" to="-1102803979"/>
+    <trip id="56" depart="280.00" from="100402305#0" to="-100402308#3"/>
+    <trip id="57" depart="285.00" from="551796315#0" to="551796315#0"/>
+    <trip id="58" depart="290.00" from="-1185273022#0" to="100402308#2"/>
+    <trip id="59" depart="295.00" from="100402308#0" to="-100402308#2"/>
 </routes>

@@ -18,235 +18,259 @@ EXPORTS
     _ZN5veins13BaseApplLayerC2Ev @17
     _ZN5veins13BaseApplLayerD2Ev @18
     _ZN5veins17DemoBaseApplLayerC2Ev @19
-    _ZN5veins5Coord4copyERKS0_ @20
-    _ZN5veins5CoordC2ERKS0_ @21
-    _ZN5veins5CoordC2Ev @22
-    _ZN5veins5CoordD0Ev @23
-    _ZN5veins5CoordD2Ev @24
-    _ZN5veins9BaseLayerC2Ev @25
-    _ZN5veinslsERSoRKNS_5CoordE @26
-    _ZN7omnetpp10cComponent12recordScalarEPKcNS_7SimTimeES2_ @27
-    _ZN7omnetpp10cComponent4emitEiPKNS_7cObjectEPS1_ @28
-    _ZN7omnetpp10cComponent4emitEicPNS_7cObjectE @29
-    _ZN7omnetpp10cComponent4emitEiePNS_7cObjectE @30
-    _ZN7omnetpp10cComponent4emitEifPNS_7cObjectE @31
-    _ZN7omnetpp10cComponent4emitEihPNS_7cObjectE @32
-    _ZN7omnetpp10cComponent4emitEiiPNS_7cObjectE @33
-    _ZN7omnetpp10cComponent4emitEijPNS_7cObjectE @34
-    _ZN7omnetpp10cComponent4emitEilPNS_7cObjectE @35
-    _ZN7omnetpp10cComponent4emitEimPNS_7cObjectE @36
-    _ZN7omnetpp10cComponent4emitEisPNS_7cObjectE @37
-    _ZN7omnetpp10cComponent4emitEitPNS_7cObjectE @38
-    _ZN7omnetpp10cComponent4emitEixPNS_7cObjectE @39
-    _ZN7omnetpp10cComponent4emitEiyPNS_7cObjectE @40
-    _ZN7omnetpp10cComponent9setRNGMapEsPi @41
-    _ZN7omnetpp10cExceptionD2Ev @42
-    _ZN7omnetpp10cIListener12subscribedToEPNS_10cComponentEi @43
-    _ZN7omnetpp10cIListener16unsubscribedFromEPNS_10cComponentEi @44
-    _ZN7omnetpp10cIListener6finishEPNS_10cComponentEi @45
-    _ZN7omnetpp11SendOptions5afterENS_7SimTimeE @46
-    _ZN7omnetpp11SendOptionsC2Ev @47
-    _ZN7omnetpp11cSimulation19getActiveSimulationEv @48
-    _ZN7omnetpp12cNamedObject14getNamePoolingEv @49
-    _ZN7omnetpp12cNamedObject7setFlagEib @50
-    _ZN7omnetpp13CodeFragmentsD2Ev @51
-    _ZN7omnetpp13cRuntimeErrorD2Ev @52
-    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageENS_7SimTimeES3_PNS_5cGateE @53
-    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageENS_7SimTimeES3_PNS_7cModuleEPKci @54
-    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageENS_7SimTimeES3_PNS_7cModuleEi @55
-    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageEPNS_5cGateE @56
-    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageEPNS_7cModuleEPKci @57
-    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageEPNS_7cModuleEi @58
-    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageERKNS_11SendOptionsEPNS_7cModuleEPKci @59
-    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageERKNS_11SendOptionsEPNS_7cModuleEi @60
-    _ZN7omnetpp13cSimpleModule11sendDelayedEPNS_8cMessageENS_7SimTimeEPKci @61
-    _ZN7omnetpp13cSimpleModule11sendDelayedEPNS_8cMessageENS_7SimTimeEPNS_5cGateE @62
-    _ZN7omnetpp13cSimpleModule11sendDelayedEPNS_8cMessageENS_7SimTimeEi @63
-    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageEPKci @64
-    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageEPNS_5cGateE @65
-    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageERKNS_11SendOptionsEPKci @66
-    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageERKNS_11SendOptionsEi @67
-    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageEi @68
-    _ZN7omnetpp23cNoncopyableOwnedObject12parsimUnpackEPNS_11cCommBufferE @69
-    _ZN7omnetpp4cLog19runtimeLogPredicateEPKNS_10cComponentENS_8LogLevelEPKc @70
-    _ZN7omnetpp7SimTime10checkedAddERKS0_ @71
-    _ZN7omnetpp7SimTime11getScaleExpEv @72
-    _ZN7omnetpp7SimTime12assertInitedIdEEvT_ @73
-    _ZN7omnetpp7SimTime12haveSameSignExx @74
-    _ZN7omnetpp7SimTime6setRawEx @75
-    _ZN7omnetpp7SimTime7toInt64Ed @76
-    _ZN7omnetpp7SimTimeC2ERKS0_ @77
-    _ZN7omnetpp7SimTimeC2Ed @78
-    _ZN7omnetpp7SimTimeC2Ev @79
-    _ZN7omnetpp7SimTimeaSEd @80
-    _ZN7omnetpp7SimTimepLERKS0_ @81
-    _ZN7omnetpp7cModule27setBuiltinAnimationsAllowedEb @82
-    _ZN7omnetpp7cObjectC2ERKS0_ @83
-    _ZN7omnetpp7cObjectC2Ev @84
-    _ZN7omnetpp7cPacket13setByteLengthEx @85
-    _ZN7omnetpp7simTimeEv @86
-    _ZN7omnetpp8internal9cLogProxy9getStreamEv @87
-    _ZN7omnetpp9bernoulliEPNS_4cRNGEd @88
-    _ZN7omnetpp9lognormalEPNS_4cRNGEdd @89
-    _ZN7omnetpplsERSoRKNS_7SimTimeE @90
-    _ZN7omnetppplERKNS_7SimTimeES2_ @91
-    _ZN9__gnu_cxx16__aligned_membufISt4pairIKN5veins7ChannelEdEE6_M_ptrEv @92
-    _ZN9__gnu_cxx16__aligned_membufISt4pairIKN5veins7ChannelEdEE7_M_addrEv @93
-    _ZNK5veins10BaseModule13numInitStagesEv @94
-    _ZNK5veins13BaseApplLayer10myApplAddrEv @95
-    _ZNK5veins5Coord3strB5cxx11Ev @96
-    _ZNK7omnetpp10cComponent10chi_squareEji @97
-    _ZNK7omnetpp10cComponent10getThisPtrEv @98
-    _ZNK7omnetpp10cComponent10intuniformEiii @99
-    _ZNK7omnetpp10cComponent11exponentialENS_7SimTimeEi @100
-    _ZNK7omnetpp10cComponent11exponentialEdi @101
-    _ZNK7omnetpp10cComponent11negbinomialEidi @102
-    _ZNK7omnetpp10cComponent11truncnormalENS_7SimTimeES1_i @103
-    _ZNK7omnetpp10cComponent11truncnormalEddi @104
-    _ZNK7omnetpp10cComponent12getNumParamsEv @105
-    _ZNK7omnetpp10cComponent14getDisplayNameEv @106
-    _ZNK7omnetpp10cComponent14intuniformexclEiii @107
-    _ZNK7omnetpp10cComponent14pareto_shiftedEdddi @108
-    _ZNK7omnetpp10cComponent4betaEddi @109
-    _ZNK7omnetpp10cComponent5getIdEv @110
-    _ZNK7omnetpp10cComponent6cauchyEddi @111
-    _ZNK7omnetpp10cComponent6normalENS_7SimTimeES1_i @112
-    _ZNK7omnetpp10cComponent6normalEddi @113
-    _ZNK7omnetpp10cComponent6triangEdddi @114
-    _ZNK7omnetpp10cComponent7dblrandEi @115
-    _ZNK7omnetpp10cComponent7gamma_dEddi @116
-    _ZNK7omnetpp10cComponent7intrandEji @117
-    _ZNK7omnetpp10cComponent7poissonEdi @118
-    _ZNK7omnetpp10cComponent7uniformENS_7SimTimeES1_i @119
-    _ZNK7omnetpp10cComponent7uniformEddi @120
-    _ZNK7omnetpp10cComponent7weibullEddi @121
-    _ZNK7omnetpp10cComponent8binomialEidi @122
-    _ZNK7omnetpp10cComponent8erlang_kEjdi @123
-    _ZNK7omnetpp10cComponent9bernoulliEdi @124
-    _ZNK7omnetpp10cComponent9geometricEdi @125
-    _ZNK7omnetpp10cComponent9lognormalEddi @126
-    _ZNK7omnetpp10cComponent9student_tEji @127
-    _ZNK7omnetpp10cIListener17getSubscribeCountEv @128
-    _ZNK7omnetpp10cSoftOwner11isSoftOwnerEv @129
-    _ZNK7omnetpp11cSimulation10getSimTimeEv @130
-    _ZNK7omnetpp12cNamedObject7getNameEv @131
-    _ZNK7omnetpp12cOwnedObject13isOwnedObjectEv @132
-    _ZNK7omnetpp12cOwnedObject8getOwnerEv @133
-    _ZNK7omnetpp16opp_pooledstring5c_strEv @134
-    _ZNK7omnetpp23cNoncopyableOwnedObject10parsimPackEPNS_11cCommBufferE @135
-    _ZNK7omnetpp7SimTime3dblEv @136
-    _ZNK7omnetpp7SimTime3rawEv @137
-    _ZNK7omnetpp7cModule13isPlaceholderEv @138
-    _ZNK7omnetpp7cModule15getParentModuleEv @139
-    _ZNK7omnetpp7cModule16getComponentKindEv @140
-    _ZNK7omnetpp7cModule27getBuiltinAnimationsAllowedEv @141
-    _ZNK7omnetpp7cObject11getFullNameEv @142
-    _ZNK7omnetpp7cObject11isSoftOwnerEv @143
-    _ZNK7omnetpp7cObject13isOwnedObjectEv @144
-    _ZNK7omnetpp7cObject7getNameEv @145
-    _ZNK7omnetpp7cObject8getOwnerEv @146
-    _ZNK9__gnu_cxx16__aligned_membufISt4pairIKN5veins7ChannelEdEE6_M_ptrEv @147
-    _ZNK9__gnu_cxx16__aligned_membufISt4pairIKN5veins7ChannelEdEE7_M_addrEv @148
-    _ZNKSt10_Select1stISt4pairIKN5veins7ChannelEdEEclERKS4_ @149
-    _ZNKSt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEE9_M_valptrEv @150
-    _ZNKSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE11_M_max_sizeEv @151
-    _ZNKSt16initializer_listISt4pairIKN5veins7ChannelEdEE3endEv @152
-    _ZNKSt16initializer_listISt4pairIKN5veins7ChannelEdEE4sizeEv @153
-    _ZNKSt16initializer_listISt4pairIKN5veins7ChannelEdEE5beginEv @154
-    _ZNKSt23_Rb_tree_const_iteratorISt4pairIKN5veins7ChannelEdEE13_M_const_castEv @155
-    _ZNKSt4lessIN5veins7ChannelEEclERKS1_S4_ @156
-    _ZNKSt6vectorISt4pairIPN7omnetpp10cComponentEiESaIS4_EE4sizeEv @157
-    _ZNKSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_Alloc_nodeclIRKS4_EEPSt13_Rb_tree_nodeIS4_EOT_ @158
-    _ZNKSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE4sizeEv @159
-    _ZNKSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE9_M_mbeginEv @160
-    _ZNSaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEC2ERKS6_ @161
-    _ZNSaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEC2IS4_EERKSaIT_E @162
-    _ZNSaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEED2Ev @163
-    _ZNSaISt4pairIKN5veins7ChannelEdEEC2ERKS4_ @164
-    _ZNSaISt4pairIKN5veins7ChannelEdEEC2Ev @165
-    _ZNSaISt4pairIKN5veins7ChannelEdEED2Ev @166
-    _ZNSt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEE9_M_valptrEv @167
-    _ZNSt15_Rb_tree_header8_M_resetEv @168
-    _ZNSt15_Rb_tree_headerC2Ev @169
-    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE10deallocateEPS6_y @170
-    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE7destroyIS5_EEvPT_ @171
-    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE8allocateEyPKv @172
-    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE9constructIS5_JRKS5_EEEvPT_DpOT0_ @173
-    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEC2ERKS7_ @174
-    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEC2Ev @175
-    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEED2Ev @176
-    _ZNSt15__new_allocatorISt4pairIKN5veins7ChannelEdEEC2ERKS5_ @177
-    _ZNSt15__new_allocatorISt4pairIKN5veins7ChannelEdEEC2Ev @178
-    _ZNSt15__new_allocatorISt4pairIKN5veins7ChannelEdEED2Ev @179
-    _ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEE10deallocateERS7_PS6_y @180
-    _ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEE7destroyIS5_EEvRS7_PT_ @181
-    _ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEE8allocateERS7_y @182
-    _ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEE9constructIS5_JRKS5_EEEvRS7_PT_DpOT0_ @183
-    _ZNSt17_Rb_tree_iteratorISt4pairIKN5veins7ChannelEdEEC2EPSt18_Rb_tree_node_base @184
-    _ZNSt17_Rb_tree_iteratorISt4pairIKN5veins7ChannelEdEEmmEv @185
-    _ZNSt17_Rb_tree_iteratorISt4pairIKN5veins7ChannelEdEEppEv @186
-    _ZNSt20_Rb_tree_key_compareISt4lessIN5veins7ChannelEEEC2ERKS3_ @187
-    _ZNSt23_Rb_tree_const_iteratorISt4pairIKN5veins7ChannelEdEEC2ERKSt17_Rb_tree_iteratorIS4_E @188
-    _ZNSt3mapIN5veins7ChannelEdSt4lessIS1_ESaISt4pairIKS1_dEEEC2ESt16initializer_listIS6_ERKS3_RKS7_ @189
-    _ZNSt3mapIN5veins7ChannelEdSt4lessIS1_ESaISt4pairIKS1_dEEED2Ev @190
-    _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC2IRPSt13_Rb_tree_nodeIS_IKN5veins7ChannelEdEERS1_Lb1EEEOT_OT0_ @191
-    _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC2IRS1_S4_Lb1EEEOT_OT0_ @192
-    _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC2IS1_S1_Lb1EEERKS1_S5_ @193
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE10_M_insert_IRKS4_NSA_11_Alloc_nodeEEESt17_Rb_tree_iteratorIS4_EPSt18_Rb_tree_node_baseSI_OT_RT0_ @194
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_Alloc_nodeC2ERSA_ @195
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_M_get_nodeEv @196
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_M_leftmostEv @197
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_M_put_nodeEPSt13_Rb_tree_nodeIS4_E @198
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE12_M_drop_nodeEPSt13_Rb_tree_nodeIS4_E @199
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE12_M_rightmostEv @200
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE13_Rb_tree_implIS8_Lb1EEC2ERKS8_OSaISt13_Rb_tree_nodeIS4_EE @201
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE13_Rb_tree_implIS8_Lb1EED2Ev @202
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE14_M_create_nodeIJRKS4_EEEPSt13_Rb_tree_nodeIS4_EDpOT_ @203
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE15_M_destroy_nodeEPSt13_Rb_tree_nodeIS4_E @204
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE17_M_construct_nodeIJRKS4_EEEvPSt13_Rb_tree_nodeIS4_EDpOT_ @205
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE17_M_insert_unique_IRKS4_NSA_11_Alloc_nodeEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EOT_RT0_ @206
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE21_M_get_Node_allocatorEv @207
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE22_M_insert_range_uniqueIPKS4_EENSt9enable_ifIXsr17__same_value_typeIT_EE5valueEvE4typeESF_SF_ @208
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE24_M_get_insert_unique_posERS3_ @209
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS3_ @210
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE3endEv @211
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE5beginEv @212
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE6_M_endEv @213
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE6_S_keyEPKSt13_Rb_tree_nodeIS4_E @214
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE6_S_keyEPKSt18_Rb_tree_node_base @215
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE7_S_leftEPSt18_Rb_tree_node_base @216
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE8_M_beginEv @217
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E @218
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE8_S_rightEPSt18_Rb_tree_node_base @219
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EEC2ERKS8_RKS9_ @220
-    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EED2Ev @221
-    _ZSt4moveIRSaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEEONSt16remove_referenceIT_E4typeEOSA_ @222
-    _ZSt7forwardIRKSt4pairIKN5veins7ChannelEdEEOT_RNSt16remove_referenceIS7_E4typeE @223
-    _ZSt7forwardIRPSt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEOT_RNSt16remove_referenceIS9_E4typeE @224
-    _ZSt7forwardIRPSt18_Rb_tree_node_baseEOT_RNSt16remove_referenceIS3_E4typeE @225
-    _ZSteqRKSt17_Rb_tree_iteratorISt4pairIKN5veins7ChannelEdEES7_ @226
-    _ZTIN13bangalore_v2v14MyBangaloreAppE @227 DATA
-    _ZTSN13bangalore_v2v14MyBangaloreAppE @228 DATA
-    _ZTSN5veins10BaseModuleE @229 DATA
-    _ZTSN5veins13BaseApplLayerE @230 DATA
-    _ZTSN5veins13BatteryAccessE @231 DATA
-    _ZTSN5veins17DemoBaseApplLayerE @232 DATA
-    _ZTSN5veins5CoordE @233 DATA
-    _ZTSN5veins9BaseLayerE @234 DATA
-    _ZTSN7omnetpp10cComponentE @235 DATA
-    _ZTSN7omnetpp10cExceptionE @236 DATA
-    _ZTSN7omnetpp10cIListenerE @237 DATA
-    _ZTSN7omnetpp10cSoftOwnerE @238 DATA
-    _ZTSN7omnetpp11noncopyableE @239 DATA
-    _ZTSN7omnetpp12cNamedObjectE @240 DATA
-    _ZTSN7omnetpp12cOwnedObjectE @241 DATA
-    _ZTSN7omnetpp13cRuntimeErrorE @242 DATA
-    _ZTSN7omnetpp13cSimpleModuleE @243 DATA
-    _ZTSN7omnetpp23cNoncopyableOwnedObjectE @244 DATA
-    _ZTSN7omnetpp7cModuleE @245 DATA
-    _ZTSN7omnetpp7cObjectE @246 DATA
-    _ZTSN7omnetpp9cListenerE @247 DATA
-    _ZTVN13bangalore_v2v14MyBangaloreAppE @248 DATA
-    _ZThn216_N13bangalore_v2v14MyBangaloreAppD0Ev @249
-    _ZThn216_N13bangalore_v2v14MyBangaloreAppD1Ev @250
-    __clang_call_terminate @251
+    _ZN5veins5CoordC2Ev @20
+    _ZN5veins5CoordD0Ev @21
+    _ZN5veins5CoordD2Ev @22
+    _ZN5veins9BaseLayerC2Ev @23
+    _ZN5veinslsERSoRKNS_5CoordE @24
+    _ZN7omnetpp10cComponent12recordScalarEPKcNS_7SimTimeES2_ @25
+    _ZN7omnetpp10cComponent4emitEiPKNS_7cObjectEPS1_ @26
+    _ZN7omnetpp10cComponent4emitEicPNS_7cObjectE @27
+    _ZN7omnetpp10cComponent4emitEiePNS_7cObjectE @28
+    _ZN7omnetpp10cComponent4emitEifPNS_7cObjectE @29
+    _ZN7omnetpp10cComponent4emitEihPNS_7cObjectE @30
+    _ZN7omnetpp10cComponent4emitEiiPNS_7cObjectE @31
+    _ZN7omnetpp10cComponent4emitEijPNS_7cObjectE @32
+    _ZN7omnetpp10cComponent4emitEilPNS_7cObjectE @33
+    _ZN7omnetpp10cComponent4emitEimPNS_7cObjectE @34
+    _ZN7omnetpp10cComponent4emitEisPNS_7cObjectE @35
+    _ZN7omnetpp10cComponent4emitEitPNS_7cObjectE @36
+    _ZN7omnetpp10cComponent4emitEixPNS_7cObjectE @37
+    _ZN7omnetpp10cComponent4emitEiyPNS_7cObjectE @38
+    _ZN7omnetpp10cComponent9setRNGMapEsPi @39
+    _ZN7omnetpp10cExceptionD2Ev @40
+    _ZN7omnetpp10cIListener12subscribedToEPNS_10cComponentEi @41
+    _ZN7omnetpp10cIListener16unsubscribedFromEPNS_10cComponentEi @42
+    _ZN7omnetpp10cIListener6finishEPNS_10cComponentEi @43
+    _ZN7omnetpp11SendOptions5afterENS_7SimTimeE @44
+    _ZN7omnetpp11SendOptionsC2Ev @45
+    _ZN7omnetpp11cSimulation19getActiveSimulationEv @46
+    _ZN7omnetpp12cNamedObject14getNamePoolingEv @47
+    _ZN7omnetpp12cNamedObject7setFlagEib @48
+    _ZN7omnetpp13CodeFragmentsD2Ev @49
+    _ZN7omnetpp13cRuntimeErrorD2Ev @50
+    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageENS_7SimTimeES3_PNS_5cGateE @51
+    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageENS_7SimTimeES3_PNS_7cModuleEPKci @52
+    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageENS_7SimTimeES3_PNS_7cModuleEi @53
+    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageEPNS_5cGateE @54
+    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageEPNS_7cModuleEPKci @55
+    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageEPNS_7cModuleEi @56
+    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageERKNS_11SendOptionsEPNS_7cModuleEPKci @57
+    _ZN7omnetpp13cSimpleModule10sendDirectEPNS_8cMessageERKNS_11SendOptionsEPNS_7cModuleEi @58
+    _ZN7omnetpp13cSimpleModule11sendDelayedEPNS_8cMessageENS_7SimTimeEPKci @59
+    _ZN7omnetpp13cSimpleModule11sendDelayedEPNS_8cMessageENS_7SimTimeEPNS_5cGateE @60
+    _ZN7omnetpp13cSimpleModule11sendDelayedEPNS_8cMessageENS_7SimTimeEi @61
+    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageEPKci @62
+    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageEPNS_5cGateE @63
+    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageERKNS_11SendOptionsEPKci @64
+    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageERKNS_11SendOptionsEi @65
+    _ZN7omnetpp13cSimpleModule4sendEPNS_8cMessageEi @66
+    _ZN7omnetpp23cNoncopyableOwnedObject12parsimUnpackEPNS_11cCommBufferE @67
+    _ZN7omnetpp4cLog19runtimeLogPredicateEPKNS_10cComponentENS_8LogLevelEPKc @68
+    _ZN7omnetpp7SimTime10checkedAddERKS0_ @69
+    _ZN7omnetpp7SimTime11getScaleExpEv @70
+    _ZN7omnetpp7SimTime12assertInitedIdEEvT_ @71
+    _ZN7omnetpp7SimTime12haveSameSignExx @72
+    _ZN7omnetpp7SimTime6setRawEx @73
+    _ZN7omnetpp7SimTime7toInt64Ed @74
+    _ZN7omnetpp7SimTimeC2ERKS0_ @75
+    _ZN7omnetpp7SimTimeC2Ed @76
+    _ZN7omnetpp7SimTimeC2Ev @77
+    _ZN7omnetpp7SimTimeaSEd @78
+    _ZN7omnetpp7SimTimepLERKS0_ @79
+    _ZN7omnetpp7cModule27setBuiltinAnimationsAllowedEb @80
+    _ZN7omnetpp7cObjectC2Ev @81
+    _ZN7omnetpp7cPacket13setByteLengthEx @82
+    _ZN7omnetpp7simTimeEv @83
+    _ZN7omnetpp8internal9cLogProxy9getStreamEv @84
+    _ZN7omnetpp9bernoulliEPNS_4cRNGEd @85
+    _ZN7omnetpp9lognormalEPNS_4cRNGEdd @86
+    _ZN7omnetpplsERSoRKNS_7SimTimeE @87
+    _ZN7omnetppplERKNS_7SimTimeES2_ @88
+    _ZN9__gnu_cxx16__aligned_membufISt4pairIKN5veins7ChannelEdEE6_M_ptrEv @89
+    _ZN9__gnu_cxx16__aligned_membufISt4pairIKN5veins7ChannelEdEE7_M_addrEv @90
+    _ZNK5veins10BaseModule13numInitStagesEv @91
+    _ZNK5veins13BaseApplLayer10myApplAddrEv @92
+    _ZNK5veins5Coord3strB5cxx11Ev @93
+    _ZNK7omnetpp10cComponent10chi_squareEji @94
+    _ZNK7omnetpp10cComponent10getThisPtrEv @95
+    _ZNK7omnetpp10cComponent10intuniformEiii @96
+    _ZNK7omnetpp10cComponent11exponentialENS_7SimTimeEi @97
+    _ZNK7omnetpp10cComponent11exponentialEdi @98
+    _ZNK7omnetpp10cComponent11negbinomialEidi @99
+    _ZNK7omnetpp10cComponent11truncnormalENS_7SimTimeES1_i @100
+    _ZNK7omnetpp10cComponent11truncnormalEddi @101
+    _ZNK7omnetpp10cComponent12getNumParamsEv @102
+    _ZNK7omnetpp10cComponent14getDisplayNameEv @103
+    _ZNK7omnetpp10cComponent14intuniformexclEiii @104
+    _ZNK7omnetpp10cComponent14pareto_shiftedEdddi @105
+    _ZNK7omnetpp10cComponent4betaEddi @106
+    _ZNK7omnetpp10cComponent5getIdEv @107
+    _ZNK7omnetpp10cComponent6cauchyEddi @108
+    _ZNK7omnetpp10cComponent6normalENS_7SimTimeES1_i @109
+    _ZNK7omnetpp10cComponent6normalEddi @110
+    _ZNK7omnetpp10cComponent6triangEdddi @111
+    _ZNK7omnetpp10cComponent7dblrandEi @112
+    _ZNK7omnetpp10cComponent7gamma_dEddi @113
+    _ZNK7omnetpp10cComponent7intrandEji @114
+    _ZNK7omnetpp10cComponent7poissonEdi @115
+    _ZNK7omnetpp10cComponent7uniformENS_7SimTimeES1_i @116
+    _ZNK7omnetpp10cComponent7uniformEddi @117
+    _ZNK7omnetpp10cComponent7weibullEddi @118
+    _ZNK7omnetpp10cComponent8binomialEidi @119
+    _ZNK7omnetpp10cComponent8erlang_kEjdi @120
+    _ZNK7omnetpp10cComponent9bernoulliEdi @121
+    _ZNK7omnetpp10cComponent9geometricEdi @122
+    _ZNK7omnetpp10cComponent9lognormalEddi @123
+    _ZNK7omnetpp10cComponent9student_tEji @124
+    _ZNK7omnetpp10cIListener17getSubscribeCountEv @125
+    _ZNK7omnetpp10cSoftOwner11isSoftOwnerEv @126
+    _ZNK7omnetpp11cSimulation10getSimTimeEv @127
+    _ZNK7omnetpp12cNamedObject7getNameEv @128
+    _ZNK7omnetpp12cOwnedObject13isOwnedObjectEv @129
+    _ZNK7omnetpp12cOwnedObject8getOwnerEv @130
+    _ZNK7omnetpp16opp_pooledstring5c_strEv @131
+    _ZNK7omnetpp23cNoncopyableOwnedObject10parsimPackEPNS_11cCommBufferE @132
+    _ZNK7omnetpp5cGate15getPreviousGateEv @133
+    _ZNK7omnetpp7SimTime3dblEv @134
+    _ZNK7omnetpp7SimTime3rawEv @135
+    _ZNK7omnetpp7cModule13isPlaceholderEv @136
+    _ZNK7omnetpp7cModule15getParentModuleEv @137
+    _ZNK7omnetpp7cModule16getComponentKindEv @138
+    _ZNK7omnetpp7cModule27getBuiltinAnimationsAllowedEv @139
+    _ZNK7omnetpp7cObject11getFullNameEv @140
+    _ZNK7omnetpp7cObject11isSoftOwnerEv @141
+    _ZNK7omnetpp7cObject13isOwnedObjectEv @142
+    _ZNK7omnetpp7cObject7getNameEv @143
+    _ZNK7omnetpp7cObject8getOwnerEv @144
+    _ZNK7omnetpp7cPacket13getByteLengthEv @145
+    _ZNK7omnetpp8cMessage14getControlInfoEv @146
+    _ZNK7omnetpp8cMessage17getSenderModuleIdEv @147
+    _ZNK7omnetpp8cMessage5getIdEv @148
+    _ZNK7omnetpp8cMessage7getKindEv @149
+    _ZNK9__gnu_cxx16__aligned_membufISt4pairIKN5veins7ChannelEdEE6_M_ptrEv @150
+    _ZNK9__gnu_cxx16__aligned_membufISt4pairIKN5veins7ChannelEdEE7_M_addrEv @151
+    _ZNKSt10_Select1stISt4pairIKN5veins7ChannelEdEEclERKS4_ @152
+    _ZNKSt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEE9_M_valptrEv @153
+    _ZNKSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE11_M_max_sizeEv @154
+    _ZNKSt16initializer_listISt4pairIKN5veins7ChannelEdEE3endEv @155
+    _ZNKSt16initializer_listISt4pairIKN5veins7ChannelEdEE4sizeEv @156
+    _ZNKSt16initializer_listISt4pairIKN5veins7ChannelEdEE5beginEv @157
+    _ZNKSt23_Rb_tree_const_iteratorISt4pairIKN5veins7ChannelEdEE13_M_const_castEv @158
+    _ZNKSt4lessIN5veins7ChannelEEclERKS1_S4_ @159
+    _ZNKSt6vectorISt4pairIPN7omnetpp10cComponentEiESaIS4_EE4sizeEv @160
+    _ZNKSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_Alloc_nodeclIRKS4_EEPSt13_Rb_tree_nodeIS4_EOT_ @161
+    _ZNKSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE4sizeEv @162
+    _ZNKSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE9_M_mbeginEv @163
+    _ZNSaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEC2ERKS6_ @164
+    _ZNSaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEC2IS4_EERKSaIT_E @165
+    _ZNSaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEED2Ev @166
+    _ZNSaISt4pairIKN5veins7ChannelEdEEC2ERKS4_ @167
+    _ZNSaISt4pairIKN5veins7ChannelEdEEC2Ev @168
+    _ZNSaISt4pairIKN5veins7ChannelEdEED2Ev @169
+    _ZNSt11char_traitsIcE6lengthEPKc @170
+    _ZNSt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEE9_M_valptrEv @171
+    _ZNSt15_Rb_tree_header8_M_resetEv @172
+    _ZNSt15_Rb_tree_headerC2Ev @173
+    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE10deallocateEPS6_y @174
+    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE7destroyIS5_EEvPT_ @175
+    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE8allocateEyPKv @176
+    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEE9constructIS5_JRKS5_EEEvPT_DpOT0_ @177
+    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEC2ERKS7_ @178
+    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEC2Ev @179
+    _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEED2Ev @180
+    _ZNSt15__new_allocatorISt4pairIKN5veins7ChannelEdEEC2ERKS5_ @181
+    _ZNSt15__new_allocatorISt4pairIKN5veins7ChannelEdEEC2Ev @182
+    _ZNSt15__new_allocatorISt4pairIKN5veins7ChannelEdEED2Ev @183
+    _ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEE10deallocateERS7_PS6_y @184
+    _ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEE7destroyIS5_EEvRS7_PT_ @185
+    _ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEE8allocateERS7_y @186
+    _ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEE9constructIS5_JRKS5_EEEvRS7_PT_DpOT0_ @187
+    _ZNSt17_Rb_tree_iteratorISt4pairIKN5veins7ChannelEdEEC2EPSt18_Rb_tree_node_base @188
+    _ZNSt17_Rb_tree_iteratorISt4pairIKN5veins7ChannelEdEEmmEv @189
+    _ZNSt17_Rb_tree_iteratorISt4pairIKN5veins7ChannelEdEEppEv @190
+    _ZNSt20_Rb_tree_key_compareISt4lessIN5veins7ChannelEEEC2ERKS3_ @191
+    _ZNSt23_Rb_tree_const_iteratorISt4pairIKN5veins7ChannelEdEEC2ERKSt17_Rb_tree_iteratorIS4_E @192
+    _ZNSt3mapIN5veins7ChannelEdSt4lessIS1_ESaISt4pairIKS1_dEEEC2ESt16initializer_listIS6_ERKS3_RKS7_ @193
+    _ZNSt3mapIN5veins7ChannelEdSt4lessIS1_ESaISt4pairIKS1_dEEED2Ev @194
+    _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC2IRPSt13_Rb_tree_nodeIS_IKN5veins7ChannelEdEERS1_Lb1EEEOT_OT0_ @195
+    _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC2IRS1_S4_Lb1EEEOT_OT0_ @196
+    _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC2IS1_S1_Lb1EEERKS1_S5_ @197
+    _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderD2Ev @198
+    _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_ @199
+    _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEycRKS3_ @200
+    _ZNSt7__cxx119to_stringEi @201
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE10_M_insert_IRKS4_NSA_11_Alloc_nodeEEESt17_Rb_tree_iteratorIS4_EPSt18_Rb_tree_node_baseSI_OT_RT0_ @202
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_Alloc_nodeC2ERSA_ @203
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_M_get_nodeEv @204
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_M_leftmostEv @205
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE11_M_put_nodeEPSt13_Rb_tree_nodeIS4_E @206
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE12_M_drop_nodeEPSt13_Rb_tree_nodeIS4_E @207
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE12_M_rightmostEv @208
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE13_Rb_tree_implIS8_Lb1EEC2ERKS8_OSaISt13_Rb_tree_nodeIS4_EE @209
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE13_Rb_tree_implIS8_Lb1EED2Ev @210
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE14_M_create_nodeIJRKS4_EEEPSt13_Rb_tree_nodeIS4_EDpOT_ @211
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE15_M_destroy_nodeEPSt13_Rb_tree_nodeIS4_E @212
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE17_M_construct_nodeIJRKS4_EEEvPSt13_Rb_tree_nodeIS4_EDpOT_ @213
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE17_M_insert_unique_IRKS4_NSA_11_Alloc_nodeEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EOT_RT0_ @214
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE21_M_get_Node_allocatorEv @215
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE22_M_insert_range_uniqueIPKS4_EENSt9enable_ifIXsr17__same_value_typeIT_EE5valueEvE4typeESF_SF_ @216
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE24_M_get_insert_unique_posERS3_ @217
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS3_ @218
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE3endEv @219
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE5beginEv @220
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE6_M_endEv @221
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE6_S_keyEPKSt13_Rb_tree_nodeIS4_E @222
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE6_S_keyEPKSt18_Rb_tree_node_base @223
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE7_S_leftEPSt18_Rb_tree_node_base @224
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE8_M_beginEv @225
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E @226
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE8_S_rightEPSt18_Rb_tree_node_base @227
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EEC2ERKS8_RKS9_ @228
+    _ZNSt8_Rb_treeIN5veins7ChannelESt4pairIKS1_dESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EED2Ev @229
+    _ZNSt8__detail14__to_chars_lenIjEEjT_i @230
+    _ZNSt8__detail18__to_chars_10_implIjEEvPcjT_ @231
+    _ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag @232
+    _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ @233
+    _ZSt4moveIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEONSt16remove_referenceIT_E4typeEOS8_ @234
+    _ZSt4moveIRSaISt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEEONSt16remove_referenceIT_E4typeEOSA_ @235
+    _ZSt7forwardIRKSt4pairIKN5veins7ChannelEdEEOT_RNSt16remove_referenceIS7_E4typeE @236
+    _ZSt7forwardIRPSt13_Rb_tree_nodeISt4pairIKN5veins7ChannelEdEEEOT_RNSt16remove_referenceIS9_E4typeE @237
+    _ZSt7forwardIRPSt18_Rb_tree_node_baseEOT_RNSt16remove_referenceIS3_E4typeE @238
+    _ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_ @239
+    _ZSteqRKSt17_Rb_tree_iteratorISt4pairIKN5veins7ChannelEdEES7_ @240
+    _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_ @241
+    _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_S9_ @242
+    _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_OS8_ @243
+    _ZTIN13bangalore_v2v14MyBangaloreAppE @244 DATA
+    _ZTSN13bangalore_v2v14MyBangaloreAppE @245 DATA
+    _ZTSN5veins10BaseModuleE @246 DATA
+    _ZTSN5veins13BaseApplLayerE @247 DATA
+    _ZTSN5veins13BatteryAccessE @248 DATA
+    _ZTSN5veins15BaseFrame1609_4E @249 DATA
+    _ZTSN5veins17DemoBaseApplLayerE @250 DATA
+    _ZTSN5veins23DemoServiceAdvertismentE @251 DATA
+    _ZTSN5veins5CoordE @252 DATA
+    _ZTSN5veins9BaseLayerE @253 DATA
+    _ZTSN7omnetpp10cComponentE @254 DATA
+    _ZTSN7omnetpp10cExceptionE @255 DATA
+    _ZTSN7omnetpp10cIListenerE @256 DATA
+    _ZTSN7omnetpp10cSoftOwnerE @257 DATA
+    _ZTSN7omnetpp11noncopyableE @258 DATA
+    _ZTSN7omnetpp12cNamedObjectE @259 DATA
+    _ZTSN7omnetpp12cOwnedObjectE @260 DATA
+    _ZTSN7omnetpp13cRuntimeErrorE @261 DATA
+    _ZTSN7omnetpp13cSimpleModuleE @262 DATA
+    _ZTSN7omnetpp23cNoncopyableOwnedObjectE @263 DATA
+    _ZTSN7omnetpp6cEventE @264 DATA
+    _ZTSN7omnetpp7cModuleE @265 DATA
+    _ZTSN7omnetpp7cObjectE @266 DATA
+    _ZTSN7omnetpp7cPacketE @267 DATA
+    _ZTSN7omnetpp8cMessageE @268 DATA
+    _ZTSN7omnetpp9cListenerE @269 DATA
+    _ZTVN13bangalore_v2v14MyBangaloreAppE @270 DATA
+    _ZThn216_N13bangalore_v2v14MyBangaloreAppD0Ev @271
+    _ZThn216_N13bangalore_v2v14MyBangaloreAppD1Ev @272
+    _ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tagEN6_GuardC2EPS4_ @273
+    _ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tagEN6_GuardD2Ev @274
+    __clang_call_terminate @275

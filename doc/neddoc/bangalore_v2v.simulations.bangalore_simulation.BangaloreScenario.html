@@ -1,0 +1,651 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="OMNeT++ NED doc generator"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="material-icons.css">
+<link rel="stylesheet" href="material.blue-light_blue.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<title>BangaloreScenario</title>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div id="top" class="mdl-layout__header-row">
+      <span class="mdl-layout-title">BangaloreScenario</span>
+      <div class="mdl-layout-spacer"></div>
+<!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search" />
+          <label class="mdl-textfield__label" for="search">Enter your query...</label>
+        </div>
+      </div>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons">code</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+        <li class="mdl-menu__item">OMNeT++ Website</li>
+      </ul>
+-->
+    </div>
+  </header>
+
+  <div class="drawer mdl-layout__drawer">
+    <nav id="side-nav" class="mdl-navigation">
+      <div id="nav-tree">
+        <div id="nav-tree-contents">
+          <div id="nav-sync" class="sync"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){initNavTree(location.pathname.split("/").slice(-1).toString(),'');});
+  </script>
+
+  <main class="mdl-layout__content">
+    <div id="doc-content">
+
+    <p>Package: <a class="reference-ned" href="packages.html#bangalore_v2v_simulations_bangalore_simulation">bangalore_v2v.simulations.bangalore_simulation</a></p>
+<h2 class="comptitle" style="float: left;">BangaloreScenario</h2>
+<span class="mdl-chip" style="float: right; margin-top: 6pt; background-color: #2196f340;">
+    <span class="mdl-chip__text">network</span>
+</span><div style="clear: both;"/>
+<p>(no description)</p>
+<img src="bangalore_v2v.simulations.bangalore_simulation.BangaloreScenario-type.svg" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html" title="manager : TraCIScenarioManagerLaunchd
+
+Source:
+manager: TraCIScenarioManagerLaunchd {
+    parameters:
+        @display(&quot;p=697,451&quot;);
+}" alt="manager : TraCIScenarioManagerLaunchd
+
+Source:
+manager: TraCIScenarioManagerLaunchd {
+    parameters:
+        @display(&quot;p=697,451&quot;);
+}" coords="675,471,724,530">
+<area shape="rect" href="../../../veins/doc/neddoc/org.car2x.veins.base.modules.BaseWorldUtility.html" title="world : BaseWorldUtility
+
+Basic utility module for the whole network.
+
+Source:
+world: BaseWorldUtility {
+    parameters:
+        playgroundSizeX = veins_eval_by_version(veins_omnetpp_buildnum(), &quot;playgroundSizeX&quot;, 1525, &quot;parent.playgroundSizeX&quot;);
+        playgroundSizeY = veins_eval_by_version(veins_omnetpp_buildnum(), &quot;playgroundSizeY&quot;, 1525, &quot;parent.playgroundSizeY&quot;);
+   ..." alt="world : BaseWorldUtility
+
+Basic utility module for the whole network.
+
+Source:
+world: BaseWorldUtility {
+    parameters:
+        playgroundSizeX = veins_eval_by_version(veins_omnetpp_buildnum(), &quot;playgroundSizeX&quot;, 1525, &quot;parent.playgroundSizeX&quot;);
+        playgroundSizeY = veins_eval_by_version(veins_omnetpp_buildnum(), &quot;playgroundSizeY&quot;, 1525, &quot;parent.playgroundSizeY&quot;);
+   ..." coords="13,21,55,78">
+<area shape="rect" href="../../../veins/doc/neddoc/org.car2x.veins.modules.world.annotations.AnnotationManager.html" title="annotations : AnnotationManager
+
+manages annotations on the OMNeT++ canvas
+
+Source:
+annotations: AnnotationManager {
+    parameters:
+        @display(&quot;p=66,679&quot;);
+}" alt="annotations : AnnotationManager
+
+manages annotations on the OMNeT++ canvas
+
+Source:
+annotations: AnnotationManager {
+    parameters:
+        @display(&quot;p=66,679&quot;);
+}" coords="36,700,101,757">
+<area shape="rect" href="../../../veins/doc/neddoc/org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html" title="roadsCanvasVisualizer : RoadsCanvasVisualizer
+
+Simple support module to visualize road network as received via TraCI.
+
+Source:
+roadsCanvasVisualizer: RoadsCanvasVisualizer {
+    @display(&quot;p=300,0&quot;);
+}" alt="roadsCanvasVisualizer : RoadsCanvasVisualizer
+
+Simple support module to visualize road network as received via TraCI.
+
+Source:
+roadsCanvasVisualizer: RoadsCanvasVisualizer {
+    @display(&quot;p=300,0&quot;);
+}" coords="243,20,361,79">
+<area shape="rect" href="../../../veins/doc/neddoc/org.car2x.veins.base.connectionManager.ConnectionManager.html" title="connectionManager : ConnectionManager
+
+Module to control all connection related stuff
+
+Source:
+connectionManager: ConnectionManager {
+    parameters:
+        @display(&quot;p=631,138&quot;);
+                // You might need to set 'maxInterfDist' here if not set in omnetpp.ini
+                // maxInterfDist = default(2500m); // Example default value
+}" alt="connectionManager : ConnectionManager
+
+Module to control all connection related stuff
+
+Source:
+connectionManager: ConnectionManager {
+    parameters:
+        @display(&quot;p=631,138&quot;);
+                // You might need to set 'maxInterfDist' here if not set in omnetpp.ini
+                // maxInterfDist = default(2500m); // Example default value
+}" coords="579,158,688,217">
+<area shape="rect" href="../../../veins/doc/neddoc/org.car2x.veins.nodes.Car.html" title="node[numCars] : Car
+
+Source:
+node[numCars]: Car {
+    parameters:
+        // Use a different approach to specify applType
+        appl.typename = &quot;bangalore_v2v.MyBangaloreApp.MyBangaloreApp&quot;; // &lt;-- Simplified to just the module name
+        // Pass the broadcastInterval parameter to your application module
+        appl.bro..." alt="node[numCars] : Car
+
+Source:
+node[numCars]: Car {
+    parameters:
+        // Use a different approach to specify applType
+        appl.typename = &quot;bangalore_v2v.MyBangaloreApp.MyBangaloreApp&quot;; // &lt;-- Simplified to just the module name
+        // Pass the broadcastInterval parameter to your application module
+        appl.bro..." coords="423,861,508,920">
+</map>
+<h3 class="subtitle">Usage diagram</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.</p>
+<object type="image/svg+xml" data="bangalore_v2v.simulations.bangalore_simulation.BangaloreScenario-usage.svg"></object>
+<h3 class="subtitle">Parameters</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr class="local">
+      <td>playgroundSizeX</td>
+      <td>double</td>
+      <td></td>
+      <td>
+<p>Playground size parameters (will be overridden by TraCI based on SUMO map boundaries)</p>
+</td>
+   </tr>
+   <tr class="local">
+      <td>playgroundSizeY</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr class="local">
+      <td>playgroundSizeZ</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr class="local">
+      <td>numCars</td>
+      <td>int</td>
+      <td></td>
+      <td>
+<p>This parameter will be set by the TraCIScenarioManagerLaunchd
+to the number of vehicles in the SUMO route file.</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Properties</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td>isNetwork</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>display</td>
+      <td>bgb=dropUnit($playgroundSizeX),dropUnit($playgroundSizeY)</td>
+      <td>
+<p>Comment out or remove the original line:
+@display("bgb=$playgroundSizeX,$playgroundSizeY");
+Add this line as a workaround:</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters</h3>
+<table class="deepparamstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.connectAt</td>
+      <td>double</td>
+      <td>0s</td>
+      <td>
+<p>when to connect to TraCI server (must be the initial timestep of the server)</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.firstStepAt</td>
+      <td>double</td>
+      <td>-1s</td>
+      <td>
+<p>when to start synchronizing with the TraCI server (-1: immediately after connecting)</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.updateInterval</td>
+      <td>double</td>
+      <td>1s</td>
+      <td>
+<p>time interval of hosts' position updates</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.moduleType</td>
+      <td>string</td>
+      <td>"org.car2x.veins.nodes.Car"</td>
+      <td>
+<p>module type to be used in the simulation for each managed vehicle</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.moduleName</td>
+      <td>string</td>
+      <td>"node"</td>
+      <td>
+<p>module name to be used in the simulation for each managed vehicle</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.moduleDisplayString</td>
+      <td>string</td>
+      <td>"*='i=veins/node/car;is=vs'"</td>
+      <td>
+<p>module displayString to be used in the simulation for each managed vehicle
+display strings key-value pairs needs to be protected with single quotes, as they use an = sign as the type mappings. For example
+<pre>
+*.manager.moduleDisplayString = "'i=block/process'"
+*.manager.moduleDisplayString = "a='i=block/process' b='i=misc/sun'"
+</pre></p>
+<p>moduleDisplayString can also be left empty:
+<pre>
+*.manager.moduleDisplayString = ""
+</pre></p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.trafficLightModuleType</td>
+      <td>string</td>
+      <td>""</td>
+      <td>
+<p>module type to be used in the simulation for each managed traffic light</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.trafficLightModuleName</td>
+      <td>string</td>
+      <td>"tls"</td>
+      <td>
+<p>module name to be used in the simulation for each managed traffic light</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.trafficLightFilter</td>
+      <td>string</td>
+      <td>""</td>
+      <td>
+<p>filter string to select which tls shall be subscribed, list sumo IDs separated by spaces</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.trafficLightModuleDisplayString</td>
+      <td>string</td>
+      <td>"i=veins/node/trafficlight;is=vs"</td>
+      <td>
+<p>module displayString to be used in the simulation for each managed traffic light</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.host</td>
+      <td>string</td>
+      <td>"localhost"</td>
+      <td>
+<p>server hostname</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.port</td>
+      <td>int</td>
+      <td>9999</td>
+      <td>
+<p>server port (-1: automatic)</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.seed</td>
+      <td>int</td>
+      <td>-1</td>
+      <td>
+<p>seed value to set in launch configuration, if missing (-1: current run number)</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.autoShutdown</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>Shutdown module as soon as no more vehicles are in the simulation</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.margin</td>
+      <td>int</td>
+      <td>25</td>
+      <td>
+<p>margin to add to all received vehicle positions</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.roiRoads</td>
+      <td>string</td>
+      <td>""</td>
+      <td>
+<p>which roads (e.g. "hwy1 hwy2") are considered to consitute the region of interest, if not empty</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.roiRects</td>
+      <td>string</td>
+      <td>""</td>
+      <td>
+<p>which rectangles (e.g. "0,0-10,10 20,20-30,30) are considered to consitute the region of interest, if not empty. Note that these rectangles have to use TraCI (SUMO) coordinates and not OMNeT++. They can be easily read from sumo-gui.</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.penetrationRate</td>
+      <td>double</td>
+      <td>1</td>
+      <td>
+<p>the probability of a vehicle being equipped with Car2X technology</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.ignoreGuiCommands</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>whether to ignore all TraCI commands that only make sense when the server has a graphical user interface</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.order</td>
+      <td>int</td>
+      <td>-1</td>
+      <td>
+<p>specific position in the multi-client execution order of the TraCI server to request upon connecting (-1: do not request a position)</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.ignoreUnknownSubscriptionResults</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>whether to (try and) ignore any subscription result we did not request (but another client might have)</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd" href="../../../veins/doc/neddoc/org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.launchConfig</td>
+      <td>xml</td>
+      <td></td>
+      <td>
+<p>launch configuration to send to sumo-launchd.py</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.base.modules.BaseWorldUtility" href="../../../veins/doc/neddoc/org.car2x.veins.base.modules.BaseWorldUtility.html">world</a>.useTorus</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>use the playground as torus?</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.base.modules.BaseWorldUtility" href="../../../veins/doc/neddoc/org.car2x.veins.base.modules.BaseWorldUtility.html">world</a>.use2D</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>use a 2-dimensional world?</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.world.annotations.AnnotationManager" href="../../../veins/doc/neddoc/org.car2x.veins.modules.world.annotations.AnnotationManager.html">annotations</a>.draw</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>draw annotations?</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.modules.world.annotations.AnnotationManager" href="../../../veins/doc/neddoc/org.car2x.veins.modules.world.annotations.AnnotationManager.html">annotations</a>.annotations</td>
+      <td>xml</td>
+      <td>xml("<annotations/>")</td>
+      <td>
+<p>annotations to add at startup</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer" href="../../../veins/doc/neddoc/org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.enabled</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>whether to enable any of the functionality of this module</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer" href="../../../veins/doc/neddoc/org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.lineZIndex</td>
+      <td>double</td>
+      <td>-1</td>
+      <td>
+<p>z-index of all lines</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer" href="../../../veins/doc/neddoc/org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.lineColor</td>
+      <td>string</td>
+      <td>"firebrick4"</td>
+      <td>
+<p>line color of roads</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer" href="../../../veins/doc/neddoc/org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.lineWidth</td>
+      <td>double</td>
+      <td>1</td>
+      <td>
+<p>line width of roads</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer" href="../../../veins/doc/neddoc/org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.lineWidthZoom</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>whether zooming should affect line width</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.base.connectionManager.ConnectionManager" href="../../../veins/doc/neddoc/org.car2x.veins.base.connectionManager.ConnectionManager.html">connectionManager</a>.sendDirect</td>
+      <td>bool</td>
+      <td></td>
+      <td>
+<p>send directly to the node or create separate gates for every connection</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.base.connectionManager.ConnectionManager" href="../../../veins/doc/neddoc/org.car2x.veins.base.connectionManager.ConnectionManager.html">connectionManager</a>.maxInterfDist</td>
+      <td>double</td>
+      <td></td>
+      <td>
+<p>maximum interference distance [m]</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.base.connectionManager.ConnectionManager" href="../../../veins/doc/neddoc/org.car2x.veins.base.connectionManager.ConnectionManager.html">connectionManager</a>.drawMaxIntfDist</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>should the maximum interference distance be displayed for each node?</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.nodes.Car" href="../../../veins/doc/neddoc/org.car2x.veins.nodes.Car.html">node</a>.<a title="org.car2x.veins.base.modules.IBaseApplLayer" href="../../../veins/doc/neddoc/org.car2x.veins.base.modules.IBaseApplLayer.html">appl</a>.headerLength</td>
+      <td>int</td>
+      <td></td>
+      <td>
+<p>length of the application message header (in bits)</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.nodes.Car" href="../../../veins/doc/neddoc/org.car2x.veins.nodes.Car.html">node</a>.<a title="org.car2x.veins.base.modules.IMobility" href="../../../veins/doc/neddoc/org.car2x.veins.base.modules.IMobility.html">veinsmobility</a>.x</td>
+      <td>double</td>
+      <td></td>
+      <td>
+<p>x coordinate of the nodes' position (-1 = random)</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.nodes.Car" href="../../../veins/doc/neddoc/org.car2x.veins.nodes.Car.html">node</a>.<a title="org.car2x.veins.base.modules.IMobility" href="../../../veins/doc/neddoc/org.car2x.veins.base.modules.IMobility.html">veinsmobility</a>.y</td>
+      <td>double</td>
+      <td></td>
+      <td>
+<p>y coordinate of the nodes' position (-1 = random)</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="org.car2x.veins.nodes.Car" href="../../../veins/doc/neddoc/org.car2x.veins.nodes.Car.html">node</a>.<a title="org.car2x.veins.base.modules.IMobility" href="../../../veins/doc/neddoc/org.car2x.veins.base.modules.IMobility.html">veinsmobility</a>.z</td>
+      <td>double</td>
+      <td></td>
+      <td>
+<p>z coordinate of the nodes' position (-1 = random)</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Source code</h3>
+<pre class="src dark-bg">
+<span style="color: #8b814c; font-weight: bold; ">network</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">BangaloreScenario</span><span style="color: #cccccc; ">
+{
+    </span><span style="color: #8b814c; font-weight: bold; ">parameters</span><span style="color: #cccccc; ">:
+        </span><span style="color: #808080; font-style: italic; ">// Playground size parameters (will be overridden by TraCI based on SUMO map boundaries)
+//        double playgroundSizeX @unit(m);
+//        double playgroundSizeY @unit(m);
+//        double playgroundSizeZ @unit(m);
+//        @display(&quot;bgb=$playgroundSizeX,$playgroundSizeY&quot;);
+</span><span style="color: #cccccc; ">
+        </span><span style="color: #808080; font-style: italic; ">//	
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// Playground size parameters (will be overridden by TraCI based on SUMO map boundaries)
+</span><span style="color: #cccccc; ">        </span><span style="color: #008080; font-weight: bold; ">double</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">playgroundSizeX</span><span style="color: #cccccc; "> </span><span style="color: #cdc673; font-weight: bold; ">@unit</span><span style="color: #cccccc; ">(</span><span style="color: #cccccc; ">m</span><span style="color: #cccccc; ">);
+        </span><span style="color: #008080; font-weight: bold; ">double</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">playgroundSizeY</span><span style="color: #cccccc; "> </span><span style="color: #cdc673; font-weight: bold; ">@unit</span><span style="color: #cccccc; ">(</span><span style="color: #cccccc; ">m</span><span style="color: #cccccc; ">);
+        </span><span style="color: #008080; font-weight: bold; ">double</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">playgroundSizeZ</span><span style="color: #cccccc; "> </span><span style="color: #cdc673; font-weight: bold; ">@unit</span><span style="color: #cccccc; ">(</span><span style="color: #cccccc; ">m</span><span style="color: #cccccc; ">);
+        </span><span style="color: #808080; font-style: italic; ">// Comment out or remove the original line:
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// @display(&quot;bgb=$playgroundSizeX,$playgroundSizeY&quot;);
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// Add this line as a workaround:
+</span><span style="color: #cccccc; ">        </span><span style="color: #cdc673; font-weight: bold; ">@display</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">&quot;bgb=dropUnit($playgroundSizeX),dropUnit($playgroundSizeY)&quot;</span><span style="color: #cccccc; ">);
+        </span><span style="color: #808080; font-style: italic; ">// &lt;-- Use dimensionless numbers for background size
+</span><span style="color: #cccccc; ">
+        </span><span style="color: #808080; font-style: italic; ">// This parameter will be set by the TraCIScenarioManagerLaunchd
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// to the number of vehicles in the SUMO route file.
+</span><span style="color: #cccccc; ">        </span><span style="color: #008080; font-weight: bold; ">int</span><span style="color: #cccccc; "> </span><span style="color: #cccccc; ">numCars</span><span style="color: #cccccc; ">;
+
+    </span><span style="color: #8b814c; font-weight: bold; ">submodules</span><span style="color: #cccccc; ">:
+        </span><span style="color: #808080; font-style: italic; ">// The TraCI Scenario Manager module connects to SUMO and manages vehicles
+</span><span style="color: #cccccc; ">
+        </span><span style="color: #cccccc; ">manager</span><span style="color: #cccccc; ">: </span><span style="color: #cccccc; ">TraCIScenarioManagerLaunchd</span><span style="color: #cccccc; "> {
+            </span><span style="color: #8b814c; font-weight: bold; ">parameters</span><span style="color: #cccccc; ">:
+                </span><span style="color: #cdc673; font-weight: bold; ">@display</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">&quot;p=697,451&quot;</span><span style="color: #cccccc; ">);
+        }
+        </span><span style="color: #cccccc; ">world</span><span style="color: #cccccc; ">: </span><span style="color: #cccccc; ">BaseWorldUtility</span><span style="color: #cccccc; "> {
+            </span><span style="color: #8b814c; font-weight: bold; ">parameters</span><span style="color: #cccccc; ">:
+                </span><span style="color: #cccccc; ">playgroundSizeX</span><span style="color: #cccccc; "> = </span><span style="color: #cccccc; ">veins_eval_by_version</span><span style="color: #cccccc; ">(</span><span style="color: #cccccc; ">veins_omnetpp_buildnum</span><span style="color: #cccccc; ">(), </span><span style="color: #7ccd7c; ">&quot;playgroundSizeX&quot;</span><span style="color: #cccccc; ">, </span><span style="color: #7ccd7c; ">1525</span><span style="color: #cccccc; ">, </span><span style="color: #7ccd7c; ">&quot;parent.playgroundSizeX&quot;</span><span style="color: #cccccc; ">);
+                </span><span style="color: #cccccc; ">playgroundSizeY</span><span style="color: #cccccc; "> = </span><span style="color: #cccccc; ">veins_eval_by_version</span><span style="color: #cccccc; ">(</span><span style="color: #cccccc; ">veins_omnetpp_buildnum</span><span style="color: #cccccc; ">(), </span><span style="color: #7ccd7c; ">&quot;playgroundSizeY&quot;</span><span style="color: #cccccc; ">, </span><span style="color: #7ccd7c; ">1525</span><span style="color: #cccccc; ">, </span><span style="color: #7ccd7c; ">&quot;parent.playgroundSizeY&quot;</span><span style="color: #cccccc; ">);
+                </span><span style="color: #cccccc; ">playgroundSizeZ</span><span style="color: #cccccc; "> = </span><span style="color: #cccccc; ">veins_eval_by_version</span><span style="color: #cccccc; ">(</span><span style="color: #cccccc; ">veins_omnetpp_buildnum</span><span style="color: #cccccc; ">(), </span><span style="color: #7ccd7c; ">&quot;playgroundSizeZ&quot;</span><span style="color: #cccccc; ">, </span><span style="color: #7ccd7c; ">1525</span><span style="color: #cccccc; ">, </span><span style="color: #7ccd7c; ">&quot;parent.playgroundSizeZ&quot;</span><span style="color: #cccccc; ">);
+                </span><span style="color: #cdc673; font-weight: bold; ">@display</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">&quot;p=30,0;i=misc/globe&quot;</span><span style="color: #cccccc; ">);
+        }
+        </span><span style="color: #808080; font-style: italic; ">// Obstacle module (include only if you are using obstacles)
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">//        obstacles: ObstacleControl {
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">//            parameters:
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">//                @display(&quot;p=42,90&quot;);
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">//        }
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// Annotation manager (include only if you are using annotations)
+</span><span style="color: #cccccc; ">        </span><span style="color: #cccccc; ">annotations</span><span style="color: #cccccc; ">: </span><span style="color: #cccccc; ">AnnotationManager</span><span style="color: #cccccc; "> {
+            </span><span style="color: #8b814c; font-weight: bold; ">parameters</span><span style="color: #cccccc; ">:
+                </span><span style="color: #cdc673; font-weight: bold; ">@display</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">&quot;p=66,679&quot;</span><span style="color: #cccccc; ">);
+        }
+
+
+        </span><span style="color: #cccccc; ">roadsCanvasVisualizer</span><span style="color: #cccccc; ">: </span><span style="color: #cccccc; ">RoadsCanvasVisualizer</span><span style="color: #cccccc; "> {
+            </span><span style="color: #cdc673; font-weight: bold; ">@display</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">&quot;p=300,0&quot;</span><span style="color: #cccccc; ">);
+        }
+
+        </span><span style="color: #cccccc; ">connectionManager</span><span style="color: #cccccc; ">: </span><span style="color: #cccccc; ">ConnectionManager</span><span style="color: #cccccc; "> {
+            </span><span style="color: #8b814c; font-weight: bold; ">parameters</span><span style="color: #cccccc; ">:
+                </span><span style="color: #cdc673; font-weight: bold; ">@display</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">&quot;p=631,138&quot;</span><span style="color: #cccccc; ">);
+                </span><span style="color: #808080; font-style: italic; ">// You might need to set 'maxInterfDist' here if not set in omnetpp.ini
+</span><span style="color: #cccccc; ">                </span><span style="color: #808080; font-style: italic; ">// maxInterfDist = default(2500m); // Example default value
+</span><span style="color: #cccccc; ">        }
+        </span><span style="color: #808080; font-style: italic; ">// Declare the submodule vector for the vehicle nodes.
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// The size of this vector is determined by the numCars parameter.
+</span><span style="color: #cccccc; ">        </span><span style="color: #cccccc; ">node</span><span style="color: #cccccc; ">[</span><span style="color: #cccccc; ">numCars</span><span style="color: #cccccc; ">]: </span><span style="color: #cccccc; ">Car</span><span style="color: #cccccc; "> {
+            </span><span style="color: #8b814c; font-weight: bold; ">parameters</span><span style="color: #cccccc; ">:
+                </span><span style="color: #808080; font-style: italic; ">// Use a different approach to specify applType
+</span><span style="color: #cccccc; ">                </span><span style="color: #cccccc; ">appl</span><span style="color: #cccccc; ">.</span><span style="color: #8b814c; font-weight: bold; ">typename</span><span style="color: #cccccc; "> = </span><span style="color: #7ccd7c; ">&quot;bangalore_v2v.MyBangaloreApp.MyBangaloreApp&quot;</span><span style="color: #cccccc; ">; </span><span style="color: #808080; font-style: italic; ">// &lt;-- Simplified to just the module name
+</span><span style="color: #cccccc; ">                </span><span style="color: #808080; font-style: italic; ">// Pass the broadcastInterval parameter to your application module
+</span><span style="color: #cccccc; ">                </span><span style="color: #cccccc; ">appl</span><span style="color: #cccccc; ">.</span><span style="color: #cccccc; ">broadcastInterval</span><span style="color: #cccccc; "> = </span><span style="color: #8b814c; font-weight: bold; ">default</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">1</span><span style="color: #cccccc; ">s</span><span style="color: #cccccc; ">); </span><span style="color: #808080; font-style: italic; ">// Example default value, can be overridden in omnetpp.ini
+</span><span style="color: #cccccc; ">
+                </span><span style="color: #cdc673; font-weight: bold; ">@display</span><span style="color: #cccccc; ">(</span><span style="color: #7ccd7c; ">&quot;i=vehicle/passenger;p=463,841&quot;</span><span style="color: #cccccc; ">);
+        }
+
+    </span><span style="color: #8b814c; font-weight: bold; ">connections</span><span style="color: #cccccc; "> </span><span style="color: #8b814c; font-weight: bold; ">allowunconnected</span><span style="color: #cccccc; ">:
+        </span><span style="color: #808080; font-style: italic; ">// Define connections between modules here if needed.
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// For V2V communication, connections are typically handled by the network interface cards (NICs)
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// and the connection manager, not explicitly listed here unless specific wired connections are involved.
+</span><span style="color: #cccccc; ">        </span><span style="color: #808080; font-style: italic; ">// 'allowunconnected' permits modules/gates to be unconnected.
+</span><span style="color: #cccccc; ">}
+</span></pre>
+File: <a href="simulations-bangalore_simulation-BangaloreScenario.ned.html">simulations/bangalore_simulation/BangaloreScenario.ned</a>
+<hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.svg"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+
+
+    </div><!-- doc-content -->
+  </main>
+</div>
+
+<script type="text/javascript" src="material.min.js"></script>
+</body>
+</html>

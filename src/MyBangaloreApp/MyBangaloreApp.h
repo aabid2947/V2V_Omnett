@@ -33,6 +33,22 @@ public:
     virtual void finish() override;
 //private:
 //    std::ofstream logFile;
+protected:
+    // Timer for periodic broadcasts
+    omnetpp::cMessage* v2v_broadcast_timer = nullptr;
+
+    // Log file stream for custom logging
+    std::ofstream logFile;
+
+    // Counters for logging total statistics
+    unsigned long messagesSent;
+    unsigned long totalBytesTransmitted;
+    unsigned long messagesReceived;
+    unsigned long totalBytesReceived;
+
+public:
+    // Destructor
+    virtual ~MyBangaloreApp(); // Make sure you have a destructor defined
 
 protected:
     // Use veins:: prefix for message types in signatures
@@ -45,7 +61,9 @@ protected:
 
     simtime_t broadcastInterval;
     cMessage* broadcastTimer;
-    std::ofstream logFile;
+
+
+
 
     virtual void sendBroadcast();
 };
