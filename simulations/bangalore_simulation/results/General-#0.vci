@@ -1,0 +1,108 @@
+file 91612 1746337747                                           
+version 3
+run General-0-20250504-11:17:43-13604
+attr configname General
+attr datetime 20250504-11:17:43
+attr datetimef 20250504-111743
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network BangaloreScenario
+attr processid 13604
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../../../OneDrive/Desktop/veins/images
+config network BangaloreScenario
+config sim-time-limit 3600s
+config *.manager.updateInterval 0.1s
+config *.manager.host "\"localhost\""
+config *.manager.port 9999
+config *.manager.moduleType "\"org.car2x.veins.nodes.Car\""
+config *.manager.moduleName "\"node\""
+config *.manager.autoShutdown true
+config *.manager.launchConfig "xmldoc(\"bangalore.launchd.xml\")"
+config *.**.BangaloreScenario.worldUtility.playgroundSizeX 3000m
+config *.**.BangaloreScenario.worldUtility.playgroundSizeY 3000m
+config *.**.BangaloreScenario.worldUtility.playgroundSizeZ 50m
+config *.**.BangaloreScenar.playgroundSizeX 3000m
+config *.**.BangaloreScenar.playgroundSizeY 3000m
+config *.**.BangaloreScenar.playgroundSizeZ 50m
+config *.node[*].mobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+config *.node[*].mobility.updateInterval 0.1s
+config *.node[*].applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+config *.node[*].nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+config *.node[*].nic.phy80211p.usePropagationDelay true
+config *.node[*].nic.phy80211p.thermalNoise -110dBm
+config *.node[*].nic.phy80211p.sensitivity -89dBm
+config *.node[*].nic.phy80211p.maxTXPower 20mW
+config *.node[*].nic.mac1609_4.useServiceChannel false
+config *.node[*].nic.mac1609_4.txPower 10mW
+config *.node[*].nic.mac1609_4.bitrate 6Mbps
+config *.node[*].veinsmobility.x 0
+config *.node[*].veinsmobility.y 0
+config *.node[*].veinsmobility.z 0
+config *.node[*].appl.broadcastInterval 1s
+config BangaloreScenario.numCars 0
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor 0dBm
+config *.**.nic.phy80211p.minPowerLevel 0dBm
+config *.connectionManager.sendDirect false
+config *.connectionManager.maxInterfDist 2500m
+
+vector 0 BangaloreScenario.node[0].nic.phy80211p RadioState ETV
+vector 1 BangaloreScenario.node[0].nic.phy80211p RadioChannel ETV
+vector 2 BangaloreScenario.manager posx ETV
+vector 3 BangaloreScenario.manager posy ETV
+vector 4 BangaloreScenario.manager speed ETV
+vector 5 BangaloreScenario.manager acceleration ETV
+vector 6 BangaloreScenario.manager co2emission ETV
+vector 7 BangaloreScenario.node[1].nic.phy80211p RadioState ETV
+vector 8 BangaloreScenario.node[1].nic.phy80211p RadioChannel ETV
+vector 9 BangaloreScenario.manager posx ETV
+vector 10 BangaloreScenario.manager posy ETV
+vector 11 BangaloreScenario.manager speed ETV
+vector 12 BangaloreScenario.manager acceleration ETV
+vector 13 BangaloreScenario.manager co2emission ETV
+vector 14 BangaloreScenario.node[2].nic.phy80211p RadioState ETV
+vector 15 BangaloreScenario.node[2].nic.phy80211p RadioChannel ETV
+vector 16 BangaloreScenario.manager posx ETV
+vector 17 BangaloreScenario.manager posy ETV
+vector 18 BangaloreScenario.manager speed ETV
+vector 19 BangaloreScenario.manager acceleration ETV
+vector 20 BangaloreScenario.manager co2emission ETV
+6	3539 4101 4 259 0.3 16.5 163 0.973 11.312966666609 629.65976728834 3446.1882260617
+5	7640 4479 4 259 0.3 16.5 163 -1.1444693833357 2.5755732625723 151.44040237978 329.73345727938
+4	12119 4376 3 259 0.2 16.5 164 0.25286542447004 15.50539213046 1932.712804565 26609.931791353
+3	16495 2765 2 259 0.1 16.5 165 123.4 126.6 20565.8 2563747.4
+2	19260 4383 2 259 0.1 16.5 165 26.628719543501 124.56216676612 11218.41448433 905520.18314618
+vector 21 BangaloreScenario.node[3].nic.phy80211p RadioState ETV
+vector 22 BangaloreScenario.node[3].nic.phy80211p RadioChannel ETV
+vector 23 BangaloreScenario.manager posx ETV
+vector 24 BangaloreScenario.manager posy ETV
+vector 25 BangaloreScenario.manager speed ETV
+vector 26 BangaloreScenario.manager acceleration ETV
+vector 27 BangaloreScenario.manager co2emission ETV
+13	24023 4472 70 358 5.3 22 168 0.973 10.279927885303 597.96477814613 2985.1769698842
+12	28495 4917 70 358 5.3 22 168 -0.93076490308158 2.5878362877294 142.58144268878 313.70882902408
+11	33412 4785 69 358 5.2 22 169 0.25243374271388 14.559758295407 1935.4412642784 25391.373888505
+10	38197 3130 68 358 5.1 22 170 123.4 126.6 21198.8 2643885.2
+9	41327 4633 68 358 5.1 22 170 26.355873572162 124.97149504794 11673.494732257 949733.1735609
+20	45960 4616 149 434 10.3 27.2 170 0.973 10.568707479794 592.39455228638 2937.1182265454
+19	50576 5028 149 434 10.3 27.2 170 -1.2341583414469 2.5938958732877 139.35204018098 317.66771454936
+18	55604 4909 148 434 10.2 27.2 171 0.2563235095269 14.30632685778 1946.5048668344 25234.733310836
+17	60513 3234 147 434 10.1 27.2 172 123.4 126.6 21452 2675940.32
+16	63747 4929 147 434 10.1 27.2 172 25.249513316559 124.90418891164 11811.471543536 962183.28826286
+27	68676 4625 264 513 16.8 33.9 172 0.973 9.2664752854777 586.11051397931 2778.0033027304
+26	73301 5093 264 513 16.8 33.9 172 -1.032651986042 2.5847716940334 137.70243292111 303.93067638787
+25	78394 4962 261 513 16.7 33.9 173 0.25259045614977 14.101345960587 1941.2394445867 24896.380436334
+24	83356 3272 260 513 16.6 33.9 174 123.4 126.6 21698.8 2706395.44
+23	86628 4982 260 513 16.6 33.9 174 25.77605554133 124.52281489973 11944.918365534 973393.31647382
+

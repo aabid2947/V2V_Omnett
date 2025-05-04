@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+    <!-- This is a very minimal network file with just one junction and two roads -->
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,100.00,100.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id="e1" from="j1" to="j2" priority="1">
+        <lane id="e1_0" index="0" speed="13.89" length="100.00" shape="0.00,1.60 100.00,1.60"/>
+    </edge>
+
+    <edge id="e2" from="j2" to="j1" priority="1">
+        <lane id="e2_0" index="0" speed="13.89" length="100.00" shape="100.00,-1.60 0.00,-1.60"/>
+    </edge>
+
+    <junction id="j1" type="priority" x="0.00" y="0.00" incLanes="e2_0" intLanes="" shape="0.00,3.20 0.00,0.00 0.00,-3.20">
+        <request index="0" response="0" foes="0"/>
+    </junction>
+
+    <junction id="j2" type="priority" x="100.00" y="0.00" incLanes="e1_0" intLanes="" shape="100.00,0.00 100.00,3.20 100.00,-3.20">
+        <request index="0" response="0" foes="0"/>
+    </junction>
+
+    <connection from="e1" to="e2" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from="e2" to="e1" fromLane="0" toLane="0" dir="t" state="M"/>
+
+</net>
