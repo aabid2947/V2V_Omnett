@@ -1,0 +1,792 @@
+file 3524525 1746451560                                         
+version 3
+run LowLat_MediumBW-0-20250505-18:54:41-1276
+attr configname LowLat_MediumBW
+attr datetime 20250505-18:54:41
+attr datetimef 20250505-185441
+attr experiment LowLat_MediumBW
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network BangaloreScenario
+attr processid 1276
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../../../OneDrive/Desktop/veins/images
+config description "Low Latency (5ms), Medium Bandwidth (10Mbps)"
+config **.serverChannel.delay 5ms
+config **.serverChannel.datarate 10Mbps
+config network BangaloreScenario
+config sim-time-limit 300s
+config repeat 5
+config *.manager.updateInterval 0.1s
+config *.manager.host "\"localhost\""
+config *.manager.port 9999
+config *.manager.moduleType "\"org.car2x.veins.nodes.Car\""
+config *.manager.moduleName "\"node\""
+config *.manager.autoShutdown true
+config *.manager.launchConfig "xmldoc(\"bangalore.launchd.xml\")"
+config *.**.scalar-recording true
+config *.**.vector-recording true
+config *.**.BangaloreScenario.worldUtility.playgroundSizeX 3000m
+config *.**.BangaloreScenario.worldUtility.playgroundSizeY 3000m
+config *.**.BangaloreScenario.worldUtility.playgroundSizeZ 50m
+config *.**.BangaloreScenario.playgroundSizeX 3000m
+config *.**.BangaloreScenario.playgroundSizeY 3000m
+config *.**.BangaloreScenario.playgroundSizeZ 50m
+config *.node[*].veinsmobility.setHostState false
+config *.node[*].veinsmobility.setHostSpeed false
+config *.node[*].mobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+config *.node[*].mobility.updateInterval 0.1s
+config *.node[*].mobility.setHostState false
+config *.node[*].applType "\"bangalore_v2v.MyBangaloreApp.MyBangaloreApp\""
+config *.node[*].nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+config *.node[*].nic.phy80211p.usePropagationDelay true
+config *.node[*].nic.phy80211p.thermalNoise -110dBm
+config *.node[*].nic.phy80211p.sensitivity -95dBm
+config *.node[*].nic.phy80211p.maxTXPower 20mW
+config *.node[*].veinsmobility.x 0
+config *.node[*].veinsmobility.y 0
+config *.node[*].veinsmobility.z 0
+config *.node[*].appl.broadcastInterval 1s
+config *.node[*].appl.periodicLoggingInterval 0.1s
+config *.node[*].appl.safetyDistanceThreshold 10m
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config BangaloreScenario.numCars 0
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.connectionManager.sendDirect false
+config *.connectionManager.maxInterfDist 10000m
+config **.serverChannel.delay 5ms
+config **.serverChannel.datarate 100Mbps
+
+vector 0 BangaloreScenario.node[0].nic.phy80211p RadioState ETV
+vector 1 BangaloreScenario.node[0].nic.phy80211p RadioChannel ETV
+vector 2 BangaloreScenario.manager posx ETV
+vector 3 BangaloreScenario.manager posy ETV
+vector 4 BangaloreScenario.manager speed ETV
+vector 5 BangaloreScenario.manager acceleration ETV
+vector 6 BangaloreScenario.manager co2emission ETV
+vector 7 BangaloreScenario.node[1].nic.phy80211p RadioState ETV
+vector 8 BangaloreScenario.node[1].nic.phy80211p RadioChannel ETV
+vector 9 BangaloreScenario.manager posx ETV
+vector 10 BangaloreScenario.manager posy ETV
+vector 11 BangaloreScenario.manager speed ETV
+vector 12 BangaloreScenario.manager acceleration ETV
+vector 13 BangaloreScenario.manager co2emission ETV
+vector 14 BangaloreScenario.node[2].nic.phy80211p RadioState ETV
+vector 15 BangaloreScenario.node[2].nic.phy80211p RadioChannel ETV
+vector 16 BangaloreScenario.manager posx ETV
+vector 17 BangaloreScenario.manager posy ETV
+vector 18 BangaloreScenario.manager speed ETV
+vector 19 BangaloreScenario.manager acceleration ETV
+vector 20 BangaloreScenario.manager co2emission ETV
+vector 21 BangaloreScenario.node[3].nic.phy80211p RadioState ETV
+vector 22 BangaloreScenario.node[3].nic.phy80211p RadioChannel ETV
+vector 23 BangaloreScenario.manager posx ETV
+vector 24 BangaloreScenario.manager posy ETV
+vector 25 BangaloreScenario.manager speed ETV
+vector 26 BangaloreScenario.manager acceleration ETV
+vector 27 BangaloreScenario.manager co2emission ETV
+vector 28 BangaloreScenario.node[4].nic.phy80211p RadioState ETV
+vector 29 BangaloreScenario.node[4].nic.phy80211p RadioChannel ETV
+vector 30 BangaloreScenario.manager posx ETV
+vector 31 BangaloreScenario.manager posy ETV
+vector 32 BangaloreScenario.manager speed ETV
+vector 33 BangaloreScenario.manager acceleration ETV
+vector 34 BangaloreScenario.manager co2emission ETV
+vector 35 BangaloreScenario.node[5].nic.phy80211p RadioState ETV
+vector 36 BangaloreScenario.node[5].nic.phy80211p RadioChannel ETV
+vector 37 BangaloreScenario.manager posx ETV
+vector 38 BangaloreScenario.manager posy ETV
+vector 39 BangaloreScenario.manager speed ETV
+vector 40 BangaloreScenario.manager acceleration ETV
+vector 41 BangaloreScenario.manager co2emission ETV
+vector 42 BangaloreScenario.node[6].nic.phy80211p RadioState ETV
+vector 43 BangaloreScenario.node[6].nic.phy80211p RadioChannel ETV
+vector 44 BangaloreScenario.manager posx ETV
+vector 45 BangaloreScenario.manager posy ETV
+vector 46 BangaloreScenario.manager speed ETV
+vector 47 BangaloreScenario.manager acceleration ETV
+vector 48 BangaloreScenario.manager co2emission ETV
+6	5594 7911 6 8040 0.3 31.1 309 0.973 17.868216541173 1642.0292960879 14012.533208181
+5	13505 8213 6 8040 0.3 31.1 309 -4.5 2.5999174537603 111.78936730105 1909.2717941297
+4	21718 8635 4 8040 0.2 31.1 310 0.24714285032102 24.794549958147 3999.1540940908 62918.621137355
+3	30353 8663 2 8040 0.1 31.1 311 396.74225784379 650.23318619794 172252.46512282 98056736.976154
+2	39016 8675 2 8040 0.1 31.1 311 191.86254522036 353.61974811072 92236.123859357 28332969.11011
+13	47691 6989 198 8138 5.3 31.2 260 0.973 10.644276683442 1002.7303667468 5697.1011563669
+12	54680 7562 198 8138 5.3 31.2 260 -4.5 2.6 142.7784420037 941.70694082473
+11	62242 7635 195 8138 5.2 31.2 261 0.25599684562138 14.5622414484 2967.6948463476 37610.386865009
+10	69877 7664 192 8138 5.1 31.2 262 455.95673837358 631.7088406912 152463.22750422 89418888.334585
+9	77541 7394 192 8138 5.1 31.2 262 29.478793456033 190.9138256017 31736.401984892 4564973.0760792
+vector 49 BangaloreScenario.node[7].nic.phy80211p RadioState ETV
+vector 50 BangaloreScenario.node[7].nic.phy80211p RadioChannel ETV
+vector 51 BangaloreScenario.manager posx ETV
+vector 52 BangaloreScenario.manager posy ETV
+vector 53 BangaloreScenario.manager speed ETV
+vector 54 BangaloreScenario.manager acceleration ETV
+vector 55 BangaloreScenario.manager co2emission ETV
+vector 56 BangaloreScenario.node[8].nic.phy80211p RadioState ETV
+vector 57 BangaloreScenario.node[8].nic.phy80211p RadioChannel ETV
+vector 58 BangaloreScenario.manager posx ETV
+vector 59 BangaloreScenario.manager posy ETV
+vector 60 BangaloreScenario.manager speed ETV
+vector 61 BangaloreScenario.manager acceleration ETV
+vector 62 BangaloreScenario.manager co2emission ETV
+20	85695 8608 650 13729 10.3 42 318 0.973 10.574377401742 1109.9847538717 5702.1262353447
+19	94303 9288 650 13729 10.3 42 318 -4.5 2.6 87.691312536795 1346.5727042586
+18	103591 9480 646 13729 10.2 42 319 0.25121549153933 14.305810632597 3398.2150545805 40732.871035512
+17	113071 9539 642 13729 10.1 42 320 459.36607144886 668.61089508367 186045.65854686 109584717.43784
+16	122610 9537 642 13729 10.1 42 320 141.88190278166 303.5505381706 63866.785103515 13599624.342565
+vector 63 BangaloreScenario.node[9].nic.phy80211p RadioState ETV
+vector 64 BangaloreScenario.node[9].nic.phy80211p RadioChannel ETV
+vector 65 BangaloreScenario.manager posx ETV
+vector 66 BangaloreScenario.manager posy ETV
+vector 67 BangaloreScenario.manager speed ETV
+vector 68 BangaloreScenario.manager acceleration ETV
+vector 69 BangaloreScenario.manager co2emission ETV
+vector 70 BangaloreScenario.node[10].nic.phy80211p RadioState ETV
+vector 71 BangaloreScenario.node[10].nic.phy80211p RadioChannel ETV
+vector 72 BangaloreScenario.manager posx ETV
+vector 73 BangaloreScenario.manager posy ETV
+vector 74 BangaloreScenario.manager speed ETV
+vector 75 BangaloreScenario.manager acceleration ETV
+vector 76 BangaloreScenario.manager co2emission ETV
+34	132909 8826 2847 20553 20.3 52.4 322 0.973 8.953549465407 1034.4657099795 4763.7704841284
+33	141735 9604 2847 20553 20.3 52.4 322 -4.5 2.6 103.27659081287 1385.1556155929
+32	151339 9723 2841 20553 20.2 52.4 323 0.24937594743702 12.265934383503 2795.5164631766 27218.075542263
+31	161062 9781 2802 20553 20.1 52.4 324 591.50705386113 650.22135677988 200948.43116618 124739531.21553
+30	170843 9790 2802 20553 20.1 52.4 324 191.81006494467 312.97689227087 82311.960637257 21479925.589665
+vector 77 BangaloreScenario.node[11].nic.phy80211p RadioState ETV
+vector 78 BangaloreScenario.node[11].nic.phy80211p RadioChannel ETV
+vector 79 BangaloreScenario.manager posx ETV
+vector 80 BangaloreScenario.manager posy ETV
+vector 81 BangaloreScenario.manager speed ETV
+vector 82 BangaloreScenario.manager acceleration ETV
+vector 83 BangaloreScenario.manager co2emission ETV
+48	181015 6890 7648 22945 30.7 55.6 250 0.973 9.5503306156743 815.74681910551 3925.8046022188
+47	187905 7300 7648 22945 30.7 55.6 250 -4.5 2.6 65.354090557211 1333.2262035312
+46	195205 7590 7595 22945 30.6 55.6 251 0.24775651352853 13.129700970156 2009.7824468832 19105.834394298
+45	202795 7671 7587 22945 30.5 55.6 252 589.87758676851 671.06997147357 156560.28788581 97443655.106078
+44	210466 7661 7587 22945 30.5 55.6 252 193.49224634261 312.99800410157 66279.756346268 17976981.092598
+41	218127 8619 4805 23344 25.3 56 308 0.973 18.732045774252 1752.3239176729 15330.568322705
+40	226746 8673 4805 23344 25.3 56 308 -4.5 2.6 119.24407682031 2131.3551899164
+39	235419 9366 4798 23344 25.2 56 309 0.25936657659966 25.628219418374 3966.7491771413 61193.93370839
+38	244785 9405 4752 23344 25.1 56 310 557.63378167427 832.54273593684 206123.43200659 140283606.58501
+37	254190 9406 4752 23344 25.1 56 310 198.65537204187 325.83611514094 86537.459422638 24563749.464609
+69	263596 3498 15502 23798 45.3 56.9 117 0.973 12.12801487239 630.34978760684 4225.4319239599
+68	267094 3460 15502 23798 45.3 56.9 117 -4.5 2.6 167.65450093268 632.29084005347
+67	270554 3629 15494 23798 45.2 56.9 118 0.24720550588868 17.012655599156 1032.5479690569 11122.178180924
+66	274183 3644 15351 23798 45.1 56.9 119 565.33485517809 621.36628411416 72463.903933404 44151363.024966
+65	277827 3646 15351 23798 45.1 56.9 119 144.14 205.7537521963 20832.025991889 3698832.0427135
+55	281473 6706 9719 24747 35.3 59.3 241 0.973 7.7758238340471 599.75744510623 2107.1868385804
+54	288179 7169 9719 24747 35.3 59.3 241 -4.5 2.6 103.28462418033 825.81916532294
+53	295348 7221 9712 24747 35.2 59.3 242 0 10.613993383971 1616.0454115307 13887.105443934
+52	302569 7453 9627 24747 35.1 59.3 243 558.11763675839 613.46246154068 143057.34009813 84300451.444771
+51	310022 7448 9627 24747 35.1 59.3 243 214.54640293865 325.87975969371 72311.69711974 21783036.826748
+vector 84 BangaloreScenario.node[12].nic.phy80211p RadioState ETV
+vector 85 BangaloreScenario.node[12].nic.phy80211p RadioChannel ETV
+vector 86 BangaloreScenario.manager posx ETV
+vector 87 BangaloreScenario.manager posy ETV
+vector 88 BangaloreScenario.manager speed ETV
+vector 89 BangaloreScenario.manager acceleration ETV
+vector 90 BangaloreScenario.manager co2emission ETV
+vector 91 BangaloreScenario.node[13].nic.phy80211p RadioState ETV
+vector 92 BangaloreScenario.node[13].nic.phy80211p RadioChannel ETV
+vector 93 BangaloreScenario.manager posx ETV
+vector 94 BangaloreScenario.manager posy ETV
+vector 95 BangaloreScenario.manager speed ETV
+vector 96 BangaloreScenario.manager acceleration ETV
+vector 97 BangaloreScenario.manager co2emission ETV
+vector 98 BangaloreScenario.node[14].nic.phy80211p RadioState ETV
+vector 99 BangaloreScenario.node[14].nic.phy80211p RadioChannel ETV
+vector 100 BangaloreScenario.manager posx ETV
+vector 101 BangaloreScenario.manager posy ETV
+vector 102 BangaloreScenario.manager speed ETV
+vector 103 BangaloreScenario.manager acceleration ETV
+vector 104 BangaloreScenario.manager co2emission ETV
+62	318621 8891 12468 30555 40.3 71.4 312 0.973 10.064653400125 958.1489445273 4205.0697664713
+61	327512 9967 12468 30555 40.3 71.4 312 -1.1934291181853 2.5928338611498 142.95215711833 362.42842141384
+60	337479 9605 12460 30555 40.2 71.4 313 0.25782265218766 14.641401988282 4044.7867104521 56337.021470532
+59	347084 9632 12317 30555 40.1 71.4 314 335.83125807011 600.04310512969 141853.14784412 66706862.198917
+58	356716 9637 12317 30555 40.1 71.4 314 147.87670745677 348.68879485394 66850.311111035 15209438.768097
+76	366353 5538 20484 30648 52.2 71.6 195 0.973 10.57983449804 835.50481269696 5105.9348231505
+75	371891 5853 20484 30648 52.2 71.6 195 -4.5 2.6 133.5913968661 907.69665818723
+74	377744 6022 20322 30648 52.1 71.6 196 0.25875277706515 15.631494886524 2028.2128449593 24550.90537628
+73	383766 6042 20313 30648 52 71.6 197 613.59 693.22471167807 125760.7172299 80373724.805254
+72	389808 6026 20313 30648 52 71.6 197 144.14 303.55745075699 45255.973959748 11101785.026135
+vector 105 BangaloreScenario.node[15].nic.phy80211p RadioState ETV
+vector 106 BangaloreScenario.node[15].nic.phy80211p RadioChannel ETV
+vector 107 BangaloreScenario.manager posx ETV
+vector 108 BangaloreScenario.manager posy ETV
+vector 109 BangaloreScenario.manager speed ETV
+vector 110 BangaloreScenario.manager acceleration ETV
+vector 111 BangaloreScenario.manager co2emission ETV
+vector 112 BangaloreScenario.node[16].nic.phy80211p RadioState ETV
+vector 113 BangaloreScenario.node[16].nic.phy80211p RadioChannel ETV
+vector 114 BangaloreScenario.manager posx ETV
+vector 115 BangaloreScenario.manager posy ETV
+vector 116 BangaloreScenario.manager speed ETV
+vector 117 BangaloreScenario.manager acceleration ETV
+vector 118 BangaloreScenario.manager co2emission ETV
+90	396612 5895 25100 35381 60.3 81.1 209 0.973 8.7663431185409 743.94603518068 3705.8206045391
+89	402507 6238 25100 35381 60.3 81.1 209 -4.5 2.6 116.78829708185 964.4440013035
+88	408745 6429 25028 35381 60.2 81.1 210 0.2543113662703 12.939095694681 1757.7489355313 16723.770188506
+87	415174 6452 24956 35381 60.1 81.1 211 586.62772123525 618.18548075441 127584.48657952 77167829.063841
+86	421626 6467 24956 35381 60.1 81.1 211 154.29796392077 304.71871512005 48418.037454442 11582515.989335
+vector 119 BangaloreScenario.node[17].nic.phy80211p RadioState ETV
+vector 120 BangaloreScenario.node[17].nic.phy80211p RadioChannel ETV
+vector 121 BangaloreScenario.manager posx ETV
+vector 122 BangaloreScenario.manager posy ETV
+vector 123 BangaloreScenario.manager speed ETV
+vector 124 BangaloreScenario.manager acceleration ETV
+vector 125 BangaloreScenario.manager co2emission ETV
+97	428482 5992 27076 38158 65.3 86 208 0.973 9.282142924796 651.29771622182 2851.5384143443
+96	434474 6620 27076 38158 65.3 86 208 -1.1965322091244 2.5849659842206 133.89569763705 309.66713552555
+95	441094 6421 26991 38158 65.2 86 209 0.25124901778973 13.701566872231 2400.6931542681 30595.584946617
+94	447515 6445 26906 38158 65.1 86 210 331.44017090311 439.84445032941 77905.748292687 29045323.082796
+93	453960 6437 26906 38158 65.1 86 210 192.32507109692 345.27531297286 55520.690424685 15267695.941464
+vector 126 BangaloreScenario.node[18].nic.phy80211p RadioState ETV
+vector 127 BangaloreScenario.node[18].nic.phy80211p RadioChannel ETV
+vector 128 BangaloreScenario.manager posx ETV
+vector 129 BangaloreScenario.manager posy ETV
+vector 130 BangaloreScenario.manager speed ETV
+vector 131 BangaloreScenario.manager acceleration ETV
+vector 132 BangaloreScenario.manager co2emission ETV
+vector 133 BangaloreScenario.node[19].nic.phy80211p RadioState ETV
+vector 134 BangaloreScenario.node[19].nic.phy80211p RadioChannel ETV
+vector 135 BangaloreScenario.manager posx ETV
+vector 136 BangaloreScenario.manager posy ETV
+vector 137 BangaloreScenario.manager speed ETV
+vector 138 BangaloreScenario.manager acceleration ETV
+vector 139 BangaloreScenario.manager co2emission ETV
+83	461175 12539 22663 48377 55.3 100 448 0.973 11.619754154868 1584.5607898012 8466.4574499064
+82	473714 13789 22663 48377 55.3 100 448 -4.5 2.6 159.67169810551 1509.0976998271
+81	487503 13764 22654 48377 55.2 100 449 0.24754462761804 16.214714438169 4785.8452512507 54879.293405572
+80	501267 13797 22492 48377 55.1 100 450 480.66234187983 653.50952802077 269763.358287 162865803.27153
+79	515064 13805 22492 48377 55.1 100 450 60.074095621445 324.90967752236 72980.122009876 15528015.072927
+27	528869 23476 1509 48639 15.3 100.3 851 0.30269655791701 16.51142442229 3141.6423608201 19386.561984638
+26	552345 25599 1509 48639 15.3 100.3 851 -4.5 2.6 138.00395370644 3076.4909474275
+25	577944 25940 1504 48639 15.2 100.3 852 0.25608864674508 22.554347954374 10873.426942913 152940.46216114
+24	603884 25966 1472 48639 15.1 100.3 853 331.70363538339 653.4547177886 445047.33333962 241181773.98837
+23	629850 25976 1472 48639 15.1 100.3 853 64.880364988982 357.40825184589 173008.94883217 43605925.558769
+vector 140 BangaloreScenario.node[20].nic.phy80211p RadioState ETV
+vector 141 BangaloreScenario.node[20].nic.phy80211p RadioChannel ETV
+vector 142 BangaloreScenario.manager posx ETV
+vector 143 BangaloreScenario.manager posy ETV
+vector 144 BangaloreScenario.manager speed ETV
+vector 145 BangaloreScenario.manager acceleration ETV
+vector 146 BangaloreScenario.manager co2emission ETV
+vector 147 BangaloreScenario.node[21].nic.phy80211p RadioState ETV
+vector 148 BangaloreScenario.node[21].nic.phy80211p RadioChannel ETV
+vector 149 BangaloreScenario.manager posx ETV
+vector 150 BangaloreScenario.manager posy ETV
+vector 151 BangaloreScenario.manager speed ETV
+vector 152 BangaloreScenario.manager acceleration ETV
+vector 153 BangaloreScenario.manager co2emission ETV
+vector 154 BangaloreScenario.node[22].nic.phy80211p RadioState ETV
+vector 155 BangaloreScenario.node[22].nic.phy80211p RadioChannel ETV
+vector 156 BangaloreScenario.manager posx ETV
+vector 157 BangaloreScenario.manager posy ETV
+vector 158 BangaloreScenario.manager speed ETV
+vector 159 BangaloreScenario.manager acceleration ETV
+vector 160 BangaloreScenario.manager co2emission ETV
+111	656993 10767 32112 57974 75.3 111.7 365 0.973 10.471849242087 1260.164297783 6532.4096033048
+110	667760 11662 32112 57974 75.3 111.7 365 -4.5 2.6 141.06393484869 1162.9266435091
+109	679422 11730 32027 57974 75.2 111.7 366 0.25566564057698 14.459388760587 4201.7981631495 53126.092155697
+108	691152 11742 31981 57974 75.1 111.7 367 447.83208765236 621.39961883869 198326.83464517 108563504.96266
+107	702894 11736 31981 57974 75.1 111.7 367 143.62321381504 236.40489708248 68766.679498429 13144361.112848
+104	714630 12635 29792 58713 70.3 112.4 422 0.35097033765687 16.703934993481 2340.7103869606 19596.319986518
+103	727265 13000 29792 58713 70.3 112.4 422 -4.5 2.6 227.53187797174 2247.3184185585
+102	740265 13476 29694 58713 70.2 112.4 423 0.25074208916328 23.051485447594 5679.4742020978 93874.523744557
+101	753741 13564 29596 58713 70.1 112.4 424 390.35008520447 653.46711193846 227836.65223489 126285069.18679
+100	767305 13566 29596 58713 70.1 112.4 424 200.09755249954 357.40222199052 132323.97310534 42311748.102074
+118	780871 9759 34867 59369 80.3 113.2 330 0.973 10.944461996208 1221.8353401594 6611.1665319975
+117	790630 10524 34867 59369 80.3 113.2 330 -4.5 2.6 143.62948665465 1401.6118717228
+116	801154 10632 34769 59369 80.2 113.2 331 0.25448834298621 14.681770232829 3313.7602985665 38083.221240465
+115	811786 10665 34671 59369 80.1 113.2 332 598.13467673431 698.02755977785 217630.3168963 142982254.42301
+114	822451 10653 34671 59369 80.1 113.2 332 152.51088940103 303.54651097022 79838.426167052 19900542.345429
+vector 161 BangaloreScenario.node[23].nic.phy80211p RadioState ETV
+vector 162 BangaloreScenario.node[23].nic.phy80211p RadioChannel ETV
+vector 163 BangaloreScenario.manager posx ETV
+vector 164 BangaloreScenario.manager posy ETV
+vector 165 BangaloreScenario.manager speed ETV
+vector 166 BangaloreScenario.manager acceleration ETV
+vector 167 BangaloreScenario.manager co2emission ETV
+139	833493 7255 44129 63346 95.3 119.3 241 0.973 9.5599816839865 758.43148016012 3348.8665080949
+138	840748 7940 44129 63346 95.3 119.3 241 -4.5 2.6 127.7306820582 593.87977133614
+137	848688 7850 44120 63346 95.2 119.3 242 0.26 13.036640725249 2502.0212278752 28825.414152634
+136	856538 7893 43958 63346 95.1 119.3 243 449.07871301787 621.3733130948 135474.2053472 76449680.773511
+135	864431 7884 43958 63346 95.1 119.3 243 145.66 236.59190470462 47859.777636052 9612161.9788
+vector 168 BangaloreScenario.node[24].nic.phy80211p RadioState ETV
+vector 169 BangaloreScenario.node[24].nic.phy80211p RadioChannel ETV
+vector 170 BangaloreScenario.manager posx ETV
+vector 171 BangaloreScenario.manager posy ETV
+vector 172 BangaloreScenario.manager speed ETV
+vector 173 BangaloreScenario.manager acceleration ETV
+vector 174 BangaloreScenario.manager co2emission ETV
+vector 175 BangaloreScenario.node[25].nic.phy80211p RadioState ETV
+vector 176 BangaloreScenario.node[25].nic.phy80211p RadioChannel ETV
+vector 177 BangaloreScenario.manager posx ETV
+vector 178 BangaloreScenario.manager posy ETV
+vector 179 BangaloreScenario.manager speed ETV
+vector 180 BangaloreScenario.manager acceleration ETV
+vector 181 BangaloreScenario.manager co2emission ETV
+vector 182 BangaloreScenario.node[26].nic.phy80211p RadioState ETV
+vector 183 BangaloreScenario.node[26].nic.phy80211p RadioChannel ETV
+vector 184 BangaloreScenario.manager posx ETV
+vector 185 BangaloreScenario.manager posy ETV
+vector 186 BangaloreScenario.manager speed ETV
+vector 187 BangaloreScenario.manager acceleration ETV
+vector 188 BangaloreScenario.manager co2emission ETV
+146	873482 9649 49292 74818 101.7 133.4 318 0.973 12.406908648275 1409.311569162 9077.625633272
+145	883131 9998 49292 74818 101.7 133.4 318 -4.5 2.6 161.80662016914 1643.6423117337
+144	893129 10402 49239 74818 101.6 133.4 319 0.24802510836488 16.430584593969 3425.2399668132 42421.739219152
+143	903531 10463 49231 74818 101.5 133.4 320 560.86712561297 695.23757105219 199326.84139525 124802431.32088
+142	913994 10465 49231 74818 101.5 133.4 320 191.84877098889 317.77795397649 81984.152357055 21597309.805732
+125	924459 14376 37652 75566 85.3 134.2 490 0.973 10.240860885279 1254.6783570705 4791.367588691
+124	938835 15894 37652 75566 85.3 134.2 490 -4.5 2.5845905452967 97.577746373489 1427.3939588149
+123	954729 15862 37644 75566 85.2 134.2 491 4.9393891862751e-05 13.56302036309 4108.3258736956 38232.841290499
+122	970591 15948 37546 75566 85.1 134.2 492 557.97415466025 653.50221118848 302571.63054152 186500854.12935
+121	986539 15935 37546 75566 85.1 134.2 492 104.32896971917 325.89140132133 118469.11391752 31036837.390142
+132	1002474 13365 40559 75566 90.3 134.2 440 0.30703164406814 18.557774297831 2607.5467788291 24166.323157728
+131	1015839 13748 40559 75566 90.3 134.2 440 -4.5 2.6 243.07752539753 2464.7805350172
+130	1029587 14233 40551 75566 90.2 134.2 441 0.24824747935915 24.60830161837 6118.6163923514 103729.63263782
+129	1043820 14344 40408 75566 90.1 134.2 442 390.33185190083 653.46580923016 239609.03606123 133777933.2458
+128	1058164 14354 40408 75566 90.1 134.2 442 157.80894089511 357.3727483952 132383.33765105 41487867.523536
+vector 189 BangaloreScenario.node[27].nic.phy80211p RadioState ETV
+vector 190 BangaloreScenario.node[27].nic.phy80211p RadioChannel ETV
+vector 191 BangaloreScenario.manager posx ETV
+vector 192 BangaloreScenario.manager posy ETV
+vector 193 BangaloreScenario.manager speed ETV
+vector 194 BangaloreScenario.manager acceleration ETV
+vector 195 BangaloreScenario.manager co2emission ETV
+vector 196 BangaloreScenario.node[28].nic.phy80211p RadioState ETV
+vector 197 BangaloreScenario.node[28].nic.phy80211p RadioChannel ETV
+vector 198 BangaloreScenario.manager posx ETV
+vector 199 BangaloreScenario.manager posy ETV
+vector 200 BangaloreScenario.manager speed ETV
+vector 201 BangaloreScenario.manager acceleration ETV
+vector 202 BangaloreScenario.manager co2emission ETV
+vector 203 BangaloreScenario.node[29].nic.phy80211p RadioState ETV
+vector 204 BangaloreScenario.node[29].nic.phy80211p RadioChannel ETV
+vector 205 BangaloreScenario.manager posx ETV
+vector 206 BangaloreScenario.manager posy ETV
+vector 207 BangaloreScenario.manager speed ETV
+vector 208 BangaloreScenario.manager acceleration ETV
+vector 209 BangaloreScenario.manager co2emission ETV
+160	1073685 11181 56523 86477 110.3 147.2 370 0.973 9.5050340569273 1253.0341863369 6118.9746054774
+159	1084866 12076 56523 86477 110.3 147.2 370 -4.5 2.6 136.38838492068 1267.1417193696
+158	1096942 12107 56513 86477 110.2 147.2 371 0.24988986866688 13.965004435054 3964.2100485088 47378.559528654
+157	1109049 12167 56389 86477 110.1 147.2 372 453.38924745415 618.16323494531 201159.24905103 110045172.84142
+156	1121216 12164 56389 86477 110.1 147.2 372 144.45499672107 232.55660655944 69850.747329264 13363692.85866
+vector 210 BangaloreScenario.node[30].nic.phy80211p RadioState ETV
+vector 211 BangaloreScenario.node[30].nic.phy80211p RadioChannel ETV
+vector 212 BangaloreScenario.manager posx ETV
+vector 213 BangaloreScenario.manager posy ETV
+vector 214 BangaloreScenario.manager speed ETV
+vector 215 BangaloreScenario.manager acceleration ETV
+vector 216 BangaloreScenario.manager co2emission ETV
+181	1133769 8072 66766 91473 125.3 152.2 270 0.973 11.185912293349 916.34258189347 4698.2123428201
+180	1141841 8598 66766 91473 125.3 152.2 270 -4.5 2.6 69.237419332807 1251.4921570711
+179	1150439 8842 66655 91473 125.2 152.2 271 0.25530053649261 15.081813781517 2756.8085004318 33357.239376207
+178	1159281 8877 66595 91473 125.1 152.2 272 609.219378514 695.31474763617 175328.67306148 113198917.88406
+177	1168158 8885 66595 91473 125.1 152.2 272 104.32896971917 303.54562814184 59582.342355059 14635288.340981
+vector 217 BangaloreScenario.node[31].nic.phy80211p RadioState ETV
+vector 218 BangaloreScenario.node[31].nic.phy80211p RadioChannel ETV
+vector 219 BangaloreScenario.manager posx ETV
+vector 220 BangaloreScenario.manager posy ETV
+vector 221 BangaloreScenario.manager speed ETV
+vector 222 BangaloreScenario.manager acceleration ETV
+vector 223 BangaloreScenario.manager co2emission ETV
+vector 224 BangaloreScenario.node[32].nic.phy80211p RadioState ETV
+vector 225 BangaloreScenario.node[32].nic.phy80211p RadioChannel ETV
+vector 226 BangaloreScenario.manager posx ETV
+vector 227 BangaloreScenario.manager posy ETV
+vector 228 BangaloreScenario.manager speed ETV
+vector 229 BangaloreScenario.manager acceleration ETV
+vector 230 BangaloreScenario.manager co2emission ETV
+174	1177821 11178 66240 102651 124.6 162.2 377 0.973 14.770950957405 1540.3030829153 10210.441551514
+173	1188999 12273 66240 102651 124.6 162.2 377 -4.5 2.6 83.675359880223 1737.5679622003
+172	1201272 12380 66187 102651 124.5 162.2 378 0.25024154849187 20.862925373278 4326.0322016289 56474.955544109
+171	1213652 12406 66089 102651 124.4 162.2 379 396.74225784379 650.22983488814 213434.48877636 123079283.7764
+170	1226058 12411 66089 102651 124.4 162.2 379 141.43882246906 353.61974811072 108338.22637881 32701468.323536
+vector 231 BangaloreScenario.node[33].nic.phy80211p RadioState ETV
+vector 232 BangaloreScenario.node[33].nic.phy80211p RadioChannel ETV
+vector 233 BangaloreScenario.manager posx ETV
+vector 234 BangaloreScenario.manager posy ETV
+vector 235 BangaloreScenario.manager speed ETV
+vector 236 BangaloreScenario.manager acceleration ETV
+vector 237 BangaloreScenario.manager co2emission ETV
+153	1238858 18062 51979 107283 105.3 166 608 0.973 9.4545385475308 1762.5501813637 7645.7456791708
+152	1256920 20020 51979 107283 105.3 166 608 -4.5 2.6 119.32369057547 1851.4563634394
+151	1276940 19945 51970 107283 105.2 166 609 0.24786707664328 12.296076259808 6102.8253339917 66954.704414286
+150	1296885 20002 51859 107283 105.1 166 610 451.1525613704 628.99157024588 345036.84088249 197351785.61747
+149	1316887 20007 51859 107283 105.1 166 610 23.477395489802 232.75840811352 89851.187737153 15668721.381196
+195	1336894 10683 76331 111351 135.3 169.5 343 0.94127115686971 17.183859435393 1940.5949668691 16775.248059099
+194	1347577 10911 76331 111351 135.3 169.5 343 -4.5 2.5999942124588 222.89843299677 1886.2148645908
+193	1358488 11272 76143 111351 135.2 169.5 344 0.2562338994178 22.666427584413 4345.3945887825 71650.363916319
+192	1369760 11359 76135 111351 135.1 169.5 345 390.34031695989 613.46502752031 174293.59877592 90219232.657077
+191	1381119 11365 76135 111351 135.1 169.5 345 316.70595828063 357.41 116797.91225475 39602719.132852
+vector 238 BangaloreScenario.node[34].nic.phy80211p RadioState ETV
+vector 239 BangaloreScenario.node[34].nic.phy80211p RadioChannel ETV
+vector 240 BangaloreScenario.manager posx ETV
+vector 241 BangaloreScenario.manager posy ETV
+vector 242 BangaloreScenario.manager speed ETV
+vector 243 BangaloreScenario.manager acceleration ETV
+vector 244 BangaloreScenario.manager co2emission ETV
+209	1392873 8735 84463 115875 145.3 173.6 284 0.973 10.180263441569 878.27861235974 4556.9705729024
+208	1401608 9567 84463 115875 145.3 173.6 284 -4.5 2.6 93.465745352345 1069.4879118198
+207	1411175 9665 84225 115875 145.2 173.6 285 0.00023007297090464 13.877635182311 1876.6511139696 19786.694507432
+206	1420840 9482 84215 115875 145.1 173.6 286 612.05821071498 664.74964285714 183867.43850524 118315479.80784
+205	1430322 9487 84215 115875 145.1 173.6 286 141.48314955815 306.7433323086 72738.518661934 19473783.69319
+167	1439809 17780 60506 116614 115.3 174.3 591 0.93429961203964 11.987424667473 2008.437030606 10575.383888605
+166	1457589 19191 60506 116614 115.3 174.3 591 -4.5 2.6 101.30601251546 2467.863871936
+165	1476780 19475 60453 116614 115.2 174.3 592 0.25340818351228 16.64891503337 6442.5264634088 84206.285785012
+164	1496255 19518 60400 116614 115.1 174.3 593 390.31662953587 707.47922695903 335864.77692888 197436200.97633
+163	1515773 19516 60400 116614 115.1 174.3 593 174.15141910271 357.41 179783.46435223 56448974.205773
+188	1535289 13346 71373 116674 130.3 174.4 442 0.973 10.3443738189 1365.3512345368 6294.3390017278
+187	1548635 14431 71373 116674 130.3 174.4 442 -4.5 2.6 132.00483332859 1494.0480836075
+186	1563066 14559 71192 116674 130.2 174.4 443 0 13.572697587329 4529.3584230136 53914.266555444
+185	1577625 14651 71125 116674 130.1 174.4 444 587.28827589964 653.51409283152 277546.64349419 173627351.84989
+184	1592276 14646 71125 116674 130.1 174.4 444 29.478793456033 316.24472047985 90958.314720735 22727299.711751
+vector 245 BangaloreScenario.node[35].nic.phy80211p RadioState ETV
+vector 246 BangaloreScenario.node[35].nic.phy80211p RadioChannel ETV
+vector 247 BangaloreScenario.manager posx ETV
+vector 248 BangaloreScenario.manager posy ETV
+vector 249 BangaloreScenario.manager speed ETV
+vector 250 BangaloreScenario.manager acceleration ETV
+vector 251 BangaloreScenario.manager co2emission ETV
+vector 252 BangaloreScenario.node[36].nic.phy80211p RadioState ETV
+vector 253 BangaloreScenario.node[36].nic.phy80211p RadioChannel ETV
+vector 254 BangaloreScenario.manager posx ETV
+vector 255 BangaloreScenario.manager posy ETV
+vector 256 BangaloreScenario.manager speed ETV
+vector 257 BangaloreScenario.manager acceleration ETV
+vector 258 BangaloreScenario.manager co2emission ETV
+223	1607700 9598 94512 125808 155.3 185.8 306 0.973 15.023809310927 1673.2029535356 12995.663085809
+222	1617298 9815 94512 125808 155.3 185.8 306 -4.5 2.6 210.89709318169 1937.9911465313
+221	1627113 10303 94274 125808 155.2 185.8 307 0.25329691111576 21.343006229285 3275.4796456817 41589.672194126
+220	1637416 10311 94207 125808 155.1 185.8 308 557.95 692.05769733987 180677.33821465 106279230.75923
+219	1647727 10309 94207 125808 155.1 185.8 308 211.95414734663 322.5872417625 85632.277160029 24234507.123782
+vector 259 BangaloreScenario.node[37].nic.phy80211p RadioState ETV
+vector 260 BangaloreScenario.node[37].nic.phy80211p RadioChannel ETV
+vector 261 BangaloreScenario.manager posx ETV
+vector 262 BangaloreScenario.manager posy ETV
+vector 263 BangaloreScenario.manager speed ETV
+vector 264 BangaloreScenario.manager acceleration ETV
+vector 265 BangaloreScenario.manager co2emission ETV
+216	1658425 12422 89459 129430 150.3 190.7 405 0.973 13.211314841219 1686.54514626 10715.768141551
+215	1670847 12883 89459 129430 150.3 190.7 405 -4.5 2.6 94.757549285099 2424.0471941069
+214	1683730 13513 89221 129430 150.2 190.7 406 0.2571360193186 18.54272376226 4296.1782577954 53633.96296587
+213	1697243 13607 89211 129430 150.1 190.7 407 591.04011095541 701.22922821309 268095.87944255 177020763.94367
+212	1710850 13615 89211 129430 150.1 190.7 407 123.16632679022 325.33432439022 89457.444216449 22170060.232031
+vector 266 BangaloreScenario.node[38].nic.phy80211p RadioState ETV
+vector 267 BangaloreScenario.node[38].nic.phy80211p RadioChannel ETV
+vector 268 BangaloreScenario.manager posx ETV
+vector 269 BangaloreScenario.manager posy ETV
+vector 270 BangaloreScenario.manager speed ETV
+vector 271 BangaloreScenario.manager acceleration ETV
+vector 272 BangaloreScenario.manager co2emission ETV
+258	1724854 3082 121167 130756 180.7 192.3 117 0.973 4.9224248830852 174.37672427056 380.84042275355
+257	1727936 2717 121167 130756 180.7 192.3 117 0 2.6 64.141191812096 140.25429760371
+256	1730653 2745 121005 130756 180.6 192.3 118 0 6.4141191812096 102.76895178009 449.57623341838
+255	1733398 3216 120945 130756 180.5 192.3 119 610.65122334395 620.08 73680.782344409 45621219.590351
+254	1736614 3218 120945 130756 180.5 192.3 119 145.09856494138 146.81568995174 17349.276119385 2529401.8301903
+vector 273 BangaloreScenario.node[39].nic.phy80211p RadioState ETV
+vector 274 BangaloreScenario.node[39].nic.phy80211p RadioChannel ETV
+vector 275 BangaloreScenario.manager posx ETV
+vector 276 BangaloreScenario.manager posy ETV
+vector 277 BangaloreScenario.manager speed ETV
+vector 278 BangaloreScenario.manager acceleration ETV
+vector 279 BangaloreScenario.manager co2emission ETV
+202	1740221 16407 79907 133306 140.3 195.7 555 0.973 10.389001555905 1651.0554381526 8020.0462408463
+201	1756628 17130 79907 133306 140.3 195.7 555 -4.5 2.6 140.44517544195 1694.8456943226
+200	1773758 17205 79694 133306 140.2 195.7 556 0 14.376082351056 5039.0748832036 63024.637704967
+199	1790963 18571 79685 133306 140.1 195.7 557 447.84751426694 664.74964285714 323355.56703346 190854139.48032
+198	1809534 18570 79685 133306 140.1 195.7 557 143.32055488325 306.74990536264 131048.77362468 32464804.938724
+251	1828104 6772 117244 133917 175.3 196.5 213 0.973 12.752225722984 1063.0726656662 7455.1622362792
+250	1834876 6940 117244 133917 175.3 196.5 213 -4.5 2.6 153.67079437824 1147.2380612263
+249	1841816 7221 117101 133917 175.2 196.5 214 0.25063865391654 18.685906193733 2446.1721596203 32412.518794486
+248	1849037 7251 117003 133917 175.1 196.5 215 679.30088442829 832.54273593684 160002.26271085 119743374.20624
+247	1856288 7240 117003 133917 175.1 196.5 215 188.88224953293 298.57086263979 58484.351718585 16078066.989296
+vector 280 BangaloreScenario.node[40].nic.phy80211p RadioState ETV
+vector 281 BangaloreScenario.node[40].nic.phy80211p RadioChannel ETV
+vector 282 BangaloreScenario.manager posx ETV
+vector 283 BangaloreScenario.manager posy ETV
+vector 284 BangaloreScenario.manager speed ETV
+vector 285 BangaloreScenario.manager acceleration ETV
+vector 286 BangaloreScenario.manager co2emission ETV
+230	1863917 12749 100237 136773 160.3 201.4 412 0.973 8.4469215114022 1076.8620062455 4000.1666405242
+229	1876666 14200 100237 136773 160.3 201.4 412 -4.5 2.6 113.9943875401 865.78384594344
+228	1890866 13926 99911 136773 160.2 201.4 413 0.25905163194588 11.704382225266 4059.1550048107 43800.472841208
+227	1904792 13944 99837 136773 160.1 201.4 414 605.92445790317 653.03 260805.31312605 164370753.61817
+226	1918736 13931 99837 136773 160.1 201.4 414 26.368296230737 300.90173984856 81048.580908323 18476575.810316
+237	1932667 11471 106513 137271 165.3 202.2 370 0.973 9.2973429283449 1176.3291398593 5510.0370387402
+236	1944138 12455 106513 137271 165.3 202.2 370 -4.5 2.6 91.59244060601 1375.8015942
+235	1956593 12517 106187 137271 165.2 202.2 371 0.25516854831274 13.693928189431 3786.2142266091 44220.11156944
+234	1969110 12520 106050 137271 165.1 202.2 372 451.17183384865 615.58416530794 200297.33369946 109027625.11631
+233	1981630 12533 106050 137271 165.1 202.2 372 147.87670745677 232.54148970169 70666.087753566 13628885.263464
+vector 287 BangaloreScenario.node[41].nic.phy80211p RadioState ETV
+vector 288 BangaloreScenario.node[41].nic.phy80211p RadioChannel ETV
+vector 289 BangaloreScenario.manager posx ETV
+vector 290 BangaloreScenario.manager posy ETV
+vector 291 BangaloreScenario.manager speed ETV
+vector 292 BangaloreScenario.manager acceleration ETV
+vector 293 BangaloreScenario.manager co2emission ETV
+vector 294 BangaloreScenario.node[42].nic.phy80211p RadioState ETV
+vector 295 BangaloreScenario.node[42].nic.phy80211p RadioChannel ETV
+vector 296 BangaloreScenario.manager posx ETV
+vector 297 BangaloreScenario.manager posy ETV
+vector 298 BangaloreScenario.manager speed ETV
+vector 299 BangaloreScenario.manager acceleration ETV
+vector 300 BangaloreScenario.manager co2emission ETV
+244	1994941 13043 112239 142621 170.3 212.4 422 0.973 10.280341286276 1540.2874124071 8316.7259041837
+243	2007984 13643 112239 142621 170.3 212.4 422 -4.5 2.6 122.81946183694 2197.0698627209
+242	2021627 14168 112001 142621 170.2 212.4 423 0.25525481051346 14.300118094196 4034.8756499557 43961.579927809
+241	2035795 14282 111877 142621 170.1 212.4 424 612.07491667336 707.21044518651 276469.77171208 180695380.33626
+240	2050077 14292 111877 142621 170.1 212.4 424 141.35223323009 303.55728061292 92443.314695118 21491695.727395
+vector 301 BangaloreScenario.node[43].nic.phy80211p RadioState ETV
+vector 302 BangaloreScenario.node[43].nic.phy80211p RadioChannel ETV
+vector 303 BangaloreScenario.manager posx ETV
+vector 304 BangaloreScenario.manager posy ETV
+vector 305 BangaloreScenario.manager speed ETV
+vector 306 BangaloreScenario.manager acceleration ETV
+vector 307 BangaloreScenario.manager co2emission ETV
+vector 308 BangaloreScenario.node[44].nic.phy80211p RadioState ETV
+vector 309 BangaloreScenario.node[44].nic.phy80211p RadioChannel ETV
+vector 310 BangaloreScenario.manager posx ETV
+vector 311 BangaloreScenario.manager posy ETV
+vector 312 BangaloreScenario.manager speed ETV
+vector 313 BangaloreScenario.manager acceleration ETV
+vector 314 BangaloreScenario.manager co2emission ETV
+vector 315 BangaloreScenario.node[45].nic.phy80211p RadioState ETV
+vector 316 BangaloreScenario.node[45].nic.phy80211p RadioChannel ETV
+vector 317 BangaloreScenario.manager posx ETV
+vector 318 BangaloreScenario.manager posy ETV
+vector 319 BangaloreScenario.manager speed ETV
+vector 320 BangaloreScenario.manager acceleration ETV
+vector 321 BangaloreScenario.manager co2emission ETV
+272	2065536 10533 130081 152565 191.6 225.4 339 0.973 9.1886233372176 1174.7540186851 5898.8943641001
+271	2076069 11166 130081 152565 191.6 225.4 339 -4.5 2.6 127.64353266169 1565.9862999633
+270	2087235 11421 130021 152565 191.5 225.4 340 0.25005425382289 13.123785340714 3058.1483607646 31577.452199304
+269	2098656 11476 129859 152565 191.4 225.4 341 589.87750742036 631.83431201568 208853.71826679 127963648.70301
+268	2110132 11458 129859 152565 191.4 225.4 341 98.177331581727 307.99410204133 58354.107510048 11201971.951771
+vector 322 BangaloreScenario.node[46].nic.phy80211p RadioState ETV
+vector 323 BangaloreScenario.node[46].nic.phy80211p RadioChannel ETV
+vector 324 BangaloreScenario.manager posx ETV
+vector 325 BangaloreScenario.manager posy ETV
+vector 326 BangaloreScenario.manager speed ETV
+vector 327 BangaloreScenario.manager acceleration ETV
+vector 328 BangaloreScenario.manager co2emission ETV
+vector 329 BangaloreScenario.node[47].nic.phy80211p RadioState ETV
+vector 330 BangaloreScenario.node[47].nic.phy80211p RadioChannel ETV
+vector 331 BangaloreScenario.manager posx ETV
+vector 332 BangaloreScenario.manager posy ETV
+vector 333 BangaloreScenario.manager speed ETV
+vector 334 BangaloreScenario.manager acceleration ETV
+vector 335 BangaloreScenario.manager co2emission ETV
+279	2122368 12959 132913 165298 195.3 237.1 419 0.973 8.7710301014329 1144.8315314448 4600.2627715183
+278	2135327 14378 132913 165298 195.3 237.1 419 -4.5 2.6 113.01118469055 992.85085283344
+277	2149705 14117 132751 165298 195.2 237.1 420 0.25176757128024 11.678643254508 4093.5268357555 43191.03832442
+276	2163822 14182 132691 165298 195.1 237.1 421 609.1710211103 673.73724055785 268776.79407286 171766463.19602
+275	2178004 14200 132691 165298 195.1 237.1 421 29.478793456033 303.55122777181 79848.081181143 18592814.485849
+vector 336 BangaloreScenario.node[48].nic.phy80211p RadioState ETV
+vector 337 BangaloreScenario.node[48].nic.phy80211p RadioChannel ETV
+vector 338 BangaloreScenario.manager posx ETV
+vector 339 BangaloreScenario.manager posy ETV
+vector 340 BangaloreScenario.manager speed ETV
+vector 341 BangaloreScenario.manager acceleration ETV
+vector 342 BangaloreScenario.manager co2emission ETV
+vector 343 BangaloreScenario.node[49].nic.phy80211p RadioState ETV
+vector 344 BangaloreScenario.node[49].nic.phy80211p RadioChannel ETV
+vector 345 BangaloreScenario.manager posx ETV
+vector 346 BangaloreScenario.manager posy ETV
+vector 347 BangaloreScenario.manager speed ETV
+vector 348 BangaloreScenario.manager acceleration ETV
+vector 349 BangaloreScenario.manager co2emission ETV
+vector 350 BangaloreScenario.node[50].nic.phy80211p RadioState ETV
+vector 351 BangaloreScenario.node[50].nic.phy80211p RadioChannel ETV
+vector 352 BangaloreScenario.manager posx ETV
+vector 353 BangaloreScenario.manager posy ETV
+vector 354 BangaloreScenario.manager speed ETV
+265	2193262 18536 128824 184036 190.2 250.2 601 0.973 9.1034103518483 1710.7965967652 7211.4414055924
+264	2211798 20443 128824 184036 190.2 250.2 601 -4.5 2.6 118.6114363852 1567.1991759344
+263	2232241 20268 128764 184036 190.1 250.2 602 0.25746436336357 12.238417822775 6237.0709244879 69107.995519625
+262	2252509 20312 128755 184036 190 250.2 603 469.05380442569 650.24093985788 349715.28683693 204768601.0109
+261	2272821 20316 128755 184036 190 250.2 603 60.740113673707 320.85361386139 99281.442001553 20736208.283316
+vector 355 BangaloreScenario.manager acceleration ETV
+vector 356 BangaloreScenario.manager co2emission ETV
+321	2293246 9487 152555 191501 225.3 254.7 295 -0.46468329172414 18.499459923029 2032.7287473898 20173.188709461
+320	2302733 9558 152555 191501 225.3 254.7 295 -4.5 2.5948476479156 259.02322845207 1715.7059223436
+319	2312291 9921 152374 191501 225.2 254.7 296 0.2561030094875 26.245533434242 4113.4558523138 72439.510150741
+318	2322212 10019 152307 191501 225.1 254.7 297 390.36483227272 611.22670838323 144043.40799932 71166032.431904
+317	2332231 9997 152307 191501 225.1 254.7 297 316.73898845802 357.39965540463 101774.58683699 34906424.004439
+vector 357 BangaloreScenario.node[51].nic.phy80211p RadioState ETV
+vector 358 BangaloreScenario.node[51].nic.phy80211p RadioChannel ETV
+vector 359 BangaloreScenario.manager posx ETV
+vector 360 BangaloreScenario.manager posy ETV
+vector 361 BangaloreScenario.manager speed ETV
+vector 362 BangaloreScenario.manager acceleration ETV
+vector 363 BangaloreScenario.manager co2emission ETV
+300	2342617 14626 141193 197363 210.3 258.3 481 0.973 8.4990001648448 1349.9428058382 5634.5053748404
+299	2357243 16320 141193 197363 210.3 258.3 481 -4.5 2.6 65.658792375764 1520.97379232
+298	2373563 16185 141185 197363 210.2 258.3 482 0.24926813101163 12.611703845845 4591.7460888868 48781.278236248
+297	2389748 16252 141132 197363 210.1 258.3 483 473.62821289969 695.30385274348 292068.19713157 178655297.45609
+296	2406000 16258 141132 197363 210.1 258.3 483 92.565717751422 303.55914223964 89277.280714122 19590584.632835
+vector 364 BangaloreScenario.node[52].nic.phy80211p RadioState ETV
+vector 365 BangaloreScenario.node[52].nic.phy80211p RadioChannel ETV
+vector 366 BangaloreScenario.manager posx ETV
+vector 367 BangaloreScenario.manager posy ETV
+vector 368 BangaloreScenario.manager speed ETV
+vector 369 BangaloreScenario.manager acceleration ETV
+vector 370 BangaloreScenario.manager co2emission ETV
+vector 371 BangaloreScenario.node[53].nic.phy80211p RadioState ETV
+vector 372 BangaloreScenario.node[53].nic.phy80211p RadioChannel ETV
+vector 373 BangaloreScenario.manager posx ETV
+vector 374 BangaloreScenario.manager posy ETV
+vector 375 BangaloreScenario.manager speed ETV
+vector 376 BangaloreScenario.manager acceleration ETV
+vector 377 BangaloreScenario.manager co2emission ETV
+328	2423036 10993 157176 209604 230.3 266 358 0.973 8.8755039218315 976.72020379153 3920.8199427842
+327	2434029 12272 157176 209604 230.3 266 358 -4.5 2.6 114.45299481131 840.05287600374
+326	2446301 12074 156995 209604 230.2 266 359 0.2592904153245 11.774205729097 3446.5258271382 36264.672181538
+325	2458375 12124 156928 209604 230.1 266 360 472.27117032179 624.97504509565 197668.42369693 109525626.838
+324	2470499 12133 156928 209604 230.1 266 360 63.344629821373 134.75887691988 34700.511031824 3500741.9200448
+286	2482632 20659 136055 211981 200.3 267.3 671 0.973 9.1003980811138 2055.9660991874 9386.7491287443
+285	2503291 22384 136055 211981 200.3 267.3 671 -4.5 2.6 112.53380993111 2457.8524328297
+284	2525675 22564 135957 211981 200.2 267.3 672 0.25009894500626 12.35052593895 6604.5340849357 70126.850035832
+283	2548239 22660 135859 211981 200.1 267.3 673 447.84684008328 707.15752890975 398980.46008568 241275245.88242
+282	2570899 22667 135859 211981 200.1 267.3 673 141.87988375163 303.55633617244 144864.13002511 32724374.418144
+314	2593566 14846 147948 212895 220.3 268.1 479 0.973 9.4037703604808 1355.4824788355 5625.5944650029
+313	2608412 16331 147948 212895 220.3 268.1 479 -4.5 2.6 118.96480978711 1102.728970014
+312	2624743 16124 147837 212895 220.2 268.1 480 0.25178287500585 12.211883489556 5036.190469639 56231.653224285
+311	2640867 16196 147777 212895 220.1 268.1 481 331.6300980496 585.2171080882 216991.14200269 101474022.00764
+310	2657063 16214 147777 212895 220.1 268.1 481 191.56637596427 345.27531297286 118352.03092061 30117752.795134
+vector 378 BangaloreScenario.node[54].nic.phy80211p RadioState ETV
+vector 379 BangaloreScenario.node[54].nic.phy80211p RadioChannel ETV
+vector 380 BangaloreScenario.manager posx ETV
+vector 381 BangaloreScenario.manager posy ETV
+vector 382 BangaloreScenario.manager speed ETV
+vector 383 BangaloreScenario.manager acceleration ETV
+vector 384 BangaloreScenario.manager co2emission ETV
+307	2673666 17025 144333 215777 215.3 270.5 553 0.973 12.742093638322 1934.3740334951 10576.823946317
+306	2690691 18196 144333 215777 215.3 270.5 553 -4.5 2.6 104.42713810307 2529.3842667989
+305	2708887 18652 144280 215777 215.2 270.5 554 0.25052951946878 18.090888161933 5571.5656719984 62662.734315782
+304	2727539 18691 144227 215777 215.1 270.5 555 557.59156066937 701.26459059327 355421.29586632 228902239.88165
+303	2746230 18694 144227 215777 215.1 270.5 555 123.23442734405 325.84388287845 123082.30436678 30060896.632874
+vector 385 BangaloreScenario.node[55].nic.phy80211p RadioState ETV
+vector 386 BangaloreScenario.node[55].nic.phy80211p RadioChannel ETV
+vector 387 BangaloreScenario.manager posx ETV
+vector 388 BangaloreScenario.manager posy ETV
+vector 389 BangaloreScenario.manager speed ETV
+vector 390 BangaloreScenario.manager acceleration ETV
+vector 391 BangaloreScenario.manager co2emission ETV
+293	2765313 21992 138495 222899 205.3 276.5 713 0.25418767000394 15.236777508207 2659.7466289448 16477.582261862
+292	2787305 23930 138495 222899 205.3 276.5 713 -4.5 2.6 137.25953369286 2439.0972780662
+291	2811235 24076 138488 222899 205.2 276.5 714 0.2499890574608 22.395374517565 9188.2994234672 131546.14316373
+290	2835311 24075 138442 222899 205.1 276.5 715 335.91881190798 650.24558938831 364441.05706394 193977982.03993
+289	2859386 24097 138442 222899 205.1 276.5 715 95.784781137826 354.23621541323 164270.96103228 43224805.464311
+363	2883483 6995 192449 224089 255.3 277.5 223 0.973 11.289687829215 920.93855614716 5431.2916998497
+362	2890478 7092 192449 224089 255.3 277.5 223 -4.5 2.6 121.03362513321 1254.6245483784
+361	2897570 7526 192230 224089 255.2 277.5 224 0.25058658428257 15.429685280018 2102.913737942 23044.273587363
+360	2905096 7552 191942 224089 255.1 277.5 225 586.6586814441 671.06417762719 140143.82624699 87481517.123108
+359	2912648 7575 191942 224089 255.1 277.5 225 189.36283267224 316.21676523128 60838.872889739 16912693.913838
+vector 392 BangaloreScenario.node[56].nic.phy80211p RadioState ETV
+vector 393 BangaloreScenario.node[56].nic.phy80211p RadioChannel ETV
+vector 394 BangaloreScenario.manager posx ETV
+vector 395 BangaloreScenario.manager posy ETV
+vector 396 BangaloreScenario.manager speed ETV
+vector 397 BangaloreScenario.manager acceleration ETV
+vector 398 BangaloreScenario.manager co2emission ETV
+356	2920612 9580 184349 227356 250.3 280.9 307 0.973 9.3804459934815 949.31523794907 4288.2671086858
+355	2930192 10477 184349 227356 250.3 280.9 307 -4.5 2.6 125.58998517973 760.87162161902
+354	2940669 10385 184036 227356 250.2 280.9 308 0.25218649364053 12.881845945701 3280.1728886824 38056.792519464
+353	2951054 10398 183723 227356 250.1 280.9 309 447.85874877893 603.34473007175 158979.23189797 82477885.979291
+352	2961452 10394 183723 227356 250.1 280.9 309 143.37549134725 236.55793689628 60120.796172437 11905001.234651
+vector 399 BangaloreScenario.node[57].nic.phy80211p RadioState ETV
+vector 400 BangaloreScenario.node[57].nic.phy80211p RadioChannel ETV
+vector 401 BangaloreScenario.manager posx ETV
+vector 402 BangaloreScenario.manager posy ETV
+vector 403 BangaloreScenario.manager speed ETV
+vector 404 BangaloreScenario.manager acceleration ETV
+vector 405 BangaloreScenario.manager co2emission ETV
+vector 406 BangaloreScenario.node[58].nic.phy80211p RadioState ETV
+vector 407 BangaloreScenario.node[58].nic.phy80211p RadioChannel ETV
+vector 408 BangaloreScenario.manager posx ETV
+vector 409 BangaloreScenario.manager posy ETV
+vector 410 BangaloreScenario.manager speed ETV
+vector 411 BangaloreScenario.manager acceleration ETV
+vector 412 BangaloreScenario.manager co2emission ETV
+405	2972624 2287 231406 239150 285.3 292 68 1.4090448541688 9.5220715626194 327.19321746838 1913.9847197837
+404	2974911 2293 231406 239150 285.3 292 68 1.3120068121236 2.5825003548758 133.13743742736 270.39629781707
+403	2977204 2333 231282 239150 285.2 292 69 0.24720112773078 13.560944870467 475.09491958184 4284.6286765959
+402	2979537 2357 231101 239150 285.1 292 70 605.86828390661 627.93628912174 42984.529814744 26400255.06141
+401	2981894 2359 231101 239150 285.1 292 70 100.61638811544 131.0201346937 8466.0466257647 1028146.1480376
+384	2984253 7179 215629 240476 270.3 293.1 229 0.973 9.3307654404205 776.17857706515 3821.5643579631
+383	2991432 7666 215629 240476 270.3 293.1 229 -4.5 2.6 124.46756011302 919.9553774069
+382	2999098 7678 215429 240476 270.2 293.1 230 0.25575249596359 12.789780273614 2078.5122812026 22170.069220724
+381	3006776 7778 215166 240476 270.1 293.1 231 679.3046380294 700.98692736456 159361.74012662 109950259.0446
+380	3014554 7777 215166 240476 270.1 293.1 231 188.95814130702 292.47545973609 56292.037005941 13988240.047226
+349	3022331 15393 176040 242196 245.3 295 498 0.973 9.5541291739441 1517.5202890212 6803.2849266049
+348	3037724 16674 176040 242196 245.3 295 498 -4.5 2.6 122.91508335409 1689.4248286986
+347	3054398 16789 175752 242196 245.2 295 499 0.25016763992654 12.560674736999 4926.9413741627 53662.736493434
+346	3071187 16825 175533 242196 245.1 295 500 605.87761650375 701.25393659181 331959.90744096 220880164.29539
+345	3088012 16839 175533 242196 245.1 295 500 100.4851961654 306.73966060906 116305.63498076 28633940.765686
+vector 413 BangaloreScenario.node[59].nic.phy80211p RadioState ETV
+vector 414 BangaloreScenario.node[59].nic.phy80211p RadioChannel ETV
+vector 415 BangaloreScenario.manager posx ETV
+vector 416 BangaloreScenario.manager posy ETV
+vector 417 BangaloreScenario.manager speed ETV
+vector 418 BangaloreScenario.manager acceleration ETV
+vector 419 BangaloreScenario.manager co2emission ETV
+370	3105240 11231 200154 243657 260.3 296.5 363 0.973 9.717322199818 1231.0164475096 6158.5920899416
+369	3116471 12042 200154 243657 260.3 296.5 363 -4.5 2.6 104.98166847665 1587.4464873907
+368	3128513 12280 199935 243657 260.2 296.5 364 0.25277808286762 13.224990461685 3560.4160313593 38645.533484629
+367	3140793 12295 199647 243657 260.1 296.5 365 589.8782118086 645.06400079248 224282.45695715 137868192.71873
+366	3153088 12295 199647 243657 260.1 296.5 365 29.478793456033 312.99397915245 64816.599974179 14480347.199887
+342	3165383 17972 169083 245086 240.3 298.6 584 0.973 10.597671941539 1832.1328686986 8692.1308616149
+341	3183355 19370 169083 245086 240.3 298.6 584 -4.5 2.6 110.83648731033 2494.1825005838
+340	3202725 19618 168820 245086 240.2 298.6 585 0.24977976080379 15.298799046457 5278.6910385231 53901.833572939
+339	3222343 19748 168683 245086 240.1 298.6 586 586.64767062411 701.24813688165 382295.37804715 250193226.66946
+338	3242091 19736 168683 245086 240.1 298.6 586 123.35073392098 316.22022811655 127631.25460158 30445141.386219
+331	3261827 21895 162558 245865 235.1 300 650 74.90109893934 232.72868069474 96391.657049903 15872259.708414
+332	3283722 21889 162558 245865 235.1 300 650 453.38924745415 627.92619871051 353549.4163178 194471421.71727
+333	3305611 21809 162632 245865 235.2 300 649 0.25490152142756 10.396126053277 5851.694925155 55866.423716415
+334	3327420 22266 162895 245865 235.3 300 648 -4.5 2.6 100.27274405904 1363.3164119067
+335	3349686 19736 162895 245865 235.3 300 648 0.973 7.7356013143452 1580.5233360012 5543.762864186
+373	3369422 11770 207837 245865 265.1 300 350 307.02609635512 357.41 119006.4371896 40524959.158166
+374	3381192 11771 207837 245865 265.1 300 350 390.33464220974 644.83480510883 173866.49351086 88380978.948146
+375	3392963 11717 208150 245865 265.2 300 349 0.25916874554567 19.611291780248 4463.3302775412 69456.939964371
+376	3404680 11296 208463 245865 265.3 300 348 -4.5 2.5963094238425 68.356904855214 2061.0432826023
+377	3415976 10824 208463 245865 265.3 300 348 0.64973543641356 14.664018680576 1625.5024003351 12126.858302864
+387	3426800 8410 220981 245865 275.1 300 250 145.66 303.54581018035 60189.159228693 15315013.437431
+388	3435210 8409 220981 245865 275.1 300 250 615.26658710788 698.01013056532 162659.08497222 106047083.26608
+389	3443619 8377 221244 245865 275.2 300 249 0.26 15.183142594318 2491.3242446302 28642.006520066
+390	3451996 8152 221381 245865 275.3 300 248 -4.5 2.6 131.35813308635 1201.2652203381
+391	3460148 7813 221381 245865 275.3 300 248 0.973 10.54343002355 996.14557714906 5713.5802217727
+394	3467961 6737 226364 245865 280.1 300 200 188.57980775501 279.82512697146 43013.51782537 9399519.2463139
+395	3474698 6734 226364 245865 280.1 300 200 569.12495862508 647.76637492825 123003.05483006 75773706.557292
+396	3481432 6672 226602 245865 280.2 300 199 0.25374792073201 9.5048447188063 1481.8556967013 12194.269761859
+397	3488104 6788 226726 245865 280.3 300 198 -4.5 2.6 92.042877219942 508.76742462461
+398	3494892 6093 226726 245865 280.3 300 198 0.973 6.6796588749506 504.10651396867 1803.0035021572
+408	3500985 3192 237284 245865 290.5 300 96 142.71398027411 192.71233851948 15639.122498739 2577791.0098156
+409	3504177 3140 237284 245865 290.5 300 96 610.41 621.3653347426 59131.42734066 36423314.836927
+410	3507317 3060 237295 245865 290.6 300 95 0 10.771482319406 592.90168414789 4439.8010974319
+411	3510377 2896 237495 245865 290.7 300 94 -4.5 2.6 81.469087832133 476.51532480876
+412	3513273 2991 237495 245865 290.7 300 94 0.973 8.1698199078386 307.55289571894 1351.0268301835
+415	3516264 1683 242358 245865 295.1 300 50 280.19356158957 281.4278166165 14035.684862215 3940017.2890654
+416	3517947 1690 242358 245865 295.1 300 50 30.198265610992 56.124372413016 1955.6565224976 79581.934131793
+417	3519637 1655 242418 245865 295.2 300 49 0.25350742437318 10.336394706758 259.60704269606 1793.7569472669
+418	3521292 1616 242631 245865 295.3 300 48 1.3637642854126 2.5966963830637 100.82887282385 217.64295015855
+419	3522908 1615 242631 245865 295.3 300 48 1.4273765509578 7.7262290361761 198.36859477823 964.94530986254
+

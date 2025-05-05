@@ -11,6 +11,8 @@ simple MyBangaloreApp extends DemoBaseApplLayer
         @class(bangalore_v2v::MyBangaloreApp);  // Namespace should match C++ file
 
         double broadcastInterval @unit(s) = default(1s);
+        double periodicLoggingInterval @unit(s) = default(0.1s);
+        double safetyDistanceThreshold @unit(m) = default(10m);
 
         // headerLength is inherited from DemoBaseApplLayer
         // int headerLength @unit(bit) = default(88bit);
